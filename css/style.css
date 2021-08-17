@@ -1,8 +1,8 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -84,17 +84,14 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-
 article,
 aside,
 details,
@@ -106,90 +103,69 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
-}
+  display: block; }
 
 body {
-    line-height: 1;
-}
+  line-height: 1; }
 
 ol,
 ul {
-    list-style: none;
-}
+  list-style: none; }
 
 blockquote,
 q {
-    quotes: none;
-}
+  quotes: none; }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
-}
+  content: '';
+  content: none; }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /* Inicio del código para el proyecto coderconf */
-
 body {
-    /* display: flex;
+  /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; */
-}
-
+    align-items: center; */ }
 
 /* header y navegación */
-
-
 /* navegación */
-
 #btn-menu {
-    display: none;
-}
+  display: none; }
 
 .btn-menu {
-    display: block;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-left: 1px solid white;
-}
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-left: 1px solid white; }
 
 .btn-menu:hover {
-    display: block;
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.3);
-}
+  display: block;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .menu {
-    position: absolute;
-    background: 4e94ab;
-    width: 75%;
-    margin-left: -75%;
-}
+  position: absolute;
+  background: 4e94ab;
+  width: 75%;
+  margin-left: -75%; }
 
 .ul {
-    flex-direction: column;
-}
+  flex-direction: column; }
 
 .li {
-    border-top: 1px solid #fff;
-}
+  border-top: 1px solid #fff; }
 
-#btn-menu:checked~.menu {
-    margin: 0%
-}
+#btn-menu:checked ~ .menu {
+  margin: 0%; }
 
 .logoPlay {
-    width: 30px;
-    height: 30px;
-}
+  width: 30px;
+  height: 30px; }
