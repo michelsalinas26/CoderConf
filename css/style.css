@@ -128,113 +128,44 @@ table {
   border-spacing: 0; }
 
 /* Inicio del código para el proyecto coderconf */
-.onePage {
-  grid-area: onePage;
-  width: 100%;
-  height: 100vh;
-  background-image: url(../images/cascoIndex.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* header y navegación */
-  /* Datos del main */ }
-  .onePage .navegacion {
-    display: flex;
-    height: 10%;
-    /* header */
-    /* navegación */ }
-    .onePage .navegacion .logo {
-      padding: 10px;
-      width: 50%; }
-    .onePage .navegacion .navbar {
-      margin: 0%;
-      padding: 0%;
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end; }
-      .onePage .navegacion .navbar #btn-menu-checkbox {
-        display: none; }
-      .onePage .navegacion .navbar .btn-menu {
-        display: block;
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        padding: 10px; }
-      .onePage .navegacion .navbar .btn-menu:hover {
-        display: block;
-        cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.3); }
-      .onePage .navegacion .navbar .menu {
-        width: 75%;
-        margin-right: -75%;
-        /* transition: all 0.5s; */ }
-        .onePage .navegacion .navbar .menu .ul {
-          display: block;
-          position: absolute;
-          display: flex;
-          flex-direction: column;
-          list-style: none; }
-        .onePage .navegacion .navbar .menu .li {
-          /* border-top: 1px solid #fff; */
-          color: white;
-          /* eliminar */ }
-        .onePage .navegacion .navbar .menu .li:hover {
-          background: rgba(0, 0, 0, 0.3); }
-        .onePage .navegacion .navbar .menu .enlaceNavbar {
-          display: block;
-          padding: 10px 20px;
-          text-decoration: none;
-          color: white;
-          font-size: 1rem; }
-      .onePage .navegacion .navbar #btn-menu-checkbox:checked ~ .menu {
-        margin: 50px 0%;
-        position: absolute; }
-  .onePage .pageOne-article {
-    width: 100%;
-    height: 90%;
-    margin-bottom: 0%;
-    display: flex;
+body {
+  /* display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center; }
-    .onePage .pageOne-article .pageOne-title {
-      color: white;
-      text-align: center; }
-    .onePage .pageOne-article .pageOne-images {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .onePage .pageOne-article .pageOne-images .pageOne-imageOne {
-        width: 100%;
-        height: 25%; }
-
-.twoPage {
-  grid-area: twoPage;
-  width: 100%;
-  height: 100vh;
-  margin: 0%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column; }
-  .twoPage .twoPage-imagen {
-    height: 65%;
-    display: flex;
     justify-content: center;
-    align-items: center; }
-    .twoPage .twoPage-imagen .twoPage-imagen-logo {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-  .twoPage .twoPage-texto {
-    height: 35%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .twoPage .twoPage-texto .twoPage-texto-h2 {
-      text-align: center;
-      font-size: 1rem; }
-    .twoPage .twoPage-texto .twoPage-texto-p {
-      padding-top: 20px;
-      text-align: center;
-      font-size: 1rem; }
+    align-items: center; */ }
+
+/* header y navegación */
+/* navegación */
+#btn-menu {
+  display: none; }
+
+.btn-menu {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-left: 1px solid white; }
+
+.btn-menu:hover {
+  display: block;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.menu {
+  position: absolute;
+  background: 4e94ab;
+  width: 75%;
+  margin-left: -75%; }
+
+.ul {
+  flex-direction: column; }
+
+.li {
+  border-top: 1px solid #fff; }
+
+#btn-menu:checked ~ .menu {
+  margin: 0%; }
+
+.logoPlay {
+  width: 30px;
+  height: 30px; }
