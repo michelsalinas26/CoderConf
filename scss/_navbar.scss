@@ -1,0 +1,56 @@
+/* Inicio del código para el proyecto coderconf */
+
+body {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+/* header y navegación */
+
+
+/* navegación */
+
+#btn-menu {
+    display: none;
+}
+
+.btn-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-left: 1px solid white;
+}
+
+.btn-menu:hover {
+    display: block;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    position: absolute;
+    background: 4e94ab;
+    width: 75%;
+    margin-left: -75%;
+}
+
+.ul {
+    flex-direction: column;
+}
+
+.li {
+    border-top: 1px solid #fff;
+}
+
+#btn-menu:checked~.menu {
+    margin: 0%
+}
+
+.logoPlay {
+    width: 30px;
+    height: 30px;
+}
