@@ -282,3 +282,52 @@ table {
     justify-content: space-evenly; }
     .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors img {
       padding: 25px 0px; }
+
+.footerPage {
+  width: 100%;
+  height: 40vh;
+  padding: 25px;
+  background-color: black;
+  display: grid;
+  grid-template-areas: "footerPage-coderconf footerPage-coderhouse" "footerPage-redesSociales footerPage-redesSociales" "footerPage-copyright footerPage-copyright";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.75fr 0.5fr 0.25fr; }
+  .footerPage .footerPage-coderconf {
+    grid-area: footerPage-coderconf;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footerPage .footerPage-coderconf .footerPage-div {
+      padding: 10px; }
+      .footerPage .footerPage-coderconf .footerPage-div .footerPage-div-h3 {
+        padding: 5px;
+        color: white; }
+  .footerPage .footerPage-coderhouse {
+    grid-area: footerPage-coderhouse;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footerPage .footerPage-coderhouse .footerPage-div {
+      padding: 10px; }
+      .footerPage .footerPage-coderhouse .footerPage-div .footerPage-div-h3 {
+        padding: 5px;
+        color: white; }
+  .footerPage .footerPage-redesSociales {
+    grid-area: footerPage-redesSociales;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footerPage .footerPage-redesSociales .footerPage-redesSociales-h2 {
+      padding: 10px;
+      color: white; }
+    .footerPage .footerPage-redesSociales .footerPage-redesSociales-div {
+      padding: 10px; }
+  .footerPage .footerPage-copyright {
+    grid-area: footerPage-copyright;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; }
+    .footerPage .footerPage-copyright .footerPage-copyright-h2 {
+      font-size: 12px;
+      color: white; }
