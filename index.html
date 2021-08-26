@@ -69,7 +69,7 @@
     <!-- Tercera página (speaker + conferncia + logo) -->
     <section class="threePage">
         <div class="threePage-logo">
-            <h2><img src="./images/+15Violeta.png" alt="Logo +15"></h2>
+            <h2 class="threePage-logo-h2"><img src="./images/+15Violeta.png" alt="Logo +15"></h2>
             <h3 class="threePage-logo-h3">SPEAKERS RECONOCIDOS</h3>
             <h4 class="threePage-logo-h4">BIGBOX / UALA / MERCADOLIBRE / TIENDA MIA / FACEBOOK / GALICIA</h4>
         </div>
@@ -219,17 +219,20 @@
             </div>
     </section>
     <!-- Sexta agenda (Inscripción) -->
-    <section>
-        <h2>INSCRIPCIÓN</h2>
-        <h3>¡Completa tus datos!</h3>
-        <p>y se parte de esta gran experiencia con los mejores speakers y temas de alto impacto para el futuro.</p>
-        <form action="">
-            <input type="tex" placeholder="Nombre">
-            <input type="tex" placeholder="Apellido">
-            <input type="tex" placeholder="Celular">
-            <input type="email" placeholder="Email">
-            <input type="tex" placeholder="País">
-            <select name="ocupacion" id="ocupacion">
+    <section class="sixPage">
+        <div class="sixPage-div">
+            <h2 class="sixPage-div-h2">INSCRIPCIÓN</h2>
+            <h3 class="sixPage-div-h3">¡Completa tus datos!</h3>
+            <p class="sixPage-div-p">y se parte de esta gran experiencia con los mejores speakers y temas de alto impacto para el futuro.</p>
+        </div>
+
+        <form class="sixPage-form" action="">
+            <input class="sixPage-form-input" type="tex" placeholder="Nombre">
+            <input class="sixPage-form-input" type="tex" placeholder="Apellido">
+            <input class="sixPage-form-input" type="tex" placeholder="Celular">
+            <input class="sixPage-form-input" type="email" placeholder="Email">
+            <input class="sixPage-form-input" type="tex" placeholder="País">
+            <select class="sixPage-form-input" name="ocupacion" id="ocupacion">
                 <option selected disabled>¿Sos parte de Coder?</option>
                 <option value="estudiante">Estudiante</option>
                 <option value="graduado">Graduado</option>
@@ -238,7 +241,7 @@
                 <option value="no">No</option>
             </select>
             <div>
-                <input type="submit" value="Enviar Formulario">
+                <input class="sixPage-form-btn" type="submit" value="Solicitar Inscripción">
             </div>
             <!-- <div><img src="./images/casco.jpg" alt="Astronauta"></div> -->
         </form>
