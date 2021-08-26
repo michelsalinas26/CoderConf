@@ -67,22 +67,20 @@
         </div>
     </section>
     <!-- Tercera página (speaker + conferncia + logo) -->
-    <section>
-        <article>
-            <div>
-                <h2>+15</h2>
-                <h3>SPEAKERS RECONOCIDOS</h3>
-                <h4>BIGBOX / UALA / MERCADOLIBRE / TIENDA MIA / FACEBOOK / GALICIA</h4>
-            </div>
-            <div>
-                <h2>+12</h2>
-                <h3>CONFERENCIAS</h3>
-                <h4>SOBRE MARKETING, DISEÑO, DESARROLLO, PRODUCTO, SUSTENTABILIDAD Y MÁS</h4>
-            </div>
-            <div>
-                <!-- <img src="./images/movil jaxa 2.png" alt="Triangulo"> -->
-            </div>
-        </article>
+    <section class="threePage">
+        <div class="threePage-logo">
+            <h2 class="threePage-logo-h2"><img src="./images/+15Violeta.png" alt="Logo +15"></h2>
+            <h3 class="threePage-logo-h3">SPEAKERS RECONOCIDOS</h3>
+            <h4 class="threePage-logo-h4">BIGBOX / UALA / MERCADOLIBRE / TIENDA MIA / FACEBOOK / GALICIA</h4>
+        </div>
+        <div class="threePage-logo">
+            <h2 class="threePage-logo-h2"><img src="./images/+12Violeta.png" alt="Logo +12"></h2>
+            <h3 class="threePage-logo-h3">CONFERENCIAS</h3>
+            <h4 class="threePage-logo-h4">SOBRE MARKETING, DISEÑO, DESARROLLO, PRODUCTO, SUSTENTABILIDAD Y MÁS</h4>
+        </div>
+        <div class="threePage-imagen">
+            <img src="./images/autoEspacialMobile.png" alt="Imagen de auto espacial">
+        </div>
     </section>
     <!-- Cuarta página (Speakers + Invitado especial + invitados) -->
     <section>
@@ -221,17 +219,20 @@
             </div>
     </section>
     <!-- Sexta agenda (Inscripción) -->
-    <section>
-        <h2>INSCRIPCIÓN</h2>
-        <h3>¡Completa tus datos!</h3>
-        <p>y se parte de esta gran experiencia con los mejores speakers y temas de alto impacto para el futuro.</p>
-        <form action="">
-            <input type="tex" placeholder="Nombre">
-            <input type="tex" placeholder="Apellido">
-            <input type="tex" placeholder="Celular">
-            <input type="email" placeholder="Email">
-            <input type="tex" placeholder="País">
-            <select name="ocupacion" id="ocupacion">
+    <section class="sixPage">
+        <div class="sixPage-div">
+            <h2 class="sixPage-div-h2">INSCRIPCIÓN</h2>
+            <h3 class="sixPage-div-h3">¡Completa tus datos!</h3>
+            <p class="sixPage-div-p">y se parte de esta gran experiencia con los mejores speakers y temas de alto impacto para el futuro.</p>
+        </div>
+
+        <form class="sixPage-form" action="">
+            <input class="sixPage-form-input" type="tex" placeholder="Nombre">
+            <input class="sixPage-form-input" type="tex" placeholder="Apellido">
+            <input class="sixPage-form-input" type="tex" placeholder="Celular">
+            <input class="sixPage-form-input" type="email" placeholder="Email">
+            <input class="sixPage-form-input" type="tex" placeholder="País">
+            <select class="sixPage-form-input" name="ocupacion" id="ocupacion">
                 <option selected disabled>¿Sos parte de Coder?</option>
                 <option value="estudiante">Estudiante</option>
                 <option value="graduado">Graduado</option>
@@ -240,67 +241,64 @@
                 <option value="no">No</option>
             </select>
             <div>
-                <input type="submit" value="Enviar Formulario">
+                <input class="sixPage-form-btn" type="submit" value="Solicitar Inscripción">
             </div>
             <!-- <div><img src="./images/casco.jpg" alt="Astronauta"></div> -->
         </form>
     </section>
     <!-- Séptima página (Sponsors) -->
-    <section>
-        <div>
-            <h2>SPONSORS</h2>
+    <section class="sevenPage">
+        <div class="sevenPage-sponsors">
+            <h2 class="sevenPage-sponsors-h2">SPONSORS</h2>
         </div>
-        <div><img src="./images/Logo-ML.png" alt="Logo de Mercado libre"></div>
-        <div><img src="./images/Logo-Google.png" alt="Logo de google"></div>
-        <div><img src="./images/Logo-TiendaNube.png" alt="Tienda de nube"></div>
+        <div class="sevenPage-imgSponsors">
+            <div><img src="./images/Logo-ML.png" alt="Logo de Mercado libre"></div>
+            <div><img src="./images/Logo-Google.png" alt="Logo de google"></div>
+            <div><img src="./images/Logo-TiendaNube.png" alt="Tienda de nube"></div>
+        </div>
     </section>
     <!-- Octava página (Form para ser sponsor) -->
-    <section>
-        <div>
-            <h2>SPONSORS</h2>
-            <h3>¡Emprendamos el mismo vuelo!</h3>
+    <section class="eightpage">
+        <div class="eightpage-div-title">
+            <h2 class="eightpage-div-title-h2">¿TE INTERESA SER SPONSOR?</h2>
+            <h3 class="eightpage-div-title-h3">¡Emprendamos el mismo vuelo!</h3>
         </div>
-        <div>
-            <form action="">
-                <input type="text" name="" id="" placeholder="Nombre">
-                <input type="text" name="" id="" placeholder="Apellido">
-                <input type="text" name="" id="" placeholder="Celular">
-                <input type="submit" value="Enviar Solicitud">
+        <div class="eightpage-div-form">
+            <form action="#" class="form">
+                <input type="text" class="input" name="nombre" id="" placeholder="Nombre y Apellido">
+                <input type="email" class="input" name="email" id="" placeholder="Email">
+                <input type="text" class="input" name="celular" id="" placeholder="Celular">
+                <div>
+                    <input class="btn" type="submit" value="Enviar Solicitud">
+                </div>
             </form>
         </div>
     </section>
     <!-- Footer -->
-    <footer>
-        <div>
-            <h2>
-                <p>CODER</p>
-                <p>CONF</p>
-            </h2>
-            <h3>Speaker</h3>
-            <h3>Agenda</h3>
-            <h3>Inscripción</h3>
-            <h3>Sponsors</h3>
-        </div>
-        <div>
-            <h2>CODERHOUSE</h2>
-            <h3>Nosotros</h3>
-            <h3>Comunidad</h3>
-            <h3>Contacto</h3>
-        </div>
-        <div>
-            <div>
-                <h2>Siguenos en</h2>
-                <ul>
-                    <li><i class="fab fa-facebook"></i></li>
-                    <li><i class="fab fa-instagram"></i></li>
-                    <li><i class="fab fa-youtube"></i></li>
-                    <li><i class="fab fa-twitter"></i></li>
-                    <li><i class="fab fa-linkedin-in"></i></li>
-                </ul>
+    <footer class="footerPage">
+        <div class="footerPage-coderconf">
+            <h2 class="footerPage-h2"><img src="./images/coderconf-mobile.png" alt="Logo Coderconf"></h2>
+            <div class="footerPage-div">
+                <h3 class="footerPage-div-h3">Speaker</h3>
+                <h3 class="footerPage-div-h3">Agenda</h3>
+                <h3 class="footerPage-div-h3">Inscripción</h3>
+                <h3 class="footerPage-div-h3">Sponsors</h3>
             </div>
-            <div>
-                <h2><i class="far fa-copyright"></i> - Copyright 2021 - Todos los derechos reservados</h2>
+        </div>
+        <div class="footerPage-coderhouse">
+            <h2 class="footerPage-h2"><img src="./images/coderconf-mobile.png" alt="Logo Coderhouse"></h2>
+            <div class="footerPage-div">
+                <h3 class="footerPage-div-h3">Nosotros</h3>
+                <h3 class="footerPage-div-h3">Comunidad</h3>
+                <h3 class="footerPage-div-h3">Contacto</h3>
             </div>
+        </div>
+        <div class="footerPage-redesSociales">
+            <h2 class="footerPage-redesSociales-h2">Siguenos en</h2>
+            <div class="footerPage-redesSociales-div"><img src="./images/redesSociales.png" alt="Redes sociales"></div>
+        </div>
+        <div class="footerPage-copyright">
+            <h2 class="footerPage-copyright-h2"><i class="far fa-copyright"></i> - Copyright 2021 - Todos los derechos reservados</h2>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>

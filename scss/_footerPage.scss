@@ -1,0 +1,60 @@
+.footerPage {
+    width: 100%;
+    height: 60vh;
+    padding: 25px;
+    background-color: black;
+    display: grid;
+    grid-template-areas: "footerPage-coderconf footerPage-coderhouse" "footerPage-redesSociales footerPage-redesSociales" "footerPage-copyright footerPage-copyright";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.75fr 0.5fr 0.25fr;
+    .footerPage-coderconf {
+        grid-area: footerPage-coderconf;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footerPage-div {
+            padding: 10px;
+            .footerPage-div-h3 {
+                padding: 5px;
+                color: white;
+            }
+        }
+    }
+    .footerPage-coderhouse {
+        grid-area: footerPage-coderhouse;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footerPage-div {
+            padding: 10px;
+            .footerPage-div-h3 {
+                padding: 5px;
+                color: white;
+            }
+        }
+    }
+    .footerPage-redesSociales {
+        grid-area: footerPage-redesSociales;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footerPage-redesSociales-h2 {
+            padding: 10px;
+            color: white;
+        }
+        .footerPage-redesSociales-div {
+            padding: 10px;
+        }
+    }
+    .footerPage-copyright {
+        grid-area: footerPage-copyright;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        .footerPage-copyright-h2 {
+            font-size: 12px;
+            color: white;
+        }
+    }
+}
