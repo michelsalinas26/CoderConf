@@ -11,10 +11,16 @@
         align-items: center;
         justify-content: center;
         .threePage-logo-h3 {
+            padding: 5px;
+            font-family: gobold-bold;
+            text-transform: uppercase;
             text-align: center;
         }
         .threePage-logo-h4 {
+            padding: 5px;
+            font-family: helvetica-medium;
             text-align: center;
+            line-height: 20px;
         }
     }
     .threePage-imagen {
