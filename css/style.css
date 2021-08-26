@@ -127,12 +127,45 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
+
+/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
+/* Media query para dispositivos entre 769px y 1200px - Tablet */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
+
+/* ------------ navegacion ------------ */
+/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
+/* Media query para dispositivos mayores a 1201px - Desktop */
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  .body {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
+
 /* Inicio del código para el proyecto coderconf */
 .onePage {
   grid-area: onePage;
   width: 100%;
   height: 100vh;
-  background-image: url(../images/cascoIndex.png);
+  background-image: url(../images/casco2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -207,7 +240,18 @@ table {
       align-items: center; }
       .onePage .pageOne-article .pageOne-images .pageOne-imageOne {
         width: 100%;
-        height: 25%; }
+        padding: 10px; }
+
+.anexo {
+  width: 100%;
+  height: 40vh;
+  padding: 10px;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .anexo .anexo-imageOne {
+    padding: 10px; }
 
 .twoPage {
   grid-area: twoPage;
@@ -241,7 +285,7 @@ table {
 
 .threePage {
   grid-area: threePage;
-  padding: 10px;
+  padding: 10px 0px;
   width: 100%;
   height: 100vh;
   background-color: #F2F2F2; }
@@ -256,14 +300,151 @@ table {
     .threePage .threePage-logo .threePage-logo-h4 {
       text-align: center; }
   .threePage .threePage-imagen {
-    height: 50%;
+    width: 100%;
+    height: 50vh;
     display: flex;
     justify-content: center; }
-  .threePage .threePage-imagen {
+  .threePage .threePage-imagen-img {
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; }
+
+.fourPage {
+  grid-area: fourPage;
+  width: 100%;
+  height: 200vh;
+  padding: 20px 0px;
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .fourPage .fourPage-divSpeaker {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h2 {
+      font-size: 40px;
+      color: yellow;
+      padding: 5px 0px; }
+    .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
+      font-size: 24px;
+      color: white;
+      padding: 5px 0px; }
+    .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
+      padding: 10px;
+      font-size: 16px;
+      color: white;
+      text-align: center; }
+  .fourPage .fourPage-divInvitado {
+    width: 100%;
+    padding: 20px 20px 0px; }
+    .fourPage .fourPage-divInvitado .fourPage-divInvitado-div {
+      display: flex;
+      justify-content: center; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-div .fourPage-divInvitado-div-h2 {
+        font-size: 24px;
+        color: yellow; }
+    .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
+      width: 100%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h2 {
+        padding: 10px;
+        font-size: 32px;
+        color: white;
+        text-align: center; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h3 {
+        padding: 5px;
+        font-size: 16px;
+        color: gray;
+        text-align: center; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h4 {
+        padding: 10px;
+        font-size: 16px;
+        color: #E0FF00;
+        text-align: center; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-p {
+        padding: 10px;
+        font-size: 16px;
+        color: white;
+        text-align: center; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h5 {
+        padding: 0px;
+        font-size: 16px;
+        color: #E0FF00;
+        text-align: center; }
+  .fourPage .fourPage-divCarousel {
+    width: 80%; }
+    .fourPage .fourPage-divCarousel .fourPage-divCarousel-divInvit {
+      width: 100%;
+      padding: 10px 20px 20px; }
+      .fourPage .fourPage-divCarousel .fourPage-divCarousel-divInvit .fourPage-divCarousel-divInvit-h2 {
+        font-size: 24px;
+        color: yellow;
+        text-align: center; }
+    .fourPage .fourPage-divCarousel .carousel-h5 {
+      font-size: 24px;
+      color: white;
+      text-align: center; }
+    .fourPage .fourPage-divCarousel .carousel-h6 {
+      font-size: 16px;
+      color: gray;
+      text-align: center; }
+    .fourPage .fourPage-divCarousel .carousel-p {
+      font-size: 20px;
+      color: yellow;
+      text-align: center; }
+
+.fivePage {
+  grid-area: fivePage;
+  width: 100%;
+  height: 100vh;
+  padding: 10px; }
+  .fivePage .fivePage-divTitle {
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 32px; }
+    .fivePage .fivePage-divTitle .fivePage-divTitle-h2 {
+      font-size: 32px;
+      color: #8215BC;
+      text-align: center; }
+    .fivePage .fivePage-divTitle .fivePage-divTitle-h3 {
+      font-size: 24px;
+      text-align: center; }
+    .fivePage .fivePage-divTitle .fivePage-divTitle-p {
+      font-size: 16px;
+      text-align: center;
+      line-height: 16px; }
+  .fivePage .fivePage-divGral {
+    width: 100%;
+    height: 75vh;
+    overflow-y: scroll;
+    padding: 10px 0px; }
+    .fivePage .fivePage-divGral .fivePage-divGral-agenda {
+      width: 100%;
+      padding: 10px 0px; }
+      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h2 {
+        font-size: 32px;
+        color: #8215BC; }
+      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h3 {
+        font-size: 24px; }
+      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h4 {
+        font-size: 16px;
+        color: #8215BC; }
+      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-p {
+        font-size: 16px;
+        color: #505050; }
 
 .sixPage {
+  grid-area: sixPage;
   width: 100%;
   height: 100vh;
   padding: 15px 0px;
@@ -337,6 +518,7 @@ table {
       padding: 25px 0px; }
 
 .eightpage {
+  grid-area: eightPage;
   width: 100%;
   height: 100vh;
   padding: 50px 0px;
@@ -381,14 +563,15 @@ table {
         color: white; }
 
 .footerPage {
+  grid-area: footerPage;
   width: 100%;
-  height: 60vh;
-  padding: 25px;
+  height: 50vh;
+  padding: 25px 25px 25px 25px;
   background-color: black;
   display: grid;
   grid-template-areas: "footerPage-coderconf footerPage-coderhouse" "footerPage-redesSociales footerPage-redesSociales" "footerPage-copyright footerPage-copyright";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.75fr 0.5fr 0.25fr; }
+  grid-template-rows: 0.5fr 0.3fr 0.2fr; }
   .footerPage .footerPage-coderconf {
     grid-area: footerPage-coderconf;
     display: flex;
@@ -413,7 +596,8 @@ table {
     grid-area: footerPage-redesSociales;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 0px; }
     .footerPage .footerPage-redesSociales .footerPage-redesSociales-h2 {
       padding: 10px;
       color: white; }
@@ -422,9 +606,10 @@ table {
   .footerPage .footerPage-copyright {
     grid-area: footerPage-copyright;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 10px; }
+    padding: auto;
+    display: flex;
+    justify-content: center; }
     .footerPage .footerPage-copyright .footerPage-copyright-h2 {
       font-size: 12px;
       color: white; }

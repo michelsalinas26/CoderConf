@@ -4,7 +4,7 @@
     grid-area: onePage;
     width: 100%;
     height: 100vh;
-    background-image: url(../images/cascoIndex.png);
+    background-image: url(../images/casco2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,8 +92,21 @@
             align-items: center;
             .pageOne-imageOne {
                 width: 100%;
-                height: 25%;
+                padding: 10px;
             }
         }
+    }
+}
+
+.anexo {
+    width: 100%;
+    height: 40vh;
+    padding: 10px;
+    background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .anexo-imageOne {
+        padding: 10px;
     }
 }

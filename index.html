@@ -34,10 +34,10 @@
                 <label for="btn-menu-checkbox" class="btn-menu"><div><img src="./images/IconNavBar.png" alt="Icono nabvar"><!-- <i class="fas fa-bars"></i> --></div></label>
                 <div class="menu">
                     <ul class="ul">
-                        <li class="li"><a href="#" class="enlaceNavbar">Speakers</a></li>
-                        <li class="li"><a href="#" class="enlaceNavbar">Agenda</a></li>
-                        <li class="li"><a href="#" class="enlaceNavbar">Sponsors</a></li>
-                        <li class="li"><a href="#" class="enlaceNavbar">Inscripción</a></li>
+                        <li class="li"><a href="#speakers" class="enlaceNavbar">Speakers</a></li>
+                        <li class="li"><a href="#agenda" class="enlaceNavbar">Agenda</a></li>
+                        <li class="li"><a href="#sponsors" class="enlaceNavbar">Sponsors</a></li>
+                        <li class="li"><a href="#inscripcion" class="enlaceNavbar">Inscripción</a></li>
                     </ul>
                 </div>
             </nav>
@@ -49,11 +49,14 @@
             <h3 class="pageOne-title">11:00 A 22:00 HS</h3>
             <div class="pageOne-images">
                 <a href="#" class="pageOne-imageOne"><img src="./images/envivoporyoutube.png" alt="link a youtube"></a>
-                <!-- <a href="#" class="pageOne-imageOne"><img src="./images/inscripciongratuita.png" alt="inscripcion gratuita"></a>
-                <a href="#" class="pageOne-imageOne"><img src="./images/cuentaregresiva.png" alt="cuenta regresiva"></a> -->
             </div>
         </article>
     </section>
+    <!-- Anexo a onePage -->
+    <div class="anexo">
+        <a href="#" class="anexo-imageOne"><img src="./images/inscripciongratuita.png" alt="inscripcion gratuita"></a>
+        <a href="#" class="anexo-imageOne"><img src="./images/cuentaregresiva.png" alt="cuenta regresiva"></a>
+    </div>
     <!-- Segunda página (Conferecia + logo astronauta) -->
     <section class="twoPage">
         <div class="twoPage-imagen">
@@ -79,32 +82,34 @@
             <h4 class="threePage-logo-h4">SOBRE MARKETING, DISEÑO, DESARROLLO, PRODUCTO, SUSTENTABILIDAD Y MÁS</h4>
         </div>
         <div class="threePage-imagen">
-            <img src="./images/autoEspacialMobile.png" alt="Imagen de auto espacial">
+            <img src="./images/autoEspacialMobile.png" class="threePage-imagen-img" alt="Imagen de auto espacial">
         </div>
     </section>
     <!-- Cuarta página (Speakers + Invitado especial + invitados) -->
-    <section>
-        <div>
-            <h2>SPEAKERS</h2>
-            <h3>Preparados para el futuro</h3>
-            <p>Invitados de alto valor expondrán sus experiencias y sus temas de investigación. Conocé a nuestros invitados 2021.</p>
+    <section class="fourPage" id="speakers">
+        <div class="fourPage-divSpeaker">
+            <h2 class="fourPage-divSpeaker-h2">SPEAKERS</h2>
+            <h3 class="fourPage-divSpeaker-h3">Preparados para el futuro</h3>
+            <p class="fourPage-divSpeaker-p">Invitados de alto valor expondrán sus experiencias y sus temas de investigación. Conocé a nuestros invitados 2021.</p>
         </div>
-        <div>
-            <div>
-                <h2>INVITADO ESPECIAL</h2>
+        <div class="fourPage-divInvitado">
+            <div class="fourPage-divInvitado-div">
+                <h2 class="fourPage-divInvitado-div-h2">INVITADO ESPECIAL</h2>
             </div>
-            <div>
-                <!-- <img src="./images/invitado.png" alt="Foto del invitado especial"> -->
-                <h2>Roger Dimant<i class="fab fa-linkedin"></i></h2>
-                <h3>Country Manager</h3>
-                <h4>MERCADO LIBRE</h4>
-                <p>Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales.</p>
-                <h5>www.rogerdimant.com</h5>
+            <div class="fourPage-divInvitado-divDatos">
+                <img src="./images/invitado.png" alt="Foto del invitado especial">
+                <h2 class="fourPage-divInvitado-divDatos-h2">Roger Dimant <i class="fab fa-linkedin"></i></h2>
+                <h3 class="fourPage-divInvitado-divDatos-h3">Country Manager</h3>
+                <h4 class="fourPage-divInvitado-divDatos-h4">MERCADO LIBRE</h4>
+                <p class="fourPage-divInvitado-divDatos-p">Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales.</p>
+                <h5 class="fourPage-divInvitado-divDatos-h5">www.rogerdimant.com</h5>
             </div>
         </div>
-        <div>
-            <h2>INVITADOS</h2>
-            <div>
+        <div class="fourPage-divCarousel">
+            <div class="fourPage-divCarousel-divInvit">
+                <h2 class="fourPage-divCarousel-divInvit-h2">INVITADOS</h2>
+            </div>
+            <div class="fourPage-divCarousel-carousel">
                 <!-- Carousel hecho con bootstrap -->
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -114,24 +119,27 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <!-- <img src="http://lorempixel.com/400/200/" class="d-block w-100" alt="..."> -->
+                            <img src="./images/imgCarousel1.png" class="d-block w-100" alt="Foto del speaker">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5 class="carousel-h5">Franco Henandez</h5>
+                                <h6 class="carousel-h6">UX Manager</h6>
+                                <p class="carousel-p">MERCADO PAGO</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <!-- <img src="http://lorempixel.com/400/300/" class="d-block w-100" alt="..."> -->
+                            <img src="./images/imgCarousel1.png" class="d-block w-100" alt="Foto del speaker">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h5 class="carousel-h5">Franco Henandez</h5>
+                                <h6 class="carousel-h6">UX Manager</h6>
+                                <p class="carousel-p">MERCADO PAGO</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <!-- <img src="http://lorempixel.com/400/400/" class="d-block w-100" alt="..."> -->
+                            <img src="./images/imgCarousel1.png" class="d-block w-100" alt="Foto del speaker">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <h5 class="carousel-h5">Franco Henandez</h5>
+                                <h6 class="carousel-h6">UX Manager</h6>
+                                <p class="carousel-p">MERCADO PAGO</p>
                             </div>
                         </div>
                     </div>
@@ -149,77 +157,70 @@
     </section>
     </section>
     <!-- Quinta página (Agenda) -->
-    <section>
-        <div>
-            <!-- <div><img src="./images/58bf1fa0e443f41d77c734c2.png" alt="Imagen de nave espacial"></div> -->
-            <div>
-                <h2>AGENDA</h2>
-            </div>
-            <div>
-                <h3>¡El futuro es ahora!</h3>
-            </div>
-            <div>
-                <p>Más de 12 ponencias con temas importantes en Tecnología e Innovación. Conocé el cronograma.</p>
-            </div>
+    <section class="fivePage" id="agenda">
+        <div class="fivePage-divTitle">
+            <h2 class="fivePage-divTitle-h2">AGENDA</h2>
+            <h3 class="fivePage-divTitle-h3">¡El futuro es ahora!</h3>
+            <p class="fivePage-divTitle-p">Más de 12 ponencias con temas importantes en Tecnología e Innovación. Conocé el cronograma.</p>
         </div>
-        <div>
-            <div>
-                <h2>11:00 HS</h2>
-                <h3>SEBASTÍAN GALANTERNIK</h3>
-                <h4>CEO EN TRAFILEA</h4>
-                <p>Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+        <div class="fivePage-divGral">
+            <div class="fivePage-divGral-agenda">
+                <h2 class="fivePage-divGral-agenda-h2">11:00 HS</h2>
+                <h3 class="fivePage-divGral-agenda-h3">SEBASTÍAN GALANTERNIK</h3>
+                <h4 class="fivePage-divGral-agenda-h4">CEO EN TRAFILEA</h4>
+                <p class="fivePage-divGral-agenda-p">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
             </div>
-            <div>
-                <h2>11:00 HS</h2>
-                <h3>SEBASTÍAN GALANTERNIK</h3>
-                <h4>CEO EN TRAFILEA</h4>
-                <p>Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+            <div class="fivePage-divGral-agenda">
+                <h2 class="fivePage-divGral-agenda-h2">12:00 HS</h2>
+                <h3 class="fivePage-divGral-agenda-h3">SEBASTÍAN GALANTERNIK</h3>
+                <h4 class="fivePage-divGral-agenda-h4">CEO EN TRAFILEA</h4>
+                <p class="fivePage-divGral-agenda-p">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
             </div>
-            <div>
-                <h2>11:00 HS</h2>
-                <h3>SEBASTÍAN GALANTERNIK</h3>
-                <h4>CEO EN TRAFILEA</h4>
-                <p>Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+            <div class="fivePage-divGral-agenda">
+                <h2 class="fivePage-divGral-agenda-h2">13:00 HS</h2>
+                <h3 class="fivePage-divGral-agenda-h3">SEBASTÍAN GALANTERNIK</h3>
+                <h4 class="fivePage-divGral-agenda-h4">CEO EN TRAFILEA</h4>
+                <p class="fivePage-divGral-agenda-p">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
             </div>
-            <div>
-                <h2>11:00 HS</h2>
-                <h3>SEBASTÍAN GALANTERNIK</h3>
-                <h4>CEO EN TRAFILEA</h4>
-                <p>Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+            <div class="fivePage-divGral-agenda">
+                <h2 class="fivePage-divGral-agenda-h2">14:00 HS</h2>
+                <h3 class="fivePage-divGral-agenda-h3">SEBASTÍAN GALANTERNIK</h3>
+                <h4 class="fivePage-divGral-agenda-h4">CEO EN TRAFILEA</h4>
+                <p class="fivePage-divGral-agenda-p">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
             </div>
-            <div>
-                <h2>11:00 HS</h2>
-                <h3>SEBASTÍAN GALANTERNIK</h3>
-                <h4>CEO EN TRAFILEA</h4>
-                <p>Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+            <div class="fivePage-divGral-agenda">
+                <h2 class="fivePage-divGral-agenda-h2">15:00 HS</h2>
+                <h3 class="fivePage-divGral-agenda-h3">SEBASTÍAN GALANTERNIK</h3>
+                <h4 class="fivePage-divGral-agenda-h4">CEO EN TRAFILEA</h4>
+                <p class="fivePage-divGral-agenda-p">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
             </div>
-            <div>
-                <h2>11:00 HS</h2>
-                <h3>SEBASTÍAN GALANTERNIK</h3>
-                <h4>CEO EN TRAFILEA</h4>
-                <p>Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+            <div class="fivePage-divGral-agenda">
+                <h2 class="fivePage-divGral-agenda-h2">16:00 HS</h2>
+                <h3 class="fivePage-divGral-agenda-h3">SEBASTÍAN GALANTERNIK</h3>
+                <h4 class="fivePage-divGral-agenda-h4">CEO EN TRAFILEA</h4>
+                <p class="fivePage-divGral-agenda-p">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
             </div>
-            <div>
-                <h2>11:00 HS</h2>
-                <h3>SEBASTÍAN GALANTERNIK</h3>
-                <h4>CEO EN TRAFILEA</h4>
-                <p>Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+            <div class="fivePage-divGral-agenda">
+                <h2 class="fivePage-divGral-agenda-h2">17:00 HS</h2>
+                <h3 class="fivePage-divGral-agenda-h3">SEBASTÍAN GALANTERNIK</h3>
+                <h4 class="fivePage-divGral-agenda-h4">CEO EN TRAFILEA</h4>
+                <p class="fivePage-divGral-agenda-p">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
             </div>
-            <div>
-                <h2>11:00 HS</h2>
-                <h3>SEBASTÍAN GALANTERNIK</h3>
-                <h4>CEO EN TRAFILEA</h4>
-                <p>Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+            <div class="fivePage-divGral-agenda">
+                <h2 class="fivePage-divGral-agenda-h2">18:00 HS</h2>
+                <h3 class="fivePage-divGral-agenda-h3">SEBASTÍAN GALANTERNIK</h3>
+                <h4 class="fivePage-divGral-agenda-h4">CEO EN TRAFILEA</h4>
+                <p class="fivePage-divGral-agenda-p">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
             </div>
-            <div>
-                <h2>11:00 HS</h2>
-                <h3>SEBASTÍAN GALANTERNIK</h3>
-                <h4>CEO EN TRAFILEA</h4>
-                <p>Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+            <div class="fivePage-divGral-agenda">
+                <h2 class="fivePage-divGral-agenda-h2">19:00 HS</h2>
+                <h3 class="fivePage-divGral-agenda-h3">SEBASTÍAN GALANTERNIK</h3>
+                <h4 class="fivePage-divGral-agenda-h4">CEO EN TRAFILEA</h4>
+                <p class="fivePage-divGral-agenda-p">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
             </div>
     </section>
     <!-- Sexta agenda (Inscripción) -->
-    <section class="sixPage">
+    <section class="sixPage" id="inscripcion">
         <div class="sixPage-div">
             <h2 class="sixPage-div-h2">INSCRIPCIÓN</h2>
             <h3 class="sixPage-div-h3">¡Completa tus datos!</h3>
@@ -247,7 +248,7 @@
         </form>
     </section>
     <!-- Séptima página (Sponsors) -->
-    <section class="sevenPage">
+    <section class="sevenPage" id="sponsors">
         <div class="sevenPage-sponsors">
             <h2 class="sevenPage-sponsors-h2">SPONSORS</h2>
         </div>
@@ -286,7 +287,7 @@
             </div>
         </div>
         <div class="footerPage-coderhouse">
-            <h2 class="footerPage-h2"><img src="./images/coderconf-mobile.png" alt="Logo Coderhouse"></h2>
+            <h2 class="footerPage-h2"><img src="./images/coderhouseBlancoMobile.png" alt="Logo Coderhouse"></h2>
             <div class="footerPage-div">
                 <h3 class="footerPage-div-h3">Nosotros</h3>
                 <h3 class="footerPage-div-h3">Comunidad</h3>
