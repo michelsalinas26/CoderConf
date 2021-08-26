@@ -132,7 +132,7 @@ table {
   grid-area: onePage;
   width: 100%;
   height: 100vh;
-  background-image: url(../images/cascoIndex.png);
+  background-image: url(../images/casco2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,7 +241,7 @@ table {
 
 .threePage {
   grid-area: threePage;
-  padding: 10px;
+  padding: 10px 0px;
   width: 100%;
   height: 100vh;
   background-color: #F2F2F2; }
@@ -256,12 +256,15 @@ table {
     .threePage .threePage-logo .threePage-logo-h4 {
       text-align: center; }
   .threePage .threePage-imagen {
-    height: 50%;
+    width: 100%;
+    height: 50vh;
     display: flex;
     justify-content: center; }
-  .threePage .threePage-imagen {
+  .threePage .threePage-imagen-img {
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; }
 
 .sixPage {
   width: 100%;
