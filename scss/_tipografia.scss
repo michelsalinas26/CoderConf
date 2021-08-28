@@ -1,1 +1,34 @@
-@import url();
+@font-face {
+    font-family: gobold-bold;
+    src: url(../tipografia/GoboldBoldItalic.otf);
+}
+
+@font-face {
+    font-family: gobold-regular;
+    src: url(../tipografia/GoboldRegularItalic.otf)
+}
+
+@font-face {
+    font-family: helvetica-bold;
+    src: url(../tipografia/HelveticaNeue-Bold.ttf)
+}
+
+@font-face {
+    font-family: helvetica-light;
+    src: url(../tipografia/HelveticaNeue-Light.ttf)
+}
+
+@font-face {
+    font-family: helvetica-medium;
+    src: url(../tipografia/HelveticaNeue-Medium.ttf)
+}
+
+@font-face {
+    font-family: helvetica-thin;
+    src: url(../tipografia/HelveticaNeue-Thin.ttf)
+}
+
+@font-face {
+    font-family: helvetica-ultralight;
+    src: url(../tipografia/HelveticaNeue-Ultralight.ttf)
+}

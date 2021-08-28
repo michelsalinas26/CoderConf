@@ -12,15 +12,19 @@
         align-items: center;
         line-height: 32px;
         .fivePage-divTitle-h2 {
+            font-family: gobold-bold;
+            text-transform: uppercase;
             font-size: 32px;
             color: #8215BC;
             text-align: center;
         }
         .fivePage-divTitle-h3 {
+            font-family: helvetica-bold;
             font-size: 24px;
             text-align: center;
         }
         .fivePage-divTitle-p {
+            font-family: helvetica-light;
             font-size: 16px;
             text-align: center;
             line-height: 16px;
@@ -35,17 +39,27 @@
             width: 100%;
             padding: 10px 0px;
             .fivePage-divGral-agenda-h2 {
+                padding: 5px;
+                font-family: gobold-bold;
+                text-transform: uppercase;
                 font-size: 32px;
                 color: #8215BC;
             }
             .fivePage-divGral-agenda-h3 {
+                padding: 5px;
+                font-family: gobold-regular;
+                text-transform: uppercase;
                 font-size: 24px;
             }
             .fivePage-divGral-agenda-h4 {
+                padding: 5px;
+                font-family: helvetica-regular;
                 font-size: 16px;
                 color: #8215BC;
             }
             .fivePage-divGral-agenda-p {
+                padding: 5px;
+                font-family: helvetica-regular;
                 font-size: 16px;
                 color: #505050;
             }
