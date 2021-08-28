@@ -614,14 +614,15 @@ table {
 .eightpage {
   grid-area: eightPage;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 50px 0px;
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .eightpage .eightpage-div-title {
-    width: 90%; }
+    width: 90%;
+    height: 30%; }
     .eightpage .eightpage-div-title .eightpage-div-title-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
@@ -638,7 +639,7 @@ table {
   .eightpage .eightpage-div-form {
     width: 90%; }
     .eightpage .eightpage-div-form .form {
-      height: 50vh;
+      height: 70%;
       padding: 20px 10%;
       border: 1px solid #F2F2F2;
       display: flex;
