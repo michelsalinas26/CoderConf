@@ -3,15 +3,16 @@
 .onePage {
     grid-area: onePage;
     width: 100%;
-    height: 100vh;
-    background-image: url(../images/casco2.png);
+    height: 130vh;
+    padding: 0px;
+    background-image: url(../images/prueba3.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* header y navegación */
     .navegacion {
         display: flex;
-        height: 10%;
+        height: 5%;
         /* header */
         .logo {
             padding: 10px;
@@ -77,8 +78,9 @@
     /* Datos del main */
     .pageOne-article {
         width: 100%;
-        height: 90%;
-        padding: 15px 15px 0px;
+        height: 65%;
+        margin: 10px 0px;
+        /* padding: 0px 15px; */
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -87,9 +89,8 @@
             font-family: gobold-bold;
             text-transform: uppercase;
             font-size: 28px;
-            font-weight: bold;
             color: white;
-            line-height: 32px;
+            line-height: 40px;
             text-align: center;
         }
         .pageOne-title-h2 {
@@ -116,20 +117,19 @@
             }
         }
     }
-}
-
-.anexo {
-    width: 100%;
-    height: 40vh;
-    padding: 5px;
-    background-color: #151515;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .anexo-imageOne {
-        padding: 0px 10px;
-    }
-    .anexo-imageTwo {
-        padding: 10px;
+    .anexo {
+        width: 100%;
+        height: 30%;
+        padding: 5px;
+        background-color: #151515;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .anexo-imageOne {
+            padding: 0px 10px;
+        }
+        .anexo-imageTwo {
+            padding: 10px;
+        }
     }
 }
