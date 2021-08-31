@@ -1,9 +1,8 @@
 .sevenPage {
     grid-area: sevenPage;
     width: 100%;
-    max-height: 100vh;
+    height: 100vh;
     padding: 0.5rem;
-    /* position: relative; */
     .sevenPage-sponsors {
         height: 20%;
         padding: 1.5rem;
@@ -16,7 +15,6 @@
         }
     }
     .sevenPage-imgSponsors {
-        /* position: relative; */
         height: 80%;
         padding: 1.5rem;
         display: flex;
