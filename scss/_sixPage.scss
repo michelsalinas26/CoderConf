@@ -9,7 +9,7 @@
     align-items: center;
     .sixPage-div {
         width: 90%;
-        height: 25vh;
+        height: 30%;
         /* border: 1px solid white; */
         .sixPage-div-h2 {
             font-family: gobold-bold;
@@ -20,7 +20,7 @@
             line-height: 48px;
         }
         .sixPage-div-h3 {
-            font-family: helvetica-regular;
+            font-family: helvetica-medium;
             color: white;
             font-size: 24px;
             text-align: center;
@@ -36,8 +36,8 @@
     }
     .sixPage-form {
         width: 90%;
-        height: 75vh;
-        padding-top: 15px;
+        height: 70%;
+        padding: 15px 0px;
         /* border: 1px solid white; */
         display: flex;
         flex-direction: column;
@@ -45,7 +45,7 @@
         .sixPage-form-input {
             width: 90%;
             margin: 10px 0px;
-            padding: 5px 5px;
+            padding: 5px 10px;
             border: 1px solid #E4FF22;
             border-radius: 2px;
             background-color: black;
@@ -55,6 +55,11 @@
          ::placeholder {
             color: gray;
             font-family: helvetica-light;
+            padding-left: 10px;
+        }
+        .eightPage-option {
+            color: white;
+            width: 50%;
         }
         .sixPage-form-btn {
             margin: 35px auto 0px;
@@ -63,7 +68,7 @@
             border: #E4FF22 1px solid;
             border-radius: 50px;
             color: black;
-            font-family: helvetica-light;
+            font-family: helvetica-medium;
         }
     }
 }
