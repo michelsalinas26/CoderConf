@@ -192,12 +192,12 @@ table {
 .onePage {
   grid-area: onePage;
   width: 100%;
-  height: 110vh;
+  height: 120vh;
   padding: 0px;
   background-image: url(../images/prueba1.png);
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   /* header y navegación */
   /* Datos del main */ }
   .onePage .navegacion {
@@ -206,7 +206,7 @@ table {
     /* header */
     /* navegación */ }
     .onePage .navegacion .logo {
-      padding: 10px;
+      padding: 0.625rem;
       width: 50%; }
     .onePage .navegacion .navbar {
       margin: 0%;
@@ -220,9 +220,9 @@ table {
         display: none; }
       .onePage .navegacion .navbar .btn-menu {
         display: block;
-        width: 50px;
-        height: 50px;
-        padding: 10px 10px 0px 10px; }
+        width: 3.125rem;
+        height: 3.125rem;
+        padding: 0.625rem 0.625rem 0px 0.625rem; }
       .onePage .navegacion .navbar .btn-menu:hover {
         display: block;
         /* cursor: pointer;
@@ -240,7 +240,7 @@ table {
           background: rgba(0, 0, 0, 0.3); }
         .onePage .navegacion .navbar .menu .enlaceNavbar {
           display: block;
-          padding: 10px 20px;
+          padding: 0.625rem 0.625rem;
           text-decoration: none;
           font-family: helvetica-light;
           color: white;
@@ -258,17 +258,17 @@ table {
     .onePage .pageOne-article .pageOne-title {
       font-family: gobold-bold;
       text-transform: uppercase;
-      font-size: 28px;
+      font-size: 1.75rem;
       color: white;
       line-height: 40px;
       text-align: center; }
     .onePage .pageOne-article .pageOne-title-h3 {
-      padding-bottom: 5px;
+      padding-bottom: 0.312rem;
       font-family: gobold-regular;
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 1rem;
       color: white;
-      line-height: 24px;
+      line-height: 1.5rem;
       text-align: center; }
     .onePage .pageOne-article .pageOne-images {
       display: flex;
@@ -276,39 +276,40 @@ table {
       align-items: center; }
       .onePage .pageOne-article .pageOne-images .pageOne-imageOne {
         width: 100%;
-        padding: 10px; }
+        padding: 0.625rem; }
   .onePage .anexo {
     width: 100%;
     height: 30%;
     margin: 0px;
-    /* padding: 5px 0px; */
     display: flex;
     flex-direction: column;
     align-items: center; }
     .onePage .anexo .anexo-imageOne {
-      padding-bottom: 10px; }
+      padding-bottom: 0.625rem; }
     .onePage .anexo .anexo-imageTwo {
       padding: 0px; }
 
 .twoPage {
   grid-area: twoPage;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   margin: 0%;
-  padding: 10px;
+  padding: 0.625rem;
   display: flex;
   flex-direction: column; }
   .twoPage .twoPage-imagen {
-    height: 65%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center; }
+    .twoPage .twoPage-imagen .twoPage-imagen-flechas {
+      padding: 0rem 0.625rem; }
     .twoPage .twoPage-imagen .twoPage-imagen-logo {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
   .twoPage .twoPage-texto {
-    height: 35%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     align-items: center; }
@@ -317,42 +318,45 @@ table {
       font-size: 1rem; }
     .twoPage .twoPage-texto .twoPage-texto-p {
       font-family: helvetica-medium;
-      padding-top: 20px;
-      text-align: center;
-      font-size: 1rem; }
+      padding: 1rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      text-align: center; }
 
 .threePage {
   grid-area: threePage;
-  padding: 10px 0px;
   width: 100%;
   height: 100vh;
   background-color: #F2F2F2; }
   .threePage .threePage-logo {
-    height: 25%;
+    height: 33%;
+    padding: 0.625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
     .threePage .threePage-logo .threePage-logo-h3 {
-      padding: 5px;
+      padding: 0.312rem;
       font-family: gobold-bold;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2.5rem; }
     .threePage .threePage-logo .threePage-logo-h4 {
       padding: 5px;
-      font-family: helvetica-medium;
+      font-family: helvetica-bold;
       text-align: center;
       line-height: 20px; }
   .threePage .threePage-imagen {
     width: 100%;
-    height: 50vh;
+    height: 34%;
     display: flex;
     justify-content: center; }
-  .threePage .threePage-imagen-img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%; }
+    .threePage .threePage-imagen .threePage-imagen-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%; }
 
 .fourPage {
   grid-area: fourPage;
