@@ -559,60 +559,57 @@ table {
   grid-area: sixPage;
   width: 100%;
   height: 100vh;
-  padding: 15px 0px;
+  padding: 1.5rem;
   background-color: #131313;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .sixPage .sixPage-div {
-    width: 90%;
-    height: 30%;
-    /* border: 1px solid white; */ }
+    width: 100%;
+    height: 30%; }
     .sixPage .sixPage-div .sixPage-div-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
       color: #E4FF22;
-      font-size: 36px;
+      font-size: 2rem;
       text-align: center;
-      line-height: 48px; }
+      line-height: 3rem; }
     .sixPage .sixPage-div .sixPage-div-h3 {
       font-family: helvetica-medium;
       color: white;
-      font-size: 24px;
+      font-size: 1.5rem;
       text-align: center;
-      line-height: 48px; }
+      line-height: 3rem; }
     .sixPage .sixPage-div .sixPage-div-p {
-      font-family: helvetica-light;
+      font-family: helvetica-thin;
       color: white;
-      font-size: 16px;
+      font-size: 1rem;
       text-align: center;
-      line-height: 24px; }
+      line-height: 1.5rem; }
   .sixPage .sixPage-form {
-    width: 90%;
+    width: 100%;
     height: 70%;
-    padding: 15px 0px;
-    /* border: 1px solid white; */
+    padding: 1rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .sixPage .sixPage-form .sixPage-form-input {
       width: 90%;
-      margin: 10px 0px;
-      padding: 5px 10px;
+      margin: 0.6rem 0rem;
+      padding: 0.5rem;
       border: 1px solid #E4FF22;
-      border-radius: 2px;
+      border-radius: 10px;
       background-color: black;
       color: #E4FF22;
       font-family: helvetica-light; }
     .sixPage .sixPage-form ::placeholder {
       color: gray;
       font-family: helvetica-light;
-      padding-left: 10px; }
+      padding-left: 0.8rem; }
     .sixPage .sixPage-form .eightPage-option {
-      color: white;
-      width: 50%; }
+      color: white; }
     .sixPage .sixPage-form .sixPage-form-btn {
-      margin: 35px auto 0px;
+      margin: 1rem auto 0rem;
       padding: 15px 50px;
       background-color: #E4FF22;
       border: #E4FF22 1px solid;
