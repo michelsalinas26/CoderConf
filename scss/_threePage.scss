@@ -1,38 +1,40 @@
 .threePage {
     grid-area: threePage;
-    padding: 10px 0px;
     width: 100%;
     height: 100vh;
     background-color: #F2F2F2;
     .threePage-logo {
-        height: 25%;
+        height: 33%;
+        padding: 0.625rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         .threePage-logo-h3 {
-            padding: 5px;
+            padding: 0.312rem;
             font-family: gobold-bold;
             text-transform: uppercase;
             text-align: center;
+            font-size: 2rem;
+            line-height: 2.5rem;
         }
         .threePage-logo-h4 {
             padding: 5px;
-            font-family: helvetica-medium;
+            font-family: helvetica-bold;
             text-align: center;
             line-height: 20px;
         }
     }
     .threePage-imagen {
         width: 100%;
-        height: 50vh;
+        height: 34%;
         display: flex;
         justify-content: center;
-    }
-    .threePage-imagen-img {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
+        .threePage-imagen-img {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
     }
 }

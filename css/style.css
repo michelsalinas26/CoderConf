@@ -192,9 +192,9 @@ table {
 .onePage {
   grid-area: onePage;
   width: 100%;
-  height: 130vh;
+  height: 120vh;
   padding: 0px;
-  background-image: url(../images/prueba3.png);
+  background-image: url(../images/prueba1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,7 +206,7 @@ table {
     /* header */
     /* navegación */ }
     .onePage .navegacion .logo {
-      padding: 10px;
+      padding: 0.625rem;
       width: 50%; }
     .onePage .navegacion .navbar {
       margin: 0%;
@@ -220,10 +220,9 @@ table {
         display: none; }
       .onePage .navegacion .navbar .btn-menu {
         display: block;
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-        /* position: relative; */ }
+        width: 3.125rem;
+        height: 3.125rem;
+        padding: 0.625rem 0.625rem 0px 0.625rem; }
       .onePage .navegacion .navbar .btn-menu:hover {
         display: block;
         /* cursor: pointer;
@@ -241,7 +240,7 @@ table {
           background: rgba(0, 0, 0, 0.3); }
         .onePage .navegacion .navbar .menu .enlaceNavbar {
           display: block;
-          padding: 10px 20px;
+          padding: 0.625rem 0.625rem;
           text-decoration: none;
           font-family: helvetica-light;
           color: white;
@@ -252,8 +251,6 @@ table {
   .onePage .pageOne-article {
     width: 100%;
     height: 65%;
-    /* margin: 10px 0px; */
-    /* padding: 0px 15px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -261,21 +258,17 @@ table {
     .onePage .pageOne-article .pageOne-title {
       font-family: gobold-bold;
       text-transform: uppercase;
-      font-size: 28px;
+      font-size: 1.75rem;
       color: white;
       line-height: 40px;
       text-align: center; }
-    .onePage .pageOne-article .pageOne-title-h2 {
+    .onePage .pageOne-article .pageOne-title-h3 {
+      padding-bottom: 0.312rem;
       font-family: gobold-regular;
       text-transform: uppercase;
-      font-size: 24px;
+      font-size: 1rem;
       color: white;
-      line-height: 24px;
-      text-align: center; }
-    .onePage .pageOne-article .pageOne-title-h3 {
-      font-size: 16px;
-      color: white;
-      line-height: 24px;
+      line-height: 1.5rem;
       text-align: center; }
     .onePage .pageOne-article .pageOne-images {
       display: flex;
@@ -283,320 +276,358 @@ table {
       align-items: center; }
       .onePage .pageOne-article .pageOne-images .pageOne-imageOne {
         width: 100%;
-        padding: 5px; }
+        padding: 0.625rem; }
   .onePage .anexo {
     width: 100%;
     height: 30%;
-    padding: 5px;
-    background-color: #151515;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .onePage .anexo .anexo-imageOne {
-      padding: 0px 10px; }
+      padding-bottom: 0.625rem; }
     .onePage .anexo .anexo-imageTwo {
-      padding: 10px; }
+      padding: 0px; }
 
 .twoPage {
   grid-area: twoPage;
   width: 100%;
   height: 100vh;
   margin: 0%;
-  padding: 10px;
+  padding: 0.625rem;
   display: flex;
   flex-direction: column; }
   .twoPage .twoPage-imagen {
-    height: 65%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center; }
+    .twoPage .twoPage-imagen .twoPage-imagen-flechas {
+      padding: 0rem 0.625rem; }
     .twoPage .twoPage-imagen .twoPage-imagen-logo {
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
   .twoPage .twoPage-texto {
-    height: 35%;
+    height: 40%;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     .twoPage .twoPage-texto .twoPage-texto-h2 {
+      padding: 1rem;
       text-align: center;
       font-size: 1rem; }
     .twoPage .twoPage-texto .twoPage-texto-p {
       font-family: helvetica-medium;
-      padding-top: 20px;
-      text-align: center;
-      font-size: 1rem; }
+      padding: 1rem;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      text-align: center; }
 
 .threePage {
   grid-area: threePage;
-  padding: 10px 0px;
   width: 100%;
   height: 100vh;
   background-color: #F2F2F2; }
   .threePage .threePage-logo {
-    height: 25%;
+    height: 33%;
+    padding: 0.625rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
     .threePage .threePage-logo .threePage-logo-h3 {
-      padding: 5px;
+      padding: 0.312rem;
       font-family: gobold-bold;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2.5rem; }
     .threePage .threePage-logo .threePage-logo-h4 {
       padding: 5px;
-      font-family: helvetica-medium;
+      font-family: helvetica-bold;
       text-align: center;
       line-height: 20px; }
   .threePage .threePage-imagen {
     width: 100%;
-    height: 50vh;
+    height: 34%;
     display: flex;
     justify-content: center; }
-  .threePage .threePage-imagen-img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%; }
+    .threePage .threePage-imagen .threePage-imagen-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%; }
 
 .fourPage {
   grid-area: fourPage;
   width: 100%;
   height: 200vh;
-  padding: 20px 0px;
+  padding: 1rem 0.312rem;
   background-color: #131313;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .fourPage .fourPage-divSpeaker {
-    width: 90%;
+    width: 100%;
+    height: 15%;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
-      font-size: 40px;
+      font-size: 2.5rem;
       color: yellow;
-      padding: 10px 0px; }
+      padding: 0.5rem; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
-      font-family: helvetica-bold;
-      font-size: 24px;
-      color: white;
-      padding: 5px 0px; }
-    .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
       font-family: helvetica-light;
-      line-height: 20px;
-      padding: 10px;
-      font-size: 16px;
+      font-size: 1.5rem;
+      color: white;
+      padding: 0.5rem; }
+    .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
+      font-family: helvetica-thin;
+      line-height: 1.2rem;
+      padding: 0.5rem;
+      font-size: 1rem;
       color: white;
       text-align: center; }
   .fourPage .fourPage-divInvitado {
     width: 100%;
-    padding: 20px 20px 0px; }
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem; }
     .fourPage .fourPage-divInvitado .fourPage-divInvitado-div {
+      padding: 0.5rem;
       display: flex;
       justify-content: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-div .fourPage-divInvitado-div-h2 {
         font-family: gobold-regular;
         text-transform: uppercase;
-        font-size: 24px;
+        font-size: 1.5rem;
         color: yellow; }
     .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
       width: 100%;
-      padding: 15px;
+      padding: 0.5rem;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
-      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h2 {
-        font-family: gobold-regular;
-        text-transform: uppercase;
-        padding: 10px;
-        font-size: 32px;
-        color: white;
-        text-align: center; }
+      justify-content: center;
+      align-items: center; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
+        width: 100%; }
+        .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
+          width: 100%;
+          padding: 0.5rem; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
+        display: flex; }
+        .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-h2 {
+          font-family: gobold-bold;
+          text-transform: uppercase;
+          padding: 0.5rem;
+          font-size: 1.5rem;
+          color: white;
+          text-align: center; }
+        .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-img {
+          padding: 0.5rem; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h3 {
         font-family: helvetica-light;
-        padding: 5px;
-        font-size: 16px;
+        padding: 0.312rem;
+        font-size: 1rem;
         color: gray;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h4 {
-        font-family: helvetica-light;
-        padding: 10px;
-        font-size: 16px;
+        font-family: helvetica-thin;
+        padding: 0.312rem;
+        font-size: 1rem;
         color: #E0FF00;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-p {
-        font-family: helvetica-light;
-        padding: 10px;
-        font-size: 16px;
+        font-family: helvetica-thin;
+        padding: 0.312rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
         color: white;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h5 {
         font-family: helvetica-light;
-        padding: 0px;
-        font-size: 16px;
+        padding: 0.312rem;
+        font-size: 1rem;
         color: #E0FF00;
         text-align: center; }
   .fourPage .fourPage-divCarousel {
-    width: 80%; }
+    width: 100%;
+    height: 35%;
+    padding: 0.5rem; }
     .fourPage .fourPage-divCarousel .fourPage-divCarousel-divInvit {
-      width: 100%;
-      padding: 10px 20px 20px; }
+      padding: 0.5rem; }
       .fourPage .fourPage-divCarousel .fourPage-divCarousel-divInvit .fourPage-divCarousel-divInvit-h2 {
         font-family: gobold-regular;
         text-transform: uppercase;
-        font-size: 24px;
-        color: yellow;
+        font-size: 1.5rem;
+        color: #E0FF00;
         text-align: center; }
-    .fourPage .fourPage-divCarousel .carousel-h5 {
-      font-family: gobold-regular;
-      text-transform: uppercase;
-      font-size: 24px;
-      color: white;
-      text-align: center; }
-    .fourPage .fourPage-divCarousel .carousel-h6 {
-      font-family: helvetica-light;
-      font-size: 16px;
-      color: gray;
-      text-align: center; }
-    .fourPage .fourPage-divCarousel .carousel-p {
-      font-family: helvetica-light;
-      font-size: 20px;
-      color: yellow;
-      text-align: center; }
+    .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel {
+      width: 100%;
+      padding: 0.5rem; }
+      .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel {
+        padding: 0.5rem; }
+        .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel .carousel-h5 {
+          font-family: gobold-regular;
+          text-transform: uppercase;
+          font-size: 24px;
+          color: white;
+          text-align: center; }
+        .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel .carousel-h6 {
+          font-family: helvetica-light;
+          font-size: 16px;
+          color: gray;
+          text-align: center; }
+        .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel .carousel-p {
+          font-family: helvetica-light;
+          font-size: 20px;
+          color: yellow;
+          text-align: center; }
 
 .fivePage {
   grid-area: fivePage;
   width: 100%;
   height: 100vh;
-  padding: 10px; }
+  padding: 0.5rem; }
   .fivePage .fivePage-divTitle {
-    width: 90%;
-    height: 20vh;
+    width: 100%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    line-height: 32px; }
+    align-items: center; }
     .fivePage .fivePage-divTitle .fivePage-divTitle-h2 {
+      padding: 0.5rem;
       font-family: gobold-bold;
       text-transform: uppercase;
-      font-size: 32px;
+      font-size: 2rem;
       color: #8215BC;
       text-align: center; }
     .fivePage .fivePage-divTitle .fivePage-divTitle-h3 {
+      padding: 0.5rem;
       font-family: helvetica-bold;
-      font-size: 24px;
+      font-size: 1.5rem;
       text-align: center; }
     .fivePage .fivePage-divTitle .fivePage-divTitle-p {
+      padding: 0.5rem;
       font-family: helvetica-light;
-      font-size: 16px;
+      font-size: 1rem;
       text-align: center;
-      line-height: 16px; }
+      line-height: 1.2rem; }
+    .fivePage .fivePage-divTitle .fivePage-divTitle-p2 {
+      padding: 0.5rem;
+      font-family: helvetica-medium;
+      font-size: 1rem;
+      text-align: center; }
   .fivePage .fivePage-divGral {
     width: 100%;
-    height: 75vh;
+    height: 70%;
     overflow-y: scroll;
-    padding: 10px 0px; }
+    padding: 0.5rem; }
     .fivePage .fivePage-divGral .fivePage-divGral-agenda {
       width: 100%;
-      padding: 10px 0px; }
+      padding: 0.5rem; }
       .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h2 {
-        padding: 5px;
+        padding: 0.5rem;
         font-family: gobold-bold;
         text-transform: uppercase;
-        font-size: 32px;
+        font-size: 1.3rem;
         color: #8215BC; }
       .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h3 {
-        padding: 5px;
+        padding: 0.5rem;
         font-family: gobold-regular;
         text-transform: uppercase;
-        font-size: 24px; }
+        font-size: 1.3rem; }
       .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h4 {
-        padding: 5px;
-        font-family: helvetica-regular;
-        font-size: 16px;
+        padding: 0rem 0.5rem 0.5rem 0.5rem;
+        font-family: helvetica-medium;
+        font-size: 1rem;
         color: #8215BC; }
       .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-p {
-        padding: 5px;
+        padding: 0rem 0.5rem 0.5rem 0.5rem;
         font-family: helvetica-regular;
-        font-size: 16px;
+        font-size: 1rem;
         color: #505050; }
 
 .sixPage {
   grid-area: sixPage;
   width: 100%;
-  height: 100vh;
-  padding: 15px 0px;
+  /* height: 100vh; */
+  padding: 1.5rem;
   background-color: #131313;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .sixPage .sixPage-div {
-    width: 90%;
-    height: 25vh;
-    /* border: 1px solid white; */ }
+    width: 100%;
+    /* height: 30%; */ }
     .sixPage .sixPage-div .sixPage-div-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
       color: #E4FF22;
-      font-size: 36px;
+      font-size: 2rem;
       text-align: center;
-      line-height: 48px; }
+      line-height: 3rem; }
     .sixPage .sixPage-div .sixPage-div-h3 {
-      font-family: helvetica-regular;
+      font-family: helvetica-medium;
       color: white;
-      font-size: 24px;
+      font-size: 1.5rem;
       text-align: center;
-      line-height: 48px; }
+      line-height: 3rem; }
     .sixPage .sixPage-div .sixPage-div-p {
-      font-family: helvetica-light;
+      font-family: helvetica-thin;
       color: white;
-      font-size: 16px;
+      font-size: 1rem;
       text-align: center;
-      line-height: 24px; }
+      line-height: 1.5rem; }
   .sixPage .sixPage-form {
-    width: 90%;
-    height: 75vh;
-    padding-top: 15px;
-    /* border: 1px solid white; */
+    width: 100%;
+    /* height: 70%; */
+    padding: 1rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .sixPage .sixPage-form .sixPage-form-input {
       width: 90%;
-      margin: 10px 0px;
-      padding: 5px 5px;
+      margin: 0.6rem 0rem;
+      padding: 0.5rem;
       border: 1px solid #E4FF22;
-      border-radius: 2px;
+      border-radius: 10px;
       background-color: black;
       color: #E4FF22;
       font-family: helvetica-light; }
     .sixPage .sixPage-form ::placeholder {
       color: gray;
-      font-family: helvetica-light; }
+      font-family: helvetica-light;
+      padding-left: 0.8rem; }
+    .sixPage .sixPage-form .eightPage-option {
+      color: white; }
     .sixPage .sixPage-form .sixPage-form-btn {
-      margin: 35px auto 0px;
+      margin: 1rem auto 0rem;
       padding: 15px 50px;
       background-color: #E4FF22;
       border: #E4FF22 1px solid;
       border-radius: 50px;
       color: black;
-      font-family: helvetica-light; }
+      font-family: helvetica-medium; }
 
 .sevenPage {
   grid-area: sevenPage;
   width: 100%;
-  max-height: 100vh;
-  padding: 10px;
-  position: relative; }
+  height: 100vh;
+  padding: 0.5rem; }
   .sevenPage .sevenPage-sponsors {
     height: 20%;
-    padding: 25px; }
+    padding: 1.5rem; }
     .sevenPage .sevenPage-sponsors .sevenPage-sponsors-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
@@ -605,44 +636,45 @@ table {
       text-align: center; }
   .sevenPage .sevenPage-imgSponsors {
     height: 80%;
-    padding: 25px 0px;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly; }
-    .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors img {
-      padding: 25px 0px; }
+    .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors div img {
+      padding: 1.5rem 0rem; }
 
 .eightpage {
   grid-area: eightPage;
   width: 100%;
-  min-height: 100vh;
-  padding: 50px 0px;
+  /* height: 100vh; */
+  padding: 1.5rem 1rem;
   background-color: #F2F2F2;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .eightpage .eightpage-div-title {
     width: 90%;
-    height: 30%; }
+    /* height: 30%; */
+    padding: 1rem; }
     .eightpage .eightpage-div-title .eightpage-div-title-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
-      font-size: 36px;
+      font-size: 2rem;
+      line-height: 2.5rem;
       color: #8215BC;
-      text-align: center;
-      margin-bottom: 10px; }
+      text-align: center; }
     .eightpage .eightpage-div-title .eightpage-div-title-h3 {
       font-family: helvetica-bold;
-      margin: 10px 0px;
-      font-size: 24px;
+      margin: 0.5rem 0rem;
+      font-size: 1.5rem;
       color: #131313;
       text-align: center; }
   .eightpage .eightpage-div-form {
-    width: 90%; }
+    width: 100%;
+    /* height: 70%; */ }
     .eightpage .eightpage-div-form .form {
-      height: 70%;
-      padding: 20px 10%;
+      padding: 1rem;
       border: 1px solid #F2F2F2;
       display: flex;
       flex-direction: column;
@@ -650,26 +682,26 @@ table {
       justify-content: center; }
       .eightpage .eightpage-div-form .form .input {
         width: 100%;
-        margin: 15px 0px;
-        padding: 10px 5px;
+        margin: 1rem 0rem;
+        padding: 0.5rem;
         border: 1px solid black;
-        border-radius: 3px; }
+        border-radius: 10px; }
       .eightpage .eightpage-div-form .form ::placeholder {
         font-family: helvetica-bold;
         color: #8215BC; }
       .eightpage .eightpage-div-form .form .btn {
-        margin: 30px auto;
-        padding: 15px 50px;
+        margin: 2rem auto;
+        padding: 1rem 3rem;
         background-color: #8215bc;
         border: black 1px solid;
-        border-radius: 50px;
+        border-radius: 3rem;
         color: white; }
 
 .footerPage {
   grid-area: footerPage;
   width: 100%;
   height: 50vh;
-  padding: 25px 25px 25px 25px;
+  padding: 1.5rem 1rem;
   background-color: black;
   display: grid;
   grid-template-areas: "footerPage-coderconf footerPage-coderhouse" "footerPage-redesSociales footerPage-redesSociales" "footerPage-copyright footerPage-copyright";
@@ -681,22 +713,38 @@ table {
     flex-direction: column;
     align-items: center; }
     .footerPage .footerPage-coderconf .footerPage-div {
-      padding: 10px; }
-      .footerPage .footerPage-coderconf .footerPage-div .footerPage-div-h3 {
-        font-family: helvetica-light;
-        padding: 5px;
-        color: white; }
+      padding: 0.5rem; }
+      .footerPage .footerPage-coderconf .footerPage-div .footerPage-div-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .footerPage .footerPage-coderconf .footerPage-div .footerPage-div-ul .footerPage-div-ul-li {
+          padding: 0.312rem; }
+        .footerPage .footerPage-coderconf .footerPage-div .footerPage-div-ul .footerPage-div-ul-li > a {
+          text-decoration: none;
+          font-family: helvetica-ultralight;
+          font-size: 0.75rem;
+          padding: 0.312rem;
+          color: white; }
   .footerPage .footerPage-coderhouse {
     grid-area: footerPage-coderhouse;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .footerPage .footerPage-coderhouse .footerPage-div {
-      padding: 10px; }
-      .footerPage .footerPage-coderhouse .footerPage-div .footerPage-div-h3 {
-        font-family: helvetica-light;
-        padding: 5px;
-        color: white; }
+      padding: 0.5rem; }
+      .footerPage .footerPage-coderhouse .footerPage-div .footerPage-div-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .footerPage .footerPage-coderhouse .footerPage-div .footerPage-div-ul .footerPage-div-ul-li {
+          padding: 0.312rem; }
+        .footerPage .footerPage-coderhouse .footerPage-div .footerPage-div-ul .footerPage-div-ul-li > a {
+          text-decoration: none;
+          font-family: helvetica-ultralight;
+          font-size: 0.75rem;
+          padding: 0.312rem;
+          color: white; }
   .footerPage .footerPage-redesSociales {
     grid-area: footerPage-redesSociales;
     display: flex;
@@ -704,19 +752,20 @@ table {
     align-items: center;
     padding-bottom: 0px; }
     .footerPage .footerPage-redesSociales .footerPage-redesSociales-h2 {
-      font-family: helvetica-bold;
-      padding: 10px;
+      font-family: helvetica-medium;
+      font-size: 0.75rem;
       color: #E0FF00; }
     .footerPage .footerPage-redesSociales .footerPage-redesSociales-div {
-      padding: 10px; }
+      padding: 0.5rem; }
   .footerPage .footerPage-copyright {
     grid-area: footerPage-copyright;
+    margin: 1rem 0rem;
     display: flex;
     align-items: center;
     padding: auto;
     display: flex;
     justify-content: center; }
     .footerPage .footerPage-copyright .footerPage-copyright-h2 {
-      font-family: helvetica-light;
-      font-size: 12px;
+      font-family: helvetica-ultralight;
+      font-size: 0.75rem;
       color: white; }
