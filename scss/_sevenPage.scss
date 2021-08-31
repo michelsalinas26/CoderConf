@@ -2,11 +2,11 @@
     grid-area: sevenPage;
     width: 100%;
     max-height: 100vh;
-    padding: 10px;
-    position: relative;
+    padding: 0.5rem;
+    /* position: relative; */
     .sevenPage-sponsors {
         height: 20%;
-        padding: 25px;
+        padding: 1.5rem;
         .sevenPage-sponsors-h2 {
             font-family: gobold-bold;
             text-transform: uppercase;
@@ -16,15 +16,15 @@
         }
     }
     .sevenPage-imgSponsors {
-        position: relative;
+        /* position: relative; */
         height: 80%;
-        padding: 25px 0px;
+        padding: 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        .sevenPage-imgSponsors img {
-            padding: 25px 0px;
+        .sevenPage-imgSponsors div img {
+            padding: 1.5rem 0rem;
         }
     }
 }
