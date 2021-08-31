@@ -254,13 +254,7 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
-    /* .pageOne-title-h3 {
-            font-size: 16px;
-            color: white;
-            line-height: 24px;
-            text-align: center;
-        } */ }
+    align-items: center; }
     .onePage .pageOne-article .pageOne-title {
       font-family: gobold-bold;
       text-transform: uppercase;
@@ -269,6 +263,7 @@ table {
       line-height: 40px;
       text-align: center; }
     .onePage .pageOne-article .pageOne-title-h3 {
+      padding-bottom: 5px;
       font-family: gobold-regular;
       text-transform: uppercase;
       font-size: 16px;
@@ -281,17 +276,17 @@ table {
       align-items: center; }
       .onePage .pageOne-article .pageOne-images .pageOne-imageOne {
         width: 100%;
-        padding: 5px; }
+        padding: 10px; }
   .onePage .anexo {
     width: 100%;
     height: 30%;
     margin: 0px;
-    padding: 5px 0px;
+    /* padding: 5px 0px; */
     display: flex;
     flex-direction: column;
     align-items: center; }
     .onePage .anexo .anexo-imageOne {
-      padding: 0px; }
+      padding-bottom: 10px; }
     .onePage .anexo .anexo-imageTwo {
       padding: 0px; }
 
