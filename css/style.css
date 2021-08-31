@@ -155,39 +155,6 @@ table {
   font-family: helvetica-ultralight;
   src: url(../tipografia/HelveticaNeue-Ultralight.ttf); }
 
-/* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
-@media screen and (min-width: 360px) and (max-width: 768px) {
-  .body {
-    width: 100%;
-    /* height: 100vh; */
-    display: grid;
-    grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
-
-/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
-/* Media query para dispositivos entre 769px y 1200px - Tablet */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .body {
-    width: 100%;
-    /* height: 100vh; */
-    display: grid;
-    grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
-
-/* ------------ navegacion ------------ */
-/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
-/* Media query para dispositivos mayores a 1201px - Desktop */
-@media screen and (min-width: 1201px) and (max-width: 1500px) {
-  .body {
-    width: 100%;
-    /* height: 100vh; */
-    display: grid;
-    grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
-
 /* Inicio del código para el proyecto coderconf */
 .onePage {
   grid-area: onePage;
@@ -772,3 +739,36 @@ table {
       font-family: helvetica-ultralight;
       font-size: 0.75rem;
       color: white; }
+
+/* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .body {
+    width: 100%;
+    /* height: 100vh; */
+    /* display: grid;
+            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+
+/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
+/* Media query para dispositivos entre 769px y 1200px - Tablet */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .body {
+    width: 100%;
+    /* height: 100vh; */
+    /* display: grid;
+            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+
+/* ------------ navegacion ------------ */
+/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
+/* Media query para dispositivos mayores a 1201px - Desktop */
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  .body {
+    width: 100%;
+    /* height: 100vh; */
+    /* display: grid;
+            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
