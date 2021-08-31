@@ -1,0 +1,46 @@
+[
+    {
+        "apellido": "GALANTERNIKS",
+        "nombre": "SEBASTÍAN",
+        "empresa": "TRAFILEA",
+        "posicion": "CEO",
+        "charla": "Quiero ser consultor SEO. Por dónde empiezo?",
+        "horario": "11:00",
+        "avatar": "images/invitado.png",
+        "contacto": "www.sebas.com",
+        "descripcion": "Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales."
+    },
+    {
+        "apellido": "LOPEZ",
+        "nombre": "CONSUELO",
+        "empresa": "Chicas en Tecnología",
+        "posicion": "Advisor in Programs and Technology",
+        "charla": "De usuarias a creadoras: La próxima generación de Chicas Líderes en Tecnología.",
+        "horario": "12:30",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1599320327/CoderConf/Consuelo_L%C3%B3pez_-_Speaker_CoderConf.jpg",
+        "contacto": "www.consuelo.com",
+        "descripcion": "Chicas en Tecnología"
+    },
+    {
+        "apellido": "Hernandez",
+        "nombre": "Franco",
+        "empresa": "Ank",
+        "posicion": "Product Development Manager",
+        "charla": "Hacks para validar una idea",
+        "horario": "14:10",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1603389012/Franco_Hernandez_xfhed8_v1lexk.jpg",
+        "contacto": "www.franco.com",
+        "descripcion": "Ank"
+    },
+    {
+        "apellido": "Linenberg",
+        "nombre": "Agustín",
+        "empresa": "Aerolab",
+        "posicion": "Co-Fundador & CEO",
+        "charla": "Tips para crear Productos Digitales y validar una idea.",
+        "horario": "15:00",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1602012735/Agustin_Linenberg_kwv7ky_loqjuz.jpg",
+        "contacto": "www.agus.com",
+        "descripcion": "Aerolab"
+    }
+]

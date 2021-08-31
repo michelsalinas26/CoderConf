@@ -1,0 +1,1 @@
+const GETSPEAKERS = 'data/speakers.json';
