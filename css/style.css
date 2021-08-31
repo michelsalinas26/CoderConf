@@ -336,7 +336,53 @@ table {
   background-color: #131313;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  /* .fourPage-divCarousel {
+        width: 100%;
+        height: 35%;
+        padding: 0.5rem;
+        .fourPage-divCarousel-divInvit {
+            padding: 0.5rem;
+            .fourPage-divCarousel-divInvit-h2 {
+                font-family: gobold-regular;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                color: #E0FF00;
+                text-align: center;
+            }
+        }
+        .fourPage-divCarousel-carousel {
+            width: 100%;
+            padding: 0.5rem;
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        max-width: auto;
+                        padding: 0.5rem;
+                        .carousel-h5 {
+                            font-family: gobold-regular;
+                            text-transform: uppercase;
+                            font-size: 24px;
+                            color: white;
+                            text-align: center;
+                        }
+                        .carousel-h6 {
+                            font-family: helvetica-light;
+                            font-size: 16px;
+                            color: gray;
+                            text-align: center;
+                        }
+                        .carousel-p {
+                            font-family: helvetica-light;
+                            font-size: 20px;
+                            color: yellow;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    } */ }
   .fourPage .fourPage-divSpeaker {
     width: 100%;
     height: 15%;
@@ -386,9 +432,9 @@ table {
       justify-content: center;
       align-items: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
-        width: 100%; }
+        /* width: 100%; */ }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
-          width: 100%;
+          /* width: 100%; */
           padding: 0.5rem; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
         display: flex; }
@@ -426,39 +472,6 @@ table {
         font-size: 1rem;
         color: #E0FF00;
         text-align: center; }
-  .fourPage .fourPage-divCarousel {
-    width: 100%;
-    height: 35%;
-    padding: 0.5rem; }
-    .fourPage .fourPage-divCarousel .fourPage-divCarousel-divInvit {
-      padding: 0.5rem; }
-      .fourPage .fourPage-divCarousel .fourPage-divCarousel-divInvit .fourPage-divCarousel-divInvit-h2 {
-        font-family: gobold-regular;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        color: #E0FF00;
-        text-align: center; }
-    .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel {
-      width: 100%;
-      padding: 0.5rem; }
-      .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel {
-        padding: 0.5rem; }
-        .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel .carousel-h5 {
-          font-family: gobold-regular;
-          text-transform: uppercase;
-          font-size: 24px;
-          color: white;
-          text-align: center; }
-        .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel .carousel-h6 {
-          font-family: helvetica-light;
-          font-size: 16px;
-          color: gray;
-          text-align: center; }
-        .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel .carousel-p {
-          font-family: helvetica-light;
-          font-size: 20px;
-          color: yellow;
-          text-align: center; }
 
 .fivePage {
   grid-area: fivePage;
@@ -759,7 +772,65 @@ table {
     /* display: grid;
             grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ }
+  /* onePage */
+  .onePage {
+    height: 100vh;
+    background-image: url(../images/fondoOnePageTablet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .onePage .navegacion {
+      height: 10%;
+      /* padding: 5px; */ }
+      .onePage .navegacion .logo {
+        height: auto; }
+      .onePage .navegacion .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        .onePage .navegacion .navbar .btn-menu {
+          display: none; }
+        .onePage .navegacion .navbar .menu {
+          display: inline-block;
+          margin: auto 0px; }
+          .onePage .navegacion .navbar .menu .ul {
+            display: flex;
+            flex-direction: row; }
+    .onePage .pageOne-article {
+      width: 50%;
+      height: 60%; }
+    .onePage .anexo {
+      width: 100%;
+      height: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+  .twoPage {
+    display: flex;
+    flex-direction: row-reverse; }
+    .twoPage .twoPage-imagen {
+      height: 100vh;
+      width: 50%;
+      display: flex;
+      justify-content: space-around; }
+    .twoPage .twoPage-texto {
+      height: 100vh;
+      width: 50%;
+      display: flex; }
+      .twoPage .twoPage-texto .twoPage-texto-h2 {
+        position: relative;
+        right: 20%; }
+      .twoPage .twoPage-texto .twoPage-texto-p {
+        text-align: start; }
+  .threePage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .threePage .threePage-imagen {
+      display: none; } }
 
 /* ------------ navegacion ------------ */
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */

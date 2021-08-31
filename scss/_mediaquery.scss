@@ -22,6 +22,81 @@
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
         }
+        /* onePage */
+        .onePage {
+            height: 100vh;
+            background-image: url(../images/fondoOnePageTablet.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .navegacion {
+                height: 10%;
+                /* padding: 5px; */
+                .logo {
+                    height: auto;
+                }
+                .navbar {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .btn-menu {
+                        display: none;
+                    }
+                    .menu {
+                        display: inline-block;
+                        margin: auto 0px;
+                        .ul {
+                            display: flex;
+                            flex-direction: row;
+                        }
+                    }
+                }
+            }
+            .pageOne-article {
+                width: 50%;
+                height: 60%;
+            }
+            .anexo {
+                width: 100%;
+                height: 30%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+        .twoPage {
+            display: flex;
+            flex-direction: row-reverse;
+            .twoPage-imagen {
+                height: 100vh;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+            }
+            .twoPage-texto {
+                height: 100vh;
+                width: 50%;
+                display: flex;
+                .twoPage-texto-h2 {
+                    position: relative;
+                    right: 20%;
+                }
+                .twoPage-texto-p {
+                    text-align: start;
+                }
+            }
+        }
+        .threePage {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .threePage-logo {}
+            .threePage-imagen {
+                display: none;
+            }
+        }
     }
     /* ------------ navegacion ------------ */
     /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
