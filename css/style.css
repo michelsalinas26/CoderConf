@@ -192,12 +192,12 @@ table {
 .onePage {
   grid-area: onePage;
   width: 100%;
-  height: 130vh;
+  height: 110vh;
   padding: 0px;
   background-image: url(../images/prueba1.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   /* header y navegación */
   /* Datos del main */ }
   .onePage .navegacion {
@@ -222,8 +222,7 @@ table {
         display: block;
         width: 50px;
         height: 50px;
-        padding: 10px;
-        /* position: relative; */ }
+        padding: 10px 10px 0px 10px; }
       .onePage .navegacion .navbar .btn-menu:hover {
         display: block;
         /* cursor: pointer;
@@ -252,12 +251,16 @@ table {
   .onePage .pageOne-article {
     width: 100%;
     height: 65%;
-    /* margin: 10px 0px; */
-    /* padding: 0px 15px; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center; }
+    align-items: center;
+    /* .pageOne-title-h3 {
+            font-size: 16px;
+            color: white;
+            line-height: 24px;
+            text-align: center;
+        } */ }
     .onePage .pageOne-article .pageOne-title {
       font-family: gobold-bold;
       text-transform: uppercase;
@@ -265,14 +268,9 @@ table {
       color: white;
       line-height: 40px;
       text-align: center; }
-    .onePage .pageOne-article .pageOne-title-h2 {
+    .onePage .pageOne-article .pageOne-title-h3 {
       font-family: gobold-regular;
       text-transform: uppercase;
-      font-size: 24px;
-      color: white;
-      line-height: 24px;
-      text-align: center; }
-    .onePage .pageOne-article .pageOne-title-h3 {
       font-size: 16px;
       color: white;
       line-height: 24px;
@@ -287,15 +285,15 @@ table {
   .onePage .anexo {
     width: 100%;
     height: 30%;
-    padding: 5px;
-    background-color: #151515;
+    margin: 0px;
+    padding: 5px 0px;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .onePage .anexo .anexo-imageOne {
-      padding: 0px 10px; }
+      padding: 0px; }
     .onePage .anexo .anexo-imageTwo {
-      padding: 10px; }
+      padding: 0px; }
 
 .twoPage {
   grid-area: twoPage;

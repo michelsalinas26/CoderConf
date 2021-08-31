@@ -3,12 +3,12 @@
 .onePage {
     grid-area: onePage;
     width: 100%;
-    height: 130vh;
+    height: 110vh;
     padding: 0px;
     background-image: url(../images/prueba1.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     /* header y navegación */
     .navegacion {
         display: flex;
@@ -34,8 +34,7 @@
                 display: block;
                 width: 50px;
                 height: 50px;
-                padding: 10px;
-                /* position: relative; */
+                padding: 10px 10px 0px 10px;
             }
             .btn-menu:hover {
                 display: block;
@@ -75,8 +74,6 @@
     .pageOne-article {
         width: 100%;
         height: 65%;
-        /* margin: 10px 0px; */
-        /* padding: 0px 15px; */
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -89,20 +86,20 @@
             line-height: 40px;
             text-align: center;
         }
-        .pageOne-title-h2 {
+        .pageOne-title-h3 {
             font-family: gobold-regular;
             text-transform: uppercase;
-            font-size: 24px;
-            color: white;
-            line-height: 24px;
-            text-align: center;
-        }
-        .pageOne-title-h3 {
             font-size: 16px;
             color: white;
             line-height: 24px;
             text-align: center;
         }
+        /* .pageOne-title-h3 {
+            font-size: 16px;
+            color: white;
+            line-height: 24px;
+            text-align: center;
+        } */
         .pageOne-images {
             display: flex;
             flex-direction: column;
@@ -116,16 +113,16 @@
     .anexo {
         width: 100%;
         height: 30%;
-        padding: 5px;
-        background-color: #151515;
+        margin: 0px;
+        padding: 5px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
         .anexo-imageOne {
-            padding: 0px 10px;
+            padding: 0px;
         }
         .anexo-imageTwo {
-            padding: 10px;
+            padding: 0px;
         }
     }
 }
