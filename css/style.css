@@ -156,10 +156,10 @@ table {
   src: url(../tipografia/HelveticaNeue-Ultralight.ttf); }
 
 /* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 768px) {
   .body {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: grid;
     grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
     grid-template-columns: 1fr;
@@ -170,7 +170,7 @@ table {
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .body {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: grid;
     grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
     grid-template-columns: 1fr;
@@ -182,7 +182,7 @@ table {
 @media screen and (min-width: 1201px) and (max-width: 1500px) {
   .body {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: grid;
     grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
     grid-template-columns: 1fr;
