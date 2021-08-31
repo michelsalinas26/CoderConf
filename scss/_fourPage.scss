@@ -1,7 +1,8 @@
 .fourPage {
     grid-area: fourPage;
     width: 100%;
-    height: 200vh;
+    /* height: 200vh; */
+    height: 1280px;
     padding: 1rem 0.312rem;
     background-color: #131313;
     display: flex;
@@ -22,7 +23,7 @@
             padding: 0.5rem;
         }
         .fourPage-divSpeaker-h3 {
-            font-family: helvetica-light;
+            font-family: helvetica-bold;
             font-size: 1.5rem;
             color: white;
             padding: 0.5rem;
