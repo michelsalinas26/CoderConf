@@ -2,65 +2,73 @@
     grid-area: fivePage;
     width: 100%;
     height: 100vh;
-    padding: 10px;
+    padding: 0.5rem;
     .fivePage-divTitle {
-        width: 90%;
-        height: 20vh;
+        width: 100%;
+        height: 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        line-height: 32px;
         .fivePage-divTitle-h2 {
+            padding: 0.5rem;
             font-family: gobold-bold;
             text-transform: uppercase;
-            font-size: 32px;
+            font-size: 2rem;
             color: #8215BC;
             text-align: center;
         }
         .fivePage-divTitle-h3 {
+            padding: 0.5rem;
             font-family: helvetica-bold;
-            font-size: 24px;
+            font-size: 1.5rem;
             text-align: center;
         }
         .fivePage-divTitle-p {
+            padding: 0.5rem;
             font-family: helvetica-light;
-            font-size: 16px;
+            font-size: 1rem;
             text-align: center;
-            line-height: 16px;
+            line-height: 1.2rem;
+        }
+        .fivePage-divTitle-p2 {
+            padding: 0.5rem;
+            font-family: helvetica-medium;
+            font-size: 1rem;
+            text-align: center;
         }
     }
     .fivePage-divGral {
         width: 100%;
-        height: 75vh;
+        height: 70%;
         overflow-y: scroll;
-        padding: 10px 0px;
+        padding: 0.5rem;
         .fivePage-divGral-agenda {
             width: 100%;
-            padding: 10px 0px;
+            padding: 0.5rem;
             .fivePage-divGral-agenda-h2 {
-                padding: 5px;
+                padding: 0.5rem;
                 font-family: gobold-bold;
                 text-transform: uppercase;
-                font-size: 32px;
+                font-size: 1.3rem;
                 color: #8215BC;
             }
             .fivePage-divGral-agenda-h3 {
-                padding: 5px;
+                padding: 0.5rem;
                 font-family: gobold-regular;
                 text-transform: uppercase;
-                font-size: 24px;
+                font-size: 1.3rem;
             }
             .fivePage-divGral-agenda-h4 {
-                padding: 5px;
-                font-family: helvetica-regular;
-                font-size: 16px;
+                padding: 0rem 0.5rem 0.5rem 0.5rem;
+                font-family: helvetica-medium;
+                font-size: 1rem;
                 color: #8215BC;
             }
             .fivePage-divGral-agenda-p {
-                padding: 5px;
+                padding: 0rem 0.5rem 0.5rem 0.5rem;
                 font-family: helvetica-regular;
-                font-size: 16px;
+                font-size: 1rem;
                 color: #505050;
             }
         }
