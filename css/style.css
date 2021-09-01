@@ -159,7 +159,6 @@ table {
 .onePage {
   grid-area: onePage;
   width: 100%;
-  /* height: 120vh; */
   height: 768px;
   padding: 0px;
   background-image: url(../images/prueba1.png);
@@ -203,7 +202,7 @@ table {
           flex-direction: column;
           list-style: none; }
         .onePage .navegacion .navbar .menu .li {
-          color: white; }
+          color: #F2F2F2; }
         .onePage .navegacion .navbar .menu .li:hover {
           background: rgba(0, 0, 0, 0.3); }
         .onePage .navegacion .navbar .menu .enlaceNavbar {
@@ -211,38 +210,43 @@ table {
           padding: 0.625rem 0.625rem;
           text-decoration: none;
           font-family: helvetica-light;
-          color: white;
+          color: #F2F2F2;
           font-size: 1rem; }
       .onePage .navegacion .navbar #btn-menu-checkbox:checked ~ .menu {
         position: relative;
         display: block; }
-  .onePage .pageOne-article {
+  .onePage .pageOneArticle {
     width: 100%;
     height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center; }
-    .onePage .pageOne-article .pageOne-title {
+    .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
       font-size: 1.75rem;
-      color: white;
+      color: #F2F2F2;
       line-height: 40px;
       text-align: center; }
-    .onePage .pageOne-article .pageOne-title-h3 {
-      padding-bottom: 0.312rem;
-      font-family: gobold-regular;
-      text-transform: uppercase;
-      font-size: 1rem;
-      color: white;
-      line-height: 1.5rem;
-      text-align: center; }
-    .onePage .pageOne-article .pageOne-images {
+    .onePage .pageOneArticle .pageOneArticle-divTwo {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center; }
+      .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
+        padding-bottom: 0.312rem;
+        font-family: gobold-regular;
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #F2F2F2;
+        line-height: 1.5rem;
+        text-align: center; }
+    .onePage .pageOneArticle .pageOneArticle-divThree {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .onePage .pageOne-article .pageOne-images .pageOne-imageOne {
+      .onePage .pageOneArticle .pageOneArticle-divThree .pageOneArticle-divThree-a {
         width: 100%;
         padding: 0.625rem; }
   .onePage .anexo {
@@ -252,10 +256,42 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .onePage .anexo .anexo-imageOne {
+    .onePage .anexo .anexo-divOne .anexo-divOne-a {
       padding-bottom: 0.625rem; }
-    .onePage .anexo .anexo-imageTwo {
-      padding: 0px; }
+    .onePage .anexo .cuentaRegresiva {
+      width: 90%;
+      display: flex;
+      flex-direction: column; }
+      .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne .cuentaRegresiva-divOne-h2 {
+        padding: 10px;
+        font-size: 1.2rem;
+        color: #F2F2F2;
+        text-align: center;
+        font-family: gobold-regular;
+        text-transform: uppercase; }
+      .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo {
+        display: flex; }
+        .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo .cuentaRegresiva-divTwo-div {
+          margin: 5px;
+          display: flex;
+          flex-direction: column;
+          background-color: #E0FF00;
+          justify-content: center;
+          width: 75px;
+          height: 75px; }
+          .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo .cuentaRegresiva-divTwo-div .cuentaRegresiva-divTwo-div-h2 {
+            padding: 5px 0px;
+            font-size: 2rem;
+            color: #131313;
+            text-align: center;
+            font-family: gobold-regular;
+            text-transform: uppercase; }
+          .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo .cuentaRegresiva-divTwo-div .cuentaRegresiva-divTwo-div-p {
+            font-size: 0.7rem;
+            color: #131313;
+            text-align: center;
+            font-family: gobold-regular;
+            text-transform: uppercase; }
 
 .twoPage {
   grid-area: twoPage;
