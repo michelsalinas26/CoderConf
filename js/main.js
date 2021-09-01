@@ -17,17 +17,31 @@ function generarSpeaker(data){
         if (a.horario < b.horario) return -1;
         return 0;
     })
-    
+
     agendaRender(ordenados);
+    //speakerRender(speakers);
+}
+
+function generarSponsor(data){
+    for (const objeto of data) {
+        sponsors.push(new Sponsor(
+            objeto.apellido,
+            objeto.nombre,
+            objeto.email,
+            objeto.celular,
+            objeto.empresa,
+            objeto.logo            
+        ));
+    }        
+    sponsorRender(sponsors);
 }
 
 fetch(GETSPEAKERS)
-  .then(response => response.json()) //1 JSON.parse(response)
+  .then(response => response.json())
   .then(json => generarSpeaker(json))
   .catch(e => console.log("ERROR"))
 
-
-//Sponsors
-sponsors.push(new Sponsor('Martinez','Shangela','sha@gmail.com',3764000000,'Google', 'images/Logo-Google.png'));
-sponsors.push(new Sponsor('Montrease','Coco A.','coco@gmail.com',3764000000,'Mercado Libre', 'images/Logo-ML.png'));
-sponsorRender(sponsors);
+fetch(GETSPONSORS)
+  .then(response => response.json())
+  .then(json => generarSponsor(json))
+  .catch(e => console.log("ERROR"))

@@ -8,5 +8,17 @@ function agendaUI(speaker){
 }
 
 function sponsorUI(sponsor) {
-    return `<div><img src="${sponsor.logo}" alt="Logo de Mercado libre"></div>`
+    return `<div class="text-center row
+    "><img src="${sponsor.logo}" alt="Logo de Mercado libre"></div>`
+}
+
+function speakerUI(speaker){
+    return `<div class="carousel-item">
+            <img src="${speaker.avatar}" class="d-block w-100" alt="Foto del speaker">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="carousel-h5">${speaker.nombre} ${speaker.apellido}</h5>
+                <h6 class="carousel-h6">${speaker.posicion}</h6>
+                <p class="carousel-p">${speaker.empresa}</p>
+            </div>
+        </div>`
 }

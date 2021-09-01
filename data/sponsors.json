@@ -1,0 +1,38 @@
+[
+    {
+        "apellido": "Mariales",
+        "nombre": "Donda",
+        "email": "lala@lala.com",
+        "celular": "000000122",
+        "empresa": "Mercado Libre",
+        "logo": "images/Logo-ML.png"
+        
+    },
+    {
+        "apellido": "Panchakes",
+        "nombre": "Brad",
+        "email": "popoa@lala.com",
+        "celular": "00003333",
+        "empresa": "Tienda Nube",
+        "logo": "images/Logo-TiendaNube.png"
+        
+    },
+    {
+        "apellido": "Flores",
+        "nombre": "Angel",
+        "email": "flafla@lala.com",
+        "celular": "00004444",
+        "empresa": "Google",
+        "logo": "images/Logo-Google.png"
+        
+    },
+    {
+        "apellido": "Papaga",
+        "nombre": "Chongolo",
+        "email": "papa@lala.com",
+        "celular": "0200000006",
+        "empresa": "Play Music",
+        "logo": "images/Logo-ML.png"
+        
+    }
+]

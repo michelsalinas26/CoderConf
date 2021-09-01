@@ -13,3 +13,11 @@ function agendaRender(speakers){
         divAgenda.innerHTML += agendaUI(speaker);
     }
 }   
+
+function speakerRender(speakers){
+    const divSpeaker = document.getElementById('listaSpeaker');
+    divSpeaker.innerHTML ='';
+    for (const speaker of speakers) {
+        divSpeaker.innerHTML += speakerUI(speaker);
+    }
+}   
