@@ -229,6 +229,8 @@ table {
       color: #F2F2F2;
       line-height: 40px;
       text-align: center; }
+    .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2b {
+      font-size: 2.5rem; }
     .onePage .pageOneArticle .pageOneArticle-divTwo {
       display: flex;
       flex-direction: column;
@@ -252,23 +254,25 @@ table {
   .onePage .anexo {
     width: 100%;
     height: 30%;
-    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .onePage .anexo .anexo-divOne .anexo-divOne-a {
-      padding-bottom: 0.625rem; }
+    .onePage .anexo .anexo-divOne {
+      padding: 0.625rem 0rem; }
     .onePage .anexo .cuentaRegresiva {
-      width: 90%;
+      width: 100%;
       display: flex;
-      flex-direction: column; }
-      .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne .cuentaRegresiva-divOne-h2 {
-        padding: 10px;
-        font-size: 1.2rem;
-        color: #F2F2F2;
-        text-align: center;
-        font-family: gobold-regular;
-        text-transform: uppercase; }
+      flex-direction: column;
+      align-items: center; }
+      .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne {
+        padding-top: 1rem; }
+        .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne .cuentaRegresiva-divOne-h2 {
+          padding: 10px;
+          font-size: 1.2rem;
+          color: #F2F2F2;
+          text-align: center;
+          font-family: gobold-regular;
+          text-transform: uppercase; }
       .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo {
         display: flex; }
         .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo .cuentaRegresiva-divTwo-div {
@@ -353,6 +357,7 @@ table {
       line-height: 2.5rem; }
     .threePage .threePage-logo .threePage-logo-h4 {
       padding: 5px;
+      font-size: 1rem;
       font-family: helvetica-medium;
       text-align: center;
       line-height: 20px; }
@@ -556,24 +561,30 @@ table {
     padding: 0.5rem; }
     .fivePage .fivePage-divGral .fivePage-divGral-agenda {
       width: 100%;
-      padding: 0.5rem; }
-      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h2 {
+      margin: 0px;
+      padding: 0rem 0.5rem;
+      display: flex;
+      flex-direction: row; }
+      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-divOne {
+        width: auto;
+        margin: 0px; }
+      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-h2 {
         padding: 0.5rem;
         font-family: gobold-bold;
         text-transform: uppercase;
         font-size: 1.3rem;
         color: #8215BC; }
-      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h3 {
+      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-h3 {
         padding: 0.5rem;
         font-family: gobold-regular;
         text-transform: uppercase;
         font-size: 1.3rem; }
-      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h4 {
+      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-h4 {
         padding: 0rem 0.5rem 0.5rem 0.5rem;
         font-family: helvetica-medium;
         font-size: 1rem;
         color: #8215BC; }
-      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-p {
+      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-p {
         padding: 0rem 0.5rem 0.5rem 0.5rem;
         font-family: helvetica-regular;
         font-size: 1rem;
@@ -799,7 +810,7 @@ table {
       color: white; }
 
 /* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 1023px) {
   .body {
     width: 100%;
     /* height: 100vh; */
@@ -810,81 +821,145 @@ table {
 
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos entre 769px y 1200px - Tablet */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .body {
     width: 100%;
     /* height: 100vh; */
     /* display: grid;
             grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ }
-  /* onePage */
-  .onePage {
-    height: 100vh;
-    background-image: url(../images/fondoOnePageTablet.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    .onePage .navegacion {
-      height: 10%;
-      /* padding: 5px; */ }
-      .onePage .navegacion .logo {
-        height: auto; }
-      .onePage .navegacion .navbar {
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* onePage */ }
+    .body .onePage {
+      height: 624px;
+      background-image: url(../images/fondoOnePageDesktop.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .body .onePage .navegacion {
+        height: 10%; }
+        .body .onePage .navegacion .logo > h1 {
+          padding: 5px; }
+          .body .onePage .navegacion .logo > h1 img {
+            width: 110px;
+            height: 35px; }
+        .body .onePage .navegacion .navbar {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; }
+          .body .onePage .navegacion .navbar .btn-menu {
+            display: none; }
+          .body .onePage .navegacion .navbar .menu {
+            display: inline-block;
+            margin: auto 0px; }
+            .body .onePage .navegacion .navbar .menu .ul {
+              display: flex;
+              flex-direction: row; }
+            .body .onePage .navegacion .navbar .menu .enlaceNavbar {
+              padding: 0.5rem;
+              font-size: 1.1rem; }
+      .body .onePage .pageOneArticle {
+        width: 40%;
+        height: 70%;
+        padding-bottom: 5rem; }
+        .body .onePage .pageOneArticle .pageOneArticle-divOne {
+          width: 90%;
+          padding: 0rem 1rem; }
+          .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+            text-align: start; }
+          .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2b {
+            font-size: 3.5rem; }
+        .body .onePage .pageOneArticle .pageOneArticle-divTwo {
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          padding: 0rem 1rem;
+          justify-content: flex-start; }
+          .body .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
+            padding: 0.5rem;
+            text-align: start; }
+      .body .onePage .anexo {
+        width: 100%;
+        height: 20%;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        .body .onePage .anexo .anexo-divOne {
+          width: 40%;
+          display: flex;
+          justify-content: center; }
+        .body .onePage .anexo .cuentaRegresiva {
+          width: 60%;
+          display: flex;
+          flex-direction: row; }
+          .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne {
+            width: 33%;
+            padding: 0px; }
+            .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne .cuentaRegresiva-divOne-h2 {
+              padding: 0px; }
+          .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo {
+            width: 67%; }
+    .body .twoPage {
+      display: flex;
+      flex-direction: row-reverse; }
+      .body .twoPage .twoPage-imagen {
+        height: 100vh;
+        width: 50%;
+        display: flex;
         justify-content: space-around; }
-        .onePage .navegacion .navbar .btn-menu {
-          display: none; }
-        .onePage .navegacion .navbar .menu {
-          display: inline-block;
-          margin: auto 0px; }
-          .onePage .navegacion .navbar .menu .ul {
-            display: flex;
-            flex-direction: row; }
-    .onePage .pageOne-article {
-      width: 50%;
-      height: 60%; }
-    .onePage .anexo {
-      width: 100%;
-      height: 30%;
+        .body .twoPage .twoPage-imagen .twoPage-imagen-logo {
+          width: 400px;
+          height: 300px; }
+      .body .twoPage .twoPage-texto {
+        height: 100vh;
+        width: 50%;
+        display: flex; }
+        .body .twoPage .twoPage-texto .twoPage-texto-h2 {
+          position: relative;
+          right: 20%; }
+          .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
+            width: 260px;
+            height: 62px; }
+        .body .twoPage .twoPage-texto .twoPage-texto-p {
+          text-align: start;
+          font-size: 19px;
+          line-height: 24px; }
+    .body .threePage {
+      background-image: url(../images/movilJaxa3.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
-      align-items: center; }
-  .twoPage {
-    display: flex;
-    flex-direction: row-reverse; }
-    .twoPage .twoPage-imagen {
-      height: 100vh;
-      width: 50%;
-      display: flex;
       justify-content: space-around; }
-    .twoPage .twoPage-texto {
-      height: 100vh;
-      width: 50%;
-      display: flex; }
-      .twoPage .twoPage-texto .twoPage-texto-h2 {
-        position: relative;
-        right: 20%; }
-      .twoPage .twoPage-texto .twoPage-texto-p {
-        text-align: start; }
-  .threePage {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; }
-    .threePage .threePage-imagen {
-      display: none; } }
+      .body .threePage .threePage-logo {
+        width: 40%;
+        height: 50%;
+        padding: 0rem 1.5rem; }
+        .body .threePage .threePage-logo .threePage-logo-h2 {
+          width: 100%; }
+        .body .threePage .threePage-logo .threePage-logo-h3 {
+          width: 100%;
+          font-size: 38px;
+          line-height: 48px;
+          text-align: start; }
+        .body .threePage .threePage-logo .threePage-logo-h4 {
+          width: 100%;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          text-align: start; }
+      .body .threePage .threePage-imagen {
+        display: none; } }
 
 /* ------------ navegacion ------------ */
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos mayores a 1201px - Desktop */
-@media screen and (min-width: 1201px) and (max-width: 1500px) {
-  .body {
-    width: 100%;
-    /* height: 100vh; */
-    /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+/* @media screen and (min-width: 1201px) and (max-width: 1500px) {
+        .body {
+            width: 100%;
+            
+        }
+    } */

@@ -87,6 +87,9 @@
                 line-height: 40px;
                 text-align: center;
             }
+            .pageOneArticle-divOne-h2b {
+                font-size: 2.5rem;
+            }
         }
         .pageOneArticle-divTwo {
             display: flex;
@@ -116,20 +119,19 @@
     .anexo {
         width: 100%;
         height: 30%;
-        margin: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
         .anexo-divOne {
-            .anexo-divOne-a {
-                padding-bottom: 0.625rem;
-            }
+            padding: 0.625rem 0rem;
         }
         .cuentaRegresiva {
-            width: 90%;
+            width: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
             .cuentaRegresiva-divOne {
+                padding-top: 1rem;
                 .cuentaRegresiva-divOne-h2 {
                     padding: 10px;
                     font-size: 1.2rem;
