@@ -1,3 +1,7 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
+import { getDatabase, ref, onValue,set} from "https://www.gstatic.com/firebasejs/9.0.1/firebase-database.js";
+
 function generarSpeaker(data){
     for (const objeto of data) {
         speakers.push(new Speaker(
@@ -45,3 +49,44 @@ fetch(GETSPONSORS)
   .then(response => response.json())
   .then(json => generarSponsor(json))
   .catch(e => console.log("ERROR"))
+
+
+fetch(GETCONFIG)
+  .then(response => response.json())
+  .then(json => setConfig(json))
+  .catch(e => console.log("ERROR"))
+
+
+//OBTENER FOMULARIO
+document.getElementById('formInscripcion').addEventListener('submit',function(e){
+    e.preventDefault();
+    const data = {
+        nombre: e.target[0].value,
+        apellido: e.target[1].value,
+        telefono: e.target[2].value,
+        email:e.target[3].value,
+        pais: e.target[4].value,
+        esCoder: e.target[5].value
+    }
+    const app = initializeApp(appconfig);
+    const db = getDatabase();
+    set(ref(db, POSTPARTICIPANTES+data.telefono), data).then(()=>{
+        console.log("WRITE");
+    });
+})
+
+document.getElementById('formSponsor').addEventListener('submit',function(e){
+    //PREVINIR EL REFRESCO
+    e.preventDefault();
+    //LOS INPUT
+    const data = {
+        nombre: e.target[0].value,
+        email: e.target[1].value,
+        celular: e.target[2].value        
+    }
+    const app = initializeApp(appconfig);
+    const db = getDatabase();
+    set(ref(db, POSTSPONSORS+data.celular), data).then(()=>{
+        console.log("WRITE");
+    });
+})

@@ -231,14 +231,14 @@
             <p class="sixPage-div-p">y se parte de esta gran experiencia con los mejores speakers y temas de alto impacto para el futuro.</p>
         </div>
 
-        <form class="sixPage-form" action="">
-            <input class="sixPage-form-input" type="tex" placeholder="Nombre">
-            <input class="sixPage-form-input" type="tex" placeholder="Apellido">
-            <input class="sixPage-form-input" type="tex" placeholder="Celular">
-            <input class="sixPage-form-input" type="email" placeholder="Email">
-            <input class="sixPage-form-input" type="tex" placeholder="País">
-            <select class="sixPage-form-input" name="ocupacion" id="ocupacion">
-                <option selected disabled>¿Sos parte de Coder?</option>
+        <form class="sixPage-form" id="formInscripcion">
+            <input class="sixPage-form-input" type="tex" placeholder="Nombre" required>
+            <input class="sixPage-form-input" type="tex" placeholder="Apellido" required>
+            <input class="sixPage-form-input" type="tex" placeholder="Celular" required>
+            <input class="sixPage-form-input" type="email" placeholder="Email" required>
+            <input class="sixPage-form-input" type="tex" placeholder="País" required>
+            <select class="sixPage-form-input" name="ocupacion" id="ocupacion" required>
+                <option selected disabled value="no">¿Sos parte de Coder?</option>
                 <option class="eightPage-option" value="estudiante">Estudiante</option>
                 <option class="eightPage-option" value="graduado">Graduado</option>
                 <option class="eightPage-option" value="tutor">Tutor</option>
@@ -255,10 +255,8 @@
         <div class="sevenPage-sponsors">
             <h2 class="sevenPage-sponsors-h2">SPONSORS</h2>
         </div>
-        <div class="sevenPage-imgSponsors">
-            <img src="./images/Logo-ML.png" alt="Logo de Mercado libre">
-            <img src="./images/Logo-Google.png" alt="Logo de google">
-            <img src="./images/Logo-TiendaNube.png" alt="Tienda de nube">
+        <div class="sevenPage-imgSponsors"  id="listaSponsor">
+            <!--RENDER SPONSOR-->
         </div>
     </section>
     <!-- Octava página (Form para ser sponsor) -->
@@ -268,10 +266,10 @@
             <h3 class="eightpage-div-title-h3">¡Emprendamos el mismo vuelo!</h3>
         </div>
         <div class="eightpage-div-form">
-            <form action="#" class="form">
-                <input type="text" class="input" name="nombre" id="" placeholder="Nombre y Apellido">
-                <input type="email" class="input" name="email" id="" placeholder="Email">
-                <input type="text" class="input" name="celular" id="" placeholder="Celular">
+            <form class="form" id="formSponsor">
+                <input type="text" class="input" name="nombre" id="" placeholder="Nombre y Apellido" required>
+                <input type="email" class="input" name="email" id="" placeholder="Email" required>
+                <input type="text" class="input" name="celular" id="" placeholder="Celular" required>
                 <div>
                     <input class="btn" type="submit" value="Enviar Solicitud">
                 </div>
@@ -313,10 +311,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     <script src="js/globals.js"></script>
     <script src="js/routes.js"></script>
+    <script src="js/functions.js"></script>
     <script src="js/class.js"></script>
     <script src="js/components.js"></script>
     <script src="js/render.js"></script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
