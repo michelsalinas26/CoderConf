@@ -159,7 +159,7 @@ table {
 .onePage {
   grid-area: onePage;
   width: 100%;
-  height: 120vh;
+  height: 768px;
   padding: 0px;
   background-image: url(../images/prueba1.png);
   background-position: center;
@@ -202,7 +202,7 @@ table {
           flex-direction: column;
           list-style: none; }
         .onePage .navegacion .navbar .menu .li {
-          color: white; }
+          color: #F2F2F2; }
         .onePage .navegacion .navbar .menu .li:hover {
           background: rgba(0, 0, 0, 0.3); }
         .onePage .navegacion .navbar .menu .enlaceNavbar {
@@ -210,56 +210,98 @@ table {
           padding: 0.625rem 0.625rem;
           text-decoration: none;
           font-family: helvetica-light;
-          color: white;
+          color: #F2F2F2;
           font-size: 1rem; }
       .onePage .navegacion .navbar #btn-menu-checkbox:checked ~ .menu {
         position: relative;
         display: block; }
-  .onePage .pageOne-article {
+  .onePage .pageOneArticle {
     width: 100%;
     height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center; }
-    .onePage .pageOne-article .pageOne-title {
+    .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
       font-size: 1.75rem;
-      color: white;
+      color: #F2F2F2;
       line-height: 40px;
       text-align: center; }
-    .onePage .pageOne-article .pageOne-title-h3 {
-      padding-bottom: 0.312rem;
-      font-family: gobold-regular;
-      text-transform: uppercase;
-      font-size: 1rem;
-      color: white;
-      line-height: 1.5rem;
-      text-align: center; }
-    .onePage .pageOne-article .pageOne-images {
+    .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2b {
+      font-size: 2.5rem; }
+    .onePage .pageOneArticle .pageOneArticle-divTwo {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center; }
+      .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
+        padding-bottom: 0.312rem;
+        font-family: gobold-regular;
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #F2F2F2;
+        line-height: 1.5rem;
+        text-align: center; }
+    .onePage .pageOneArticle .pageOneArticle-divThree {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .onePage .pageOne-article .pageOne-images .pageOne-imageOne {
+      .onePage .pageOneArticle .pageOneArticle-divThree .pageOneArticle-divThree-a {
         width: 100%;
         padding: 0.625rem; }
   .onePage .anexo {
     width: 100%;
     height: 30%;
-    margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .onePage .anexo .anexo-imageOne {
-      padding-bottom: 0.625rem; }
-    .onePage .anexo .anexo-imageTwo {
-      padding: 0px; }
+    .onePage .anexo .anexo-divOne {
+      padding: 0.625rem 0rem; }
+    .onePage .anexo .cuentaRegresiva {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne {
+        padding-top: 1rem; }
+        .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne .cuentaRegresiva-divOne-h2 {
+          padding: 10px;
+          font-size: 1.2rem;
+          color: #F2F2F2;
+          text-align: center;
+          font-family: gobold-regular;
+          text-transform: uppercase; }
+      .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo {
+        display: flex; }
+        .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo .cuentaRegresiva-divTwo-div {
+          margin: 5px;
+          display: flex;
+          flex-direction: column;
+          background-color: #E0FF00;
+          justify-content: center;
+          width: 75px;
+          height: 75px; }
+          .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo .cuentaRegresiva-divTwo-div .cuentaRegresiva-divTwo-div-h2 {
+            padding: 5px 0px;
+            font-size: 2rem;
+            color: #131313;
+            text-align: center;
+            font-family: gobold-regular;
+            text-transform: uppercase; }
+          .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo .cuentaRegresiva-divTwo-div .cuentaRegresiva-divTwo-div-p {
+            font-size: 0.7rem;
+            color: #131313;
+            text-align: center;
+            font-family: gobold-regular;
+            text-transform: uppercase; }
 
 .twoPage {
   grid-area: twoPage;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 640px;
   margin: 0%;
   padding: 0.625rem;
   display: flex;
@@ -296,7 +338,8 @@ table {
 .threePage {
   grid-area: threePage;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 640px;
   background-color: #F2F2F2; }
   .threePage .threePage-logo {
     height: 33%;
@@ -314,7 +357,8 @@ table {
       line-height: 2.5rem; }
     .threePage .threePage-logo .threePage-logo-h4 {
       padding: 5px;
-      font-family: helvetica-bold;
+      font-size: 1rem;
+      font-family: helvetica-medium;
       text-align: center;
       line-height: 20px; }
   .threePage .threePage-imagen {
@@ -331,12 +375,59 @@ table {
 .fourPage {
   grid-area: fourPage;
   width: 100%;
-  height: 200vh;
+  /* height: 200vh; */
+  height: 1280px;
   padding: 1rem 0.312rem;
   background-color: #131313;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  /* .fourPage-divCarousel {
+        width: 100%;
+        height: 35%;
+        padding: 0.5rem;
+        .fourPage-divCarousel-divInvit {
+            padding: 0.5rem;
+            .fourPage-divCarousel-divInvit-h2 {
+                font-family: gobold-regular;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                color: #E0FF00;
+                text-align: center;
+            }
+        }
+        .fourPage-divCarousel-carousel {
+            width: 100%;
+            padding: 0.5rem;
+            .carousel {
+                .carousel-inner {
+                    .carousel-item {
+                        max-width: auto;
+                        padding: 0.5rem;
+                        .carousel-h5 {
+                            font-family: gobold-regular;
+                            text-transform: uppercase;
+                            font-size: 24px;
+                            color: white;
+                            text-align: center;
+                        }
+                        .carousel-h6 {
+                            font-family: helvetica-light;
+                            font-size: 16px;
+                            color: gray;
+                            text-align: center;
+                        }
+                        .carousel-p {
+                            font-family: helvetica-light;
+                            font-size: 20px;
+                            color: yellow;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    } */ }
   .fourPage .fourPage-divSpeaker {
     width: 100%;
     height: 15%;
@@ -351,7 +442,7 @@ table {
       color: yellow;
       padding: 0.5rem; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
-      font-family: helvetica-light;
+      font-family: helvetica-bold;
       font-size: 1.5rem;
       color: white;
       padding: 0.5rem; }
@@ -386,9 +477,9 @@ table {
       justify-content: center;
       align-items: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
-        width: 100%; }
+        /* width: 100%; */ }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
-          width: 100%;
+          /* width: 100%; */
           padding: 0.5rem; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
         display: flex; }
@@ -426,44 +517,12 @@ table {
         font-size: 1rem;
         color: #E0FF00;
         text-align: center; }
-  .fourPage .fourPage-divCarousel {
-    width: 100%;
-    height: 35%;
-    padding: 0.5rem; }
-    .fourPage .fourPage-divCarousel .fourPage-divCarousel-divInvit {
-      padding: 0.5rem; }
-      .fourPage .fourPage-divCarousel .fourPage-divCarousel-divInvit .fourPage-divCarousel-divInvit-h2 {
-        font-family: gobold-regular;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        color: #E0FF00;
-        text-align: center; }
-    .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel {
-      width: 100%;
-      padding: 0.5rem; }
-      .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel {
-        padding: 0.5rem; }
-        .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel .carousel-h5 {
-          font-family: gobold-regular;
-          text-transform: uppercase;
-          font-size: 24px;
-          color: white;
-          text-align: center; }
-        .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel .carousel-h6 {
-          font-family: helvetica-light;
-          font-size: 16px;
-          color: gray;
-          text-align: center; }
-        .fourPage .fourPage-divCarousel .fourPage-divCarousel-carousel .carousel .carousel-p {
-          font-family: helvetica-light;
-          font-size: 20px;
-          color: yellow;
-          text-align: center; }
 
 .fivePage {
   grid-area: fivePage;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 640px;
   padding: 0.5rem; }
   .fivePage .fivePage-divTitle {
     width: 100%;
@@ -498,37 +557,54 @@ table {
   .fivePage .fivePage-divGral {
     width: 100%;
     height: 70%;
-    overflow-y: scroll;
-    padding: 0.5rem; }
-    .fivePage .fivePage-divGral .fivePage-divGral-agenda {
-      width: 100%;
-      padding: 0.5rem; }
-      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h2 {
-        padding: 0.5rem;
-        font-family: gobold-bold;
-        text-transform: uppercase;
-        font-size: 1.3rem;
-        color: #8215BC; }
-      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h3 {
-        padding: 0.5rem;
-        font-family: gobold-regular;
-        text-transform: uppercase;
-        font-size: 1.3rem; }
-      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-h4 {
-        padding: 0rem 0.5rem 0.5rem 0.5rem;
-        font-family: helvetica-medium;
-        font-size: 1rem;
-        color: #8215BC; }
-      .fivePage .fivePage-divGral .fivePage-divGral-agenda .fivePage-divGral-agenda-p {
-        padding: 0rem 0.5rem 0.5rem 0.5rem;
-        font-family: helvetica-regular;
-        font-size: 1rem;
-        color: #505050; }
+    /* overflow-y: scroll; */
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column; }
+    .fivePage .fivePage-divGral .fivePage-divGral-imagen {
+      display: none; }
+    .fivePage .fivePage-divGral .fivePage-divGral-divTwo {
+      overflow-y: scroll;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column; }
+      .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda {
+        width: auto;
+        margin: 0px;
+        padding: 0rem 0.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda .fivePage-divGral-agenda-divOne {
+          width: auto;
+          margin: 0px; }
+        .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-h2 {
+          padding: 0.5rem;
+          font-family: gobold-bold;
+          text-transform: uppercase;
+          font-size: 1.3rem;
+          color: #8215BC; }
+        .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-h3 {
+          padding: 0.5rem;
+          font-family: gobold-regular;
+          text-transform: uppercase;
+          font-size: 1.3rem; }
+        .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-h4 {
+          padding: 0rem 0.5rem 0.5rem 0.5rem;
+          font-family: helvetica-medium;
+          font-size: 1rem;
+          color: #8215BC; }
+        .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-p {
+          padding: 0rem 0.5rem 0.5rem 0.5rem;
+          font-family: helvetica-regular;
+          font-size: 1rem;
+          color: #505050; }
 
 .sixPage {
   grid-area: sixPage;
   width: 100%;
   /* height: 100vh; */
+  height: 650px;
   padding: 1.5rem;
   background-color: #131313;
   display: flex;
@@ -536,7 +612,7 @@ table {
   align-items: center; }
   .sixPage .sixPage-div {
     width: 100%;
-    /* height: 30%; */ }
+    height: 30%; }
     .sixPage .sixPage-div .sixPage-div-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
@@ -545,7 +621,7 @@ table {
       text-align: center;
       line-height: 3rem; }
     .sixPage .sixPage-div .sixPage-div-h3 {
-      font-family: helvetica-medium;
+      font-family: helvetica-bold;
       color: white;
       font-size: 1.5rem;
       text-align: center;
@@ -558,7 +634,7 @@ table {
       line-height: 1.5rem; }
   .sixPage .sixPage-form {
     width: 100%;
-    /* height: 70%; */
+    height: 70%;
     padding: 1rem 0rem;
     display: flex;
     flex-direction: column;
@@ -590,7 +666,8 @@ table {
 .sevenPage {
   grid-area: sevenPage;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 640px;
   padding: 0.5rem; }
   .sevenPage .sevenPage-sponsors {
     height: 20%;
@@ -618,6 +695,7 @@ table {
   grid-area: eightPage;
   width: 100%;
   /* height: 100vh; */
+  height: 640px;
   padding: 1.5rem 1rem;
   background-color: #F2F2F2;
   display: flex;
@@ -670,7 +748,8 @@ table {
 .footerPage {
   grid-area: footerPage;
   width: 100%;
-  height: 50vh;
+  /* height: 50vh; */
+  height: 320px;
   padding: 1.5rem 1rem;
   background-color: black;
   display: grid;
@@ -741,7 +820,7 @@ table {
       color: white; }
 
 /* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (min-width: 360px) and (max-width: 1023px) {
   .body {
     width: 100%;
     /* height: 100vh; */
@@ -752,23 +831,159 @@ table {
 
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos entre 769px y 1200px - Tablet */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 2000px) {
   .body {
     width: 100%;
     /* height: 100vh; */
     /* display: grid;
             grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* onePage */ }
+    .body .onePage {
+      height: 624px;
+      background-image: url(../images/fondoOnePageDesktop.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .body .onePage .navegacion {
+        height: 10%; }
+        .body .onePage .navegacion .logo > h1 {
+          padding: 5px; }
+          .body .onePage .navegacion .logo > h1 img {
+            width: 110px;
+            height: 35px; }
+        .body .onePage .navegacion .navbar {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; }
+          .body .onePage .navegacion .navbar .btn-menu {
+            display: none; }
+          .body .onePage .navegacion .navbar .menu {
+            display: inline-block;
+            margin: auto 0px; }
+            .body .onePage .navegacion .navbar .menu .ul {
+              display: flex;
+              flex-direction: row; }
+            .body .onePage .navegacion .navbar .menu .enlaceNavbar {
+              padding: 0.5rem;
+              font-size: 1.1rem; }
+      .body .onePage .pageOneArticle {
+        width: 40%;
+        height: 70%;
+        padding-bottom: 5rem; }
+        .body .onePage .pageOneArticle .pageOneArticle-divOne {
+          width: 90%;
+          padding: 0rem 1rem; }
+          .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+            text-align: start; }
+          .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2b {
+            font-size: 3.5rem; }
+        .body .onePage .pageOneArticle .pageOneArticle-divTwo {
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          padding: 0rem 1rem;
+          justify-content: flex-start; }
+          .body .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
+            padding: 0.5rem;
+            text-align: start; }
+      .body .onePage .anexo {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        .body .onePage .anexo .anexo-divOne {
+          width: 40%;
+          display: flex;
+          justify-content: center; }
+        .body .onePage .anexo .cuentaRegresiva {
+          width: 60%;
+          display: flex;
+          flex-direction: row; }
+          .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne {
+            width: 33%;
+            padding: 0px; }
+            .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne .cuentaRegresiva-divOne-h2 {
+              padding: 0px; }
+          .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo {
+            width: 67%; }
+    .body .twoPage {
+      display: flex;
+      flex-direction: row-reverse; }
+      .body .twoPage .twoPage-imagen {
+        height: 100vh;
+        width: 50%;
+        display: flex;
+        justify-content: space-around; }
+        .body .twoPage .twoPage-imagen .twoPage-imagen-logo {
+          width: 400px;
+          height: 300px; }
+      .body .twoPage .twoPage-texto {
+        height: 100vh;
+        width: 50%;
+        display: flex; }
+        .body .twoPage .twoPage-texto .twoPage-texto-h2 {
+          position: relative;
+          right: 20%; }
+          .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
+            width: 260px;
+            height: 62px; }
+        .body .twoPage .twoPage-texto .twoPage-texto-p {
+          text-align: start;
+          font-size: 19px;
+          line-height: 24px; }
+    .body .threePage {
+      background-image: url(../images/movilJaxa3.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .body .threePage .threePage-logo {
+        width: 40%;
+        height: 50%;
+        padding: 0rem 1.5rem; }
+        .body .threePage .threePage-logo .threePage-logo-h2 {
+          width: 100%; }
+        .body .threePage .threePage-logo .threePage-logo-h3 {
+          width: 100%;
+          font-size: 38px;
+          line-height: 48px;
+          text-align: start; }
+        .body .threePage .threePage-logo .threePage-logo-h4 {
+          width: 100%;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          text-align: start; }
+      .body .threePage .threePage-imagen {
+        display: none; }
+    .body .fivePage .fivePage-divGral {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
+      .body .fivePage .fivePage-divGral .fivePage-divGral-imagen {
+        padding-left: 100px;
+        width: 30%;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .body .fivePage .fivePage-divGral .fivePage-divGral-divTwo {
+        width: 70%;
+        padding-right: 100px; } }
 
 /* ------------ navegacion ------------ */
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos mayores a 1201px - Desktop */
-@media screen and (min-width: 1201px) and (max-width: 1500px) {
-  .body {
-    width: 100%;
-    /* height: 100vh; */
-    /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+/* @media screen and (min-width: 1201px) and (max-width: 1500px) {
+        .body {
+            width: 100%;
+            
+        }
+    } */

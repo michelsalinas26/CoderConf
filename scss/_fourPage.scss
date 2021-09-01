@@ -1,7 +1,8 @@
 .fourPage {
     grid-area: fourPage;
     width: 100%;
-    height: 200vh;
+    /* height: 200vh; */
+    height: 1280px;
     padding: 1rem 0.312rem;
     background-color: #131313;
     display: flex;
@@ -22,7 +23,7 @@
             padding: 0.5rem;
         }
         .fourPage-divSpeaker-h3 {
-            font-family: helvetica-light;
+            font-family: helvetica-bold;
             font-size: 1.5rem;
             color: white;
             padding: 0.5rem;
@@ -62,9 +63,9 @@
             justify-content: center;
             align-items: center;
             .fourPage-divInvitado-divDatos-div {
-                width: 100%;
+                /* width: 100%; */
                 .fourPage-divInvitado-divDatos-div-img {
-                    width: 100%;
+                    /* width: 100%; */
                     padding: 0.5rem;
                 }
             }
@@ -113,7 +114,7 @@
             }
         }
     }
-    .fourPage-divCarousel {
+    /* .fourPage-divCarousel {
         width: 100%;
         height: 35%;
         padding: 0.5rem;
@@ -131,27 +132,32 @@
             width: 100%;
             padding: 0.5rem;
             .carousel {
-                padding: 0.5rem;
-                .carousel-h5 {
-                    font-family: gobold-regular;
-                    text-transform: uppercase;
-                    font-size: 24px;
-                    color: white;
-                    text-align: center;
-                }
-                .carousel-h6 {
-                    font-family: helvetica-light;
-                    font-size: 16px;
-                    color: gray;
-                    text-align: center;
-                }
-                .carousel-p {
-                    font-family: helvetica-light;
-                    font-size: 20px;
-                    color: yellow;
-                    text-align: center;
+                .carousel-inner {
+                    .carousel-item {
+                        max-width: auto;
+                        padding: 0.5rem;
+                        .carousel-h5 {
+                            font-family: gobold-regular;
+                            text-transform: uppercase;
+                            font-size: 24px;
+                            color: white;
+                            text-align: center;
+                        }
+                        .carousel-h6 {
+                            font-family: helvetica-light;
+                            font-size: 16px;
+                            color: gray;
+                            text-align: center;
+                        }
+                        .carousel-p {
+                            font-family: helvetica-light;
+                            font-size: 20px;
+                            color: yellow;
+                            text-align: center;
+                        }
+                    }
                 }
             }
         }
-    }
+    } */
 }
