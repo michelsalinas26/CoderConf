@@ -183,6 +183,25 @@
                 display: none;
             }
         }
+        .fivePage {
+            .fivePage-divGral {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .fivePage-divGral-imagen {
+                    padding-left: 100px;
+                    width: 30%;
+                    display: block;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .fivePage-divGral-divTwo {
+                    width: 70%;
+                    padding-right: 100px;
+                }
+            }
+        }
     }
 }
 
