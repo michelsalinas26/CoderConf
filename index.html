@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Título -->
     <title>CODERCONF</title>
+    <!--CAPCHA-->
 </head>
 
 <body class="body">
@@ -232,7 +233,17 @@
             <h3 class="sixPage-div-h3">¡Completa tus datos!</h3>
             <p class="sixPage-div-p">y se parte de esta gran experiencia con los mejores speakers y temas de alto impacto para el futuro.</p>
         </div>
-
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="...">
+              <strong class="me-auto">Bootstrap</strong>
+              <small>11 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Hello, world! This is a toast message.
+            </div>
+          </div>
         <form class="sixPage-form" id="formInscripcion">
             <input class="sixPage-form-input" type="tex" placeholder="Nombre" required>
             <input class="sixPage-form-input" type="tex" placeholder="Apellido" required>
@@ -247,6 +258,7 @@
                 <option class="eightPage-option" value="profesor">Profesor</option>
                 <option class="eightPage-option" value="no">No</option>
             </select>
+            <div class="g-recaptcha" data-sitekey="6LdRwz4cAAAAAGY6xA6a5s_CRnTh-xMfuc-lfTdk" data-callback="enableSubmit"></div>
             <div>
                 <input class="sixPage-form-btn" type="submit" value="Solicitar Inscripción">
             </div>
@@ -314,6 +326,7 @@
     <script src="js/globals.js"></script>
     <script src="js/routes.js"></script>
     <script src="js/functions.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="js/class.js"></script>
     <script src="js/components.js"></script>
     <script src="js/render.js"></script>

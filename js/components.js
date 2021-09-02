@@ -28,3 +28,9 @@ function clockUI(tic){
             ${tic.minutes} m 
             ${tic.seconds} s`;
 }
+
+function spinnerUI(){
+    return `<div id="spinnerForm" class="spinner-grow text-warning mt-4" role="status">
+                <span class="visually-hidden">Enviando...</span>
+            </div>`
+}

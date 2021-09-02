@@ -24,3 +24,12 @@ function getTic(distance){
 function getDistance(now,eventday){
   return eventday.getTime() - now.getTime();
 }
+
+function enableSubmit(response){
+    submitState(false);
+}
+
+function submitState(state){
+    const botones = document.querySelectorAll('input[type="submit"]');
+    botones.forEach(b=> b.disabled = state)
+}

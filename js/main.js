@@ -1,7 +1,6 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase-app.js";
-import { getDatabase, ref, onValue,set} from "https://www.gstatic.com/firebasejs/9.0.1/firebase-database.js";
-
+import { getDatabase, ref,set} from "https://www.gstatic.com/firebasejs/9.0.1/firebase-database.js";
+//------------------------------- GENERADORES-------------------------------
 function generarSpeaker(data){
     for (const objeto of data) {
         speakers.push(new Speaker(
@@ -40,26 +39,33 @@ function generarSponsor(data){
     sponsorRender(sponsors);
 }
 
+function sendData(url,clave,data){
+    const app = initializeApp(appconfig);
+    const db = getDatabase();
+    set(ref(db, url+clave), data).then(()=>{
+        document.getElementById('spinnerForm').remove();
+        submitState(false);
+    });
+}
+//------------------------------- FETCHS-------------------------------
 fetch(GETSPEAKERS)
   .then(response => response.json())
   .then(json => generarSpeaker(json))
-  .catch(e => console.log("ERROR"))
+  .catch(e => console.log("ERROR AL CARGAR SPEAKERS"))
 
 fetch(GETSPONSORS)
   .then(response => response.json())
   .then(json => generarSponsor(json))
-  .catch(e => console.log("ERROR"))
-
+  .catch(e => console.log("ERROR AL CARGAR SPONSOR"))
 
 fetch(GETCONFIG)
   .then(response => response.json())
   .then(json => setConfig(json))
-  .catch(e => console.log("ERROR"))
-
-
-//OBTENER FOMULARIO
+  .catch(e => console.log("ERROR AL CARGAR CONFIGURACION"))
+//------------------------------- EVENTOS -------------------------------
 document.getElementById('formInscripcion').addEventListener('submit',function(e){
     e.preventDefault();
+    console.log(grecaptcha.getResponse());
     const data = {
         nombre: e.target[0].value,
         apellido: e.target[1].value,
@@ -68,44 +74,35 @@ document.getElementById('formInscripcion').addEventListener('submit',function(e)
         pais: e.target[4].value,
         esCoder: e.target[5].value
     }
-    const app = initializeApp(appconfig);
-    const db = getDatabase();
-    set(ref(db, POSTPARTICIPANTES+data.telefono), data).then(()=>{
-        console.log("WRITE");
-    });
+    this.reset();
+    this.innerHTML += spinnerUI();
+    sendData(POSTPARTICIPANTES,data.telefono, data);
 })
 
 document.getElementById('formSponsor').addEventListener('submit',function(e){
-    //PREVINIR EL REFRESCO
     e.preventDefault();
-    //LOS INPUT
     const data = {
         nombre: e.target[0].value,
         email: e.target[1].value,
         celular: e.target[2].value        
     }
-    const app = initializeApp(appconfig);
-    const db = getDatabase();
-    set(ref(db, POSTSPONSORS+data.celular), data).then(()=>{
-        console.log("WRITE");
-    });
+    this.reset();
+    this.innerHTML += spinnerUI();
+    sendData(POSTSPONSORS,data.celular, data);
 })
-
+//------------------------------- MAIN -------------------------------
+submitState(true);
 if(isEvent(new Date(), eventday)){
     clockRender('clock', getTic(0));
 }else{
     clockRender('clock',getTic(getDistance(new Date(),eventday)));
     var clock = setInterval(function() {
         const distance = getDistance(new Date(),eventday);
-        // Time calculations for days, hours, minutes and seconds
         const tic = getTic(distance);
-        // Output the result in an element with id="demo"
-        console.log(tic);
         clockRender('clock', tic);
-        // If the count down is over, write some text 
         if (distance < 0) {
           clearInterval(clock);
           clockRender('clock', getTic(0));
         }
-      }, 1000);
+    }, 1000);
 }

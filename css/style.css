@@ -769,3 +769,5 @@ table {
       font-family: helvetica-ultralight;
       font-size: 0.75rem;
       color: white; }
+
+.g-recaptcha{max-width: 100%;}
