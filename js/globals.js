@@ -1,4 +1,4 @@
 const speakers = [];
 const sponsors = [];
 const appconfig= {};
-const day = '2021-03-08';
+const eventday = new Date("09/01/2021 22:16:10");

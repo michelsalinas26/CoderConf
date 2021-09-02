@@ -90,3 +90,22 @@ document.getElementById('formSponsor').addEventListener('submit',function(e){
         console.log("WRITE");
     });
 })
+
+if(isEvent(new Date(), eventday)){
+    clockRender('clock', getTic(0));
+}else{
+    clockRender('clock',getTic(getDistance(new Date(),eventday)));
+    var clock = setInterval(function() {
+        const distance = getDistance(new Date(),eventday);
+        // Time calculations for days, hours, minutes and seconds
+        const tic = getTic(distance);
+        // Output the result in an element with id="demo"
+        console.log(tic);
+        clockRender('clock', tic);
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(clock);
+          clockRender('clock', getTic(0));
+        }
+      }, 1000);
+}

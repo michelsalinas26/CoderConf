@@ -21,3 +21,8 @@ function speakerRender(speakers){
         divSpeaker.innerHTML += speakerUI(speaker);
     }
 }   
+
+function clockRender(id,tic){
+    const divClock = document.getElementById(id);  
+    divClock.innerHTML = clockUI(tic);
+}

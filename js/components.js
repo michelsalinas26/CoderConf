@@ -21,3 +21,10 @@ function speakerUI(speaker){
             </div>
         </div>`
 }
+
+function clockUI(tic){
+    return `${tic.days} d 
+            ${tic.hours} h  
+            ${tic.minutes} m 
+            ${tic.seconds} s`;
+}
