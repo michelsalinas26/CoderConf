@@ -114,6 +114,7 @@
             }
         }
     }
+    /* Carousel hecho con bootstrap */
     /* .fourPage-divCarousel {
         width: 100%;
         height: 35%;
@@ -160,4 +161,53 @@
             }
         }
     } */
+    .carousel {
+        width: 100%;
+        height: 35%;
+        .carousel-speakerGral {
+            padding: 1rem;
+            display: flex;
+            overflow-x: scroll;
+            .carousel-speakerGral-speaker {
+                display: flex;
+                flex-direction: column;
+                .carousel-speakerGral-speaker-img {
+                    width: 250px;
+                    padding: 1rem 2rem;
+                }
+                .carousel-speakerGral-speaker-div {
+                    display: flex;
+                    flex-direction: column;
+                    .carousel-speakerGral-speaker-div-subdiv {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .carousel-speakerGral-speaker-div-h5 {
+                            text-align: center;
+                            color: #FFFFFF;
+                            font-family: gobold-regular;
+                            font-size: 1rem;
+                        }
+                        .carousel-speakerGral-speaker-div-img {
+                            padding: 0px 5px;
+                        }
+                    }
+                    .carousel-speakerGral-speaker-div-h6 {
+                        padding: 5px;
+                        text-align: center;
+                        color: #A5A5A5;
+                        font-family: helvetica-medium;
+                        font-size: 0.8rem;
+                    }
+                    .carousel-speakerGral-speaker-div-p {
+                        padding: 5px;
+                        text-align: center;
+                        color: #E0FF00;
+                        font-family: helvetica-medium;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -2,7 +2,7 @@
     grid-area: twoPage;
     width: 100%;
     /* height: 100vh; */
-    height: 640px;
+    height: 550px;
     margin: 0%;
     padding: 0.625rem;
     display: flex;
@@ -17,7 +17,6 @@
             /* padding: 0rem 0.625rem; */
         }
         .twoPage-imagen-logo {
-            width: 80%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -25,7 +24,7 @@
     }
     .twoPage-texto {
         height: 50%;
-        padding: 1rem;
+        padding: 1.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -37,7 +36,7 @@
         }
         .twoPage-texto-p {
             font-family: helvetica-medium;
-            padding: 1rem;
+            padding: 1.5rem;
             font-size: 1rem;
             line-height: 1.2rem;
             text-align: center;
