@@ -34,3 +34,18 @@ function spinnerUI(){
                 <span class="visually-hidden">Enviando...</span>
             </div>`
 }
+
+function inscripcionUI(email){
+    document.querySelector('.sixPage-div-h2').innerHTML = 'INSCRIPCIÓN REALIZADA';
+    document.querySelector('.sixPage-div-p').innerHTML = `¡Te estaremos enviado un correo a ${email}!`;
+    document.querySelector('.sixPage-div-h3').remove();
+    document.querySelector('.sixPage-form').remove();
+}
+
+function notificacionUI(email){
+    document.querySelector('.eightpage-div-title-h2').innerHTML = 'SOLICITUD ENVIADA';
+    document.querySelector('.eightpage-div-title-h3').innerHTML = `¡Te estaremos enviado un correo a ${email}!`;
+    document.querySelector('.eightpage-div-form').remove();
+}
+
+

@@ -43,8 +43,11 @@ function sendData(url,clave,data){
     const app = initializeApp(appconfig);
     const db = getDatabase();
     set(ref(db, url+clave), data).then(()=>{
-        document.getElementById('spinnerForm').remove();
-        submitState(false);
+        if(url === POSTPARTICIPANTES){
+            inscripcionUI(data.email);
+        }else{
+            notificacionUI(data.email);
+        }
     });
 }
 //------------------------------- FETCHS-------------------------------
