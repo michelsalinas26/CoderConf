@@ -6,7 +6,7 @@
     background-color: black;
     display: grid;
     grid-template-areas: "footerPage-coderconf footerPage-coderhouse" "footerPage-redesSociales footerPage-redesSociales" "footerPage-copyright footerPage-copyright";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 0.3fr 0.2fr;
     .footerPage-coderconf {
         grid-area: footerPage-coderconf;
@@ -61,11 +61,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 0px;
+        padding: 1rem;
         .footerPage-redesSociales-h2 {
             font-family: helvetica-medium;
             font-size: 0.75rem;
             color: #E0FF00;
+            padding: 0.5rem;
         }
         .footerPage-redesSociales-div {
             padding: 0.5rem;
@@ -73,7 +74,6 @@
     }
     .footerPage-copyright {
         grid-area: footerPage-copyright;
-        margin: 1rem 0rem;
         display: flex;
         align-items: center;
         padding: auto;

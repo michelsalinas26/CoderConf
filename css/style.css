@@ -155,39 +155,6 @@ table {
   font-family: helvetica-ultralight;
   src: url(../tipografia/HelveticaNeue-Ultralight.ttf); }
 
-/* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .body {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
-
-/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
-/* Media query para dispositivos entre 769px y 1200px - Tablet */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .body {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
-
-/* ------------ navegacion ------------ */
-/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
-/* Media query para dispositivos mayores a 1201px - Desktop */
-@media screen and (min-width: 1201px) and (max-width: 1500px) {
-  .body {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } }
-
 /* Inicio del código para el proyecto coderconf */
 .onePage {
   grid-area: onePage;
@@ -642,7 +609,10 @@ table {
     align-items: center;
     justify-content: space-evenly; }
     .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors div img {
-      padding: 1.5rem 0rem; }
+      padding: 1.5rem 0rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
 
 .eightpage {
   grid-area: eightPage;
@@ -705,7 +675,7 @@ table {
   background-color: black;
   display: grid;
   grid-template-areas: "footerPage-coderconf footerPage-coderhouse" "footerPage-redesSociales footerPage-redesSociales" "footerPage-copyright footerPage-copyright";
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows: 0.5fr 0.3fr 0.2fr; }
   .footerPage .footerPage-coderconf {
     grid-area: footerPage-coderconf;
@@ -750,16 +720,16 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 0px; }
+    padding: 1rem; }
     .footerPage .footerPage-redesSociales .footerPage-redesSociales-h2 {
       font-family: helvetica-medium;
       font-size: 0.75rem;
-      color: #E0FF00; }
+      color: #E0FF00;
+      padding: 0.5rem; }
     .footerPage .footerPage-redesSociales .footerPage-redesSociales-div {
       padding: 0.5rem; }
   .footerPage .footerPage-copyright {
     grid-area: footerPage-copyright;
-    margin: 1rem 0rem;
     display: flex;
     align-items: center;
     padding: auto;
@@ -770,4 +740,35 @@ table {
       font-size: 0.75rem;
       color: white; }
 
-.g-recaptcha{max-width: 100%;}
+/* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .body {
+    width: 100%;
+    /* height: 100vh; */
+    /* display: grid;
+            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+
+/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
+/* Media query para dispositivos entre 769px y 1200px - Tablet */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .body {
+    width: 100%;
+    /* height: 100vh; */
+    /* display: grid;
+            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+
+/* ------------ navegacion ------------ */
+/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
+/* Media query para dispositivos mayores a 1201px - Desktop */
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  .body {
+    width: 100%;
+    /* height: 100vh; */
+    /* display: grid;
+            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
