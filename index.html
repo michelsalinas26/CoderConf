@@ -312,13 +312,21 @@
         </div>
 
         <form class="sixPage-form" action="">
-            <input class="sixPage-form-input" type="text" placeholder="Nombre">
-            <input class="sixPage-form-input" type="text" placeholder="Apellido">
-            <input class="sixPage-form-input" type="text" placeholder="Celular">
-            <input class="sixPage-form-input" type="email" placeholder="Email">
-            <input class="sixPage-form-input" type="text" placeholder="País">
-            <select class="sixPage-form-input" name="ocupacion" id="ocupacion">
-                <option selected disabled>¿Sos parte de Coder?</option>
+            <label for="name" class="sixPage-form-label">Nombres</label>
+            <input class="sixPage-form-input" type="text" placeholder="Nombre" name="nombre">
+            <label for="apellido" class="sixPage-form-label">Apellidos</label>
+            <input class="sixPage-form-input" type="text" placeholder="Apellido" name="apellido">
+            <label for="celular" class="sixPage-form-label">Celular</label>
+            <input class="sixPage-form-input" type="text" placeholder="Celular" name="celular">
+            <label for="email" class="sixPage-form-label">Email</label>
+            <input class="sixPage-form-input" type="email" placeholder="Email" name="email">
+            <label for="email2" class="sixPage-form-label">Confirmar tu Email</label>
+            <input class="sixPage-form-input" type="email" placeholder="Confirmar tu Email" name="email2">
+            <label for="pais" class="sixPage-form-label">País</label>
+            <input class="sixPage-form-input" type="text" placeholder="País" name="pais">
+            <label for="select" class="sixPage-form-label">¿Sos parte de Coder'</label>
+            <select class="sixPage-form-input" name="ocupacion" id="ocupacion" name="select">
+                <option selected disabled>Selecciona</option>
                 <option class="eightPage-option" value="estudiante">Estudiante</option>
                 <option class="eightPage-option" value="graduado">Graduado</option>
                 <option class="eightPage-option" value="tutor">Tutor</option>
@@ -329,6 +337,9 @@
                 <input class="sixPage-form-btn" type="submit" value="Solicitar Inscripción">
             </div>
         </form>
+        <div>
+            <img src="./images/imgSixpageMobile.png" alt="Imagen de astronauta">
+        </div>
     </section>
     <!-- Séptima página (Sponsors) -->
     <section class="sevenPage" id="sponsors">
@@ -336,9 +347,9 @@
             <h2 class="sevenPage-sponsors-h2">SPONSORS</h2>
         </div>
         <div class="sevenPage-imgSponsors">
-            <img src="./images/Logo-ML.png" alt="Logo de Mercado libre">
-            <img src="./images/Logo-Google.png" alt="Logo de google">
-            <img src="./images/Logo-TiendaNube.png" alt="Tienda de nube">
+            <div class="sevenPage-imgSponsors-div"><img src="./images/Logo-ML.png" alt="Logo de Mercado libre" class="sevenPage-imgSponsors-div-img"></div>
+            <div class="sevenPage-imgSponsors-div"><img src="./images/Logo-Google.png" alt="Logo de google" class="sevenPage-imgSponsors-div-img"></div>
+            <div class="sevenPage-imgSponsors-div"><img src="./images/Logo-TiendaNube.png" alt="Tienda de nube" class="sevenPage-imgSponsors-div-img"></div>
         </div>
     </section>
     <!-- Octava página (Form para ser sponsor) -->
@@ -349,8 +360,11 @@
         </div>
         <div class="eightpage-div-form">
             <form action="#" class="form">
+                <label for="nombre" class="eightpage-div-form-label">Nombre</label>
                 <input type="text" class="input" name="nombre" id="" placeholder="Nombre y Apellido">
+                <label for="email" class="eightpage-div-form-label">Email</label>
                 <input type="email" class="input" name="email" id="" placeholder="Email">
+                <label for="celular" class="eightpage-div-form-label">Celular</label>
                 <input type="text" class="input" name="celular" id="" placeholder="Celular">
                 <div>
                     <input class="btn" type="submit" value="Enviar Solicitud">

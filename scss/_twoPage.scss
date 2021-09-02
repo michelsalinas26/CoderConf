@@ -8,21 +8,23 @@
     display: flex;
     flex-direction: column;
     .twoPage-imagen {
-        height: 60%;
+        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         .twoPage-imagen-flechas {
-            padding: 0rem 0.625rem;
+            display: none;
+            /* padding: 0rem 0.625rem; */
         }
         .twoPage-imagen-logo {
+            width: 80%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
         }
     }
     .twoPage-texto {
-        height: 40%;
+        height: 50%;
         padding: 1rem;
         display: flex;
         flex-direction: column;
