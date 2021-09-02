@@ -23,6 +23,8 @@ function speakerRender(speakers){
 }   
 
 function clockRender(id,tic){
-    const divClock = document.getElementById(id);  
-    divClock.innerHTML = clockUI(tic);
+    document.querySelector('#clockDay').innerHTML = tic.days;
+    document.querySelector('#clockHours').innerHTML = tic.hours;
+    document.querySelector('#clockMinutes').innerHTML = tic.minutes;
+    document.querySelector('#clockSeconds').innerHTML = tic.seconds;
 }

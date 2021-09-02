@@ -43,6 +43,7 @@ function sendData(url,clave,data){
     const app = initializeApp(appconfig);
     const db = getDatabase();
     set(ref(db, url+clave), data).then(()=>{
+        submitState(true);
         if(url === POSTPARTICIPANTES){
             inscripcionUI(data.email);
         }else{

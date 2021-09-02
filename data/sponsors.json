@@ -27,12 +27,13 @@
         
     },
     {
-        "apellido": "Papaga",
-        "nombre": "Chongolo",
-        "email": "papa@lala.com",
-        "celular": "0200000006",
-        "empresa": "Play Music",
-        "logo": "images/Logo-ML.png"
+        "apellido": "Panchakes",
+        "nombre": "Brad",
+        "email": "popoa@lala.com",
+        "celular": "00003333",
+        "empresa": "Tienda Nube",
+        "logo": "images/Logo-TiendaNube.png"
         
     }
+
 ]

@@ -42,5 +42,16 @@
         "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1602012735/Agustin_Linenberg_kwv7ky_loqjuz.jpg",
         "contacto": "www.agus.com",
         "descripcion": "Aerolab"
+    },
+    {
+        "apellido": "GALANTERNIKS",
+        "nombre": "SEBASTÍAN",
+        "empresa": "TRAFILEA",
+        "posicion": "CEO",
+        "charla": "Quiero ser consultor SEO. Por dónde empiezo?",
+        "horario": "18:00",
+        "avatar": "images/invitado.png",
+        "contacto": "www.sebas.com",
+        "descripcion": "Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales."
     }
 ]

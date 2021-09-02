@@ -1,10 +1,17 @@
 function agendaUI(speaker){
     return `<div class="fivePage-divGral-agenda">
-        <h2 class="fivePage-divGral-agenda-h2">${speaker.horario}</h2>
-        <h3 class="fivePage-divGral-agenda-h3">${speaker.nombre} ${speaker.apellido}</h3>
-        <h4 class="fivePage-divGral-agenda-h4">${speaker.posicion} EN ${speaker.empresa}</h4>
-        <p class="fivePage-divGral-agenda-p">Charla: ${speaker.charla}</p>
-    </div>`
+    <div class="fivePage-divGral-agenda-divOne">
+        <img src="./images/imagenFlechaAgenda.png" alt="Imagen de flecha - agenda">
+    </div>
+    <div class="fivePage-divGral-agenda-divTwo">
+        <h2 class="fivePage-divGral-agenda-h2 agendaColorGris">${speaker.horario}</h2>
+        <h3 class="fivePage-divGral-agenda-h3 agendaColorGris">${speaker.nombre} ${speaker.apellido}</h3>
+        <h4 class="fivePage-divGral-agenda-h4 agendaColorGris">${speaker.posicion} EN ${speaker.empresa}</h4>
+        <p class="fivePage-divGral-agenda-p agendaColorGris">${speaker.charla}</p>
+    </div>
+</div>`
+
+
 }
 
 function sponsorUI(sponsor) {
@@ -20,13 +27,6 @@ function speakerUI(speaker){
                 <p class="carousel-p">${speaker.empresa}</p>
             </div>
         </div>`
-}
-
-function clockUI(tic){
-    return `${tic.days} d 
-            ${tic.hours} h  
-            ${tic.minutes} m 
-            ${tic.seconds} s`;
 }
 
 function spinnerUI(){
