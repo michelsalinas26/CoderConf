@@ -251,6 +251,34 @@ table {
       .onePage .pageOneArticle .pageOneArticle-divThree .pageOneArticle-divThree-a {
         width: 100%;
         padding: 0.625rem; }
+    .onePage .pageOneArticle .burbujas .burbujas-imgOne {
+      width: 16px;
+      position: absolute;
+      left: 5%;
+      bottom: 40%;
+      animation: burbujaOne 3s linear infinite; }
+
+@keyframes burbujaOne {
+  0% {
+    bottom: 30%; }
+  50% {
+    bottom: 45%; }
+  100% {
+    bottom: 60%; } }
+    .onePage .pageOneArticle .burbujas .burbujas-imgTwo {
+      width: 16px;
+      position: absolute;
+      right: 5%;
+      bottom: 50%;
+      animation: burbujaTwo 3s linear infinite; }
+
+@keyframes burbujaTwo {
+  0% {
+    bottom: 50%; }
+  50% {
+    bottom: 65%; }
+  100% {
+    bottom: 80%; } }
   .onePage .anexo {
     width: 100%;
     height: 30%;
@@ -375,63 +403,16 @@ table {
 .fourPage {
   grid-area: fourPage;
   width: 100%;
-  /* height: 200vh; */
-  height: 1280px;
+  /* height: 175vh; */
+  height: 1120px;
   padding: 1rem 0.312rem;
   background-color: #131313;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* Carousel hecho con bootstrap */
-  /* .fourPage-divCarousel {
-        width: 100%;
-        height: 35%;
-        padding: 0.5rem;
-        .fourPage-divCarousel-divInvit {
-            padding: 0.5rem;
-            .fourPage-divCarousel-divInvit-h2 {
-                font-family: gobold-regular;
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                color: #E0FF00;
-                text-align: center;
-            }
-        }
-        .fourPage-divCarousel-carousel {
-            width: 100%;
-            padding: 0.5rem;
-            .carousel {
-                .carousel-inner {
-                    .carousel-item {
-                        max-width: auto;
-                        padding: 0.5rem;
-                        .carousel-h5 {
-                            font-family: gobold-regular;
-                            text-transform: uppercase;
-                            font-size: 24px;
-                            color: white;
-                            text-align: center;
-                        }
-                        .carousel-h6 {
-                            font-family: helvetica-light;
-                            font-size: 16px;
-                            color: gray;
-                            text-align: center;
-                        }
-                        .carousel-p {
-                            font-family: helvetica-light;
-                            font-size: 20px;
-                            color: yellow;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-    } */ }
+  align-items: center; }
   .fourPage .fourPage-divSpeaker {
     width: 100%;
-    height: 15%;
+    height: 20%;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -520,9 +501,9 @@ table {
         text-align: center; }
   .fourPage .carousel {
     width: 100%;
-    height: 35%; }
+    height: 30%; }
     .fourPage .carousel .carousel-speakerGral {
-      padding: 1rem;
+      padding: 0rem 1rem;
       display: flex;
       overflow-x: scroll; }
       .fourPage .carousel .carousel-speakerGral .carousel-speakerGral-speaker {
@@ -555,7 +536,7 @@ table {
             padding: 5px;
             text-align: center;
             color: #E0FF00;
-            font-family: helvetica-medium;
+            font-family: helvetica-thin;
             font-size: 0.8rem; }
 
 .fivePage {
@@ -800,7 +781,7 @@ table {
         width: 100%;
         margin: 0.5rem 0rem 1rem;
         padding: 0.5rem;
-        border: 1px solid #8215bc;
+        border: 1px solid #8215BC;
         border-radius: 5px; }
       .eightpage .eightpage-div-form .form ::placeholder {
         font-family: helvetica-bold;
@@ -809,10 +790,10 @@ table {
       .eightpage .eightpage-div-form .form .btn {
         margin: 2rem auto;
         padding: 0.8rem 5rem;
-        background-color: #8215bc;
+        background-color: #8215BC;
         border: black 1px solid;
         border-radius: 2rem;
-        color: white; }
+        color: #FFFFFF; }
 
 .footerPage {
   grid-area: footerPage;
