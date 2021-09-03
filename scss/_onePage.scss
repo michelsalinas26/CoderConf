@@ -115,6 +115,44 @@
                 padding: 0.625rem;
             }
         }
+        .burbujas {
+            .burbujas-imgOne {
+                width: 16px;
+                position: absolute;
+                left: 5%;
+                bottom: 40%;
+                animation: burbujaOne 3s linear infinite;
+            }
+            @keyframes burbujaOne {
+                0% {
+                    bottom: 30%;
+                }
+                50% {
+                    bottom: 45%;
+                }
+                100% {
+                    bottom: 60%;
+                }
+            }
+            .burbujas-imgTwo {
+                width: 16px;
+                position: absolute;
+                right: 5%;
+                bottom: 50%;
+                animation: burbujaTwo 3s linear infinite;
+            }
+            @keyframes burbujaTwo {
+                0% {
+                    bottom: 50%;
+                }
+                50% {
+                    bottom: 65%;
+                }
+                100% {
+                    bottom: 80%;
+                }
+            }
+        }
     }
     .anexo {
         width: 100%;
