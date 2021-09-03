@@ -44,17 +44,6 @@
         flex-direction: column;
         align-items: center;
         padding: 0.5rem;
-        .fourPage-divInvitado-div {
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            .fourPage-divInvitado-div-h2 {
-                font-family: gobold-regular;
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                color: yellow;
-            }
-        }
         .fourPage-divInvitado-divDatos {
             width: 100%;
             padding: 0.5rem;
@@ -63,9 +52,7 @@
             justify-content: center;
             align-items: center;
             .fourPage-divInvitado-divDatos-div {
-                /* width: 100%; */
                 .fourPage-divInvitado-divDatos-div-img {
-                    /* width: 100%; */
                     padding: 0.5rem;
                 }
             }

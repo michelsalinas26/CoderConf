@@ -55,13 +55,14 @@
                 border-radius: 5px;
             }
              ::placeholder {
-                font-family: helvetica-bold;
+                font-family: helvetica-light;
                 color: #8215BC;
                 padding-left: 0.8rem;
             }
             .btn {
                 margin: 2rem auto;
                 padding: 0.8rem 5rem;
+                font-family: helvetica-bold;
                 background-color: #8215BC;
                 border: black 1px solid;
                 border-radius: 2rem;

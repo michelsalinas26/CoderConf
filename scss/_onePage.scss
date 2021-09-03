@@ -57,7 +57,7 @@
                 }
                 .enlaceNavbar {
                     display: block;
-                    padding: 0.625rem 0.625rem;
+                    padding: 0.8rem 0.625rem;
                     text-decoration: none;
                     font-family: helvetica-light;
                     color: #F2F2F2;
@@ -121,7 +121,7 @@
                 position: absolute;
                 left: 5%;
                 bottom: 40%;
-                animation: burbujaOne 3s linear infinite;
+                animation: burbujaOne 4s linear infinite;
             }
             @keyframes burbujaOne {
                 0% {
@@ -143,10 +143,10 @@
             }
             @keyframes burbujaTwo {
                 0% {
-                    bottom: 50%;
+                    bottom: 40%;
                 }
                 50% {
-                    bottom: 65%;
+                    bottom: 60%;
                 }
                 100% {
                     bottom: 80%;

@@ -207,7 +207,7 @@ table {
           background: rgba(0, 0, 0, 0.3); }
         .onePage .navegacion .navbar .menu .enlaceNavbar {
           display: block;
-          padding: 0.625rem 0.625rem;
+          padding: 0.8rem 0.625rem;
           text-decoration: none;
           font-family: helvetica-light;
           color: #F2F2F2;
@@ -256,7 +256,7 @@ table {
       position: absolute;
       left: 5%;
       bottom: 40%;
-      animation: burbujaOne 3s linear infinite; }
+      animation: burbujaOne 4s linear infinite; }
 
 @keyframes burbujaOne {
   0% {
@@ -274,9 +274,9 @@ table {
 
 @keyframes burbujaTwo {
   0% {
-    bottom: 50%; }
+    bottom: 40%; }
   50% {
-    bottom: 65%; }
+    bottom: 60%; }
   100% {
     bottom: 80%; } }
   .onePage .anexo {
@@ -442,15 +442,6 @@ table {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem; }
-    .fourPage .fourPage-divInvitado .fourPage-divInvitado-div {
-      padding: 0.5rem;
-      display: flex;
-      justify-content: center; }
-      .fourPage .fourPage-divInvitado .fourPage-divInvitado-div .fourPage-divInvitado-div-h2 {
-        font-family: gobold-regular;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        color: yellow; }
     .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
       width: 100%;
       padding: 0.5rem;
@@ -458,11 +449,8 @@ table {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
-        /* width: 100%; */ }
-        .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
-          /* width: 100%; */
-          padding: 0.5rem; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
+        padding: 0.5rem; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
         display: flex; }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-h2 {
@@ -719,11 +707,13 @@ table {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    /* overflow-x: scroll; */ }
     .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div {
       height: 33%;
-      width: 50%;
+      width: 125px;
       display: flex;
       flex-direction: column;
       justify-content: center; }
@@ -784,12 +774,13 @@ table {
         border: 1px solid #8215BC;
         border-radius: 5px; }
       .eightpage .eightpage-div-form .form ::placeholder {
-        font-family: helvetica-bold;
+        font-family: helvetica-light;
         color: #8215BC;
         padding-left: 0.8rem; }
       .eightpage .eightpage-div-form .form .btn {
         margin: 2rem auto;
         padding: 0.8rem 5rem;
+        font-family: helvetica-bold;
         background-color: #8215BC;
         border: black 1px solid;
         border-radius: 2rem;
