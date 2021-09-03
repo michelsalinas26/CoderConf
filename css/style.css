@@ -929,7 +929,7 @@ table {
 
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos entre 769px y 1200px - Tablet */
-@media screen and (min-width: 768px) and (max-width: 1139px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .body {
     width: 100%;
     /* onePage */ }
@@ -1181,7 +1181,7 @@ table {
 /* ------------ navegacion ------------ */
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos mayores a 1201px - Desktop */
-@media screen and (min-width: 1140px) and (max-width: 2400px) {
+@media screen and (min-width: 1024px) and (max-width: 2400px) {
   .body {
     width: 100%;
     /* onePage */ }
@@ -1193,8 +1193,11 @@ table {
       background-size: cover; }
       .body .onePage .navegacion {
         height: 10%; }
-        .body .onePage .navegacion .logo > h1 {
+        .body .onePage .navegacion .logo .eje {
           padding: 10px; }
+          .body .onePage .navegacion .logo .eje img {
+            width: 110px;
+            height: 35px; }
         .body .onePage .navegacion .navbar {
           display: flex;
           flex-direction: row;
@@ -1210,7 +1213,7 @@ table {
               justify-content: space-between; }
             .body .onePage .navegacion .navbar .menu .enlaceNavbar {
               padding: 0.5rem;
-              font-size: 1.0rem; }
+              font-size: 1.2rem; }
       .body .onePage .pageOneArticle {
         width: 40%;
         height: 70%;
@@ -1219,11 +1222,11 @@ table {
           width: 90%;
           padding: 0rem 1rem; }
           .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
-            font-size: 1.5rem;
-            line-height: 3rem;
+            font-size: 2.5rem;
+            line-height: 4rem;
             text-align: start; }
           .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2b {
-            font-size: 2.5rem; }
+            font-size: 3.5rem; }
         .body .onePage .pageOneArticle .pageOneArticle-divTwo {
           width: 90%;
           display: flex;
@@ -1232,7 +1235,8 @@ table {
           justify-content: flex-start; }
           .body .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
             padding: 0.5rem;
-            text-align: start; }
+            text-align: start;
+            font-size: 1.2rem; }
         .body .onePage .pageOneArticle .burbujas .burbujas-imgOne {
           left: 50%; }
       .body .onePage .anexo {
@@ -1299,12 +1303,12 @@ table {
         display: flex;
         flex-direction: column; }
         .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
-          width: 260px;
-          height: 62px; }
+          width: 300px;
+          height: 80px; }
         .body .twoPage .twoPage-texto .twoPage-texto-p {
           text-align: start;
-          font-size: 19px;
-          line-height: 24px; }
+          font-size: 21px;
+          line-height: 25px; }
     .body .threePage {
       height: 500px;
       padding: 0.625rem 0rem;
@@ -1341,25 +1345,33 @@ table {
       background-repeat: no-repeat;
       background-size: cover; }
       .body .fourPage .fourPage-divSpeaker {
-        width: 50%;
-        height: 30%;
+        width: 65%;
+        height: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h2 {
+          font-size: 3rem; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
+          font-size: 1.6rem; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
+          font-size: 1.3rem;
+          line-height: 1.6rem; }
       .body .fourPage .fourPage-divInvitado {
         height: 35%; }
         .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
           display: flex;
-          flex-direction: row;
-          justify-content: space-around; }
+          flex-direction: row; }
           .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
-            width: 50%; }
+            width: 50%;
+            display: flex;
+            justify-content: center; }
           .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
             width: 50%;
             display: flex;
             flex-direction: column; }
       .body .fourPage .carousel {
-        height: 35%; }
+        height: 40%; }
     .body .fivePage .fivePage-divGral {
       width: 100%;
       display: flex;
@@ -1381,24 +1393,42 @@ table {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
-      .body .sixPage .sixPage-form {
+      .body .sixPage .sixPage-div .sixPage-div-h2 {
+        font-size: 3.5rem; }
+      .body .sixPage .sixPage-div .sixPage-div-h3 {
+        font-size: 2rem; }
+      .body .sixPage .sixPage-div .sixPage-div-p {
+        font-size: 1rem; }
+      .body .sixPage .sixPage-form .sixPage-form-gral {
         display: flex;
-        flex-direction: column; }
-        .body .sixPage .sixPage-form .sixPage-form-gral {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center; }
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 3rem 0rem; }
+        .body .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div {
+          width: 50%; }
+          .body .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .sixPage-form-input {
+            padding: 0.5rem 0.2rem; }
       .body .sixPage .sixPage-divTwo {
         display: none; }
+    .body .sevenPage .sevenPage-sponsors .sevenPage-sponsors-h2 {
+      font-size: 4rem; }
     .body .sevenPage .sevenPage-imgSponsors {
       flex-direction: row; }
       .body .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div {
         width: 33%;
         height: 125px;
-        padding: 16px; }
+        padding: 10px 20px; }
+        .body .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div .sevenPage-imgSponsors-div-img {
+          width: 250px;
+          height: 250px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          padding-left: 3rem; }
     .body .eightpage .eightpage-div-title {
       padding: 2rem; }
+    .body .eightpage .eightpage-div-form .form .eightpage-div-form-label {
+      padding-left: 20px; }
     .body .footerPage {
       height: 250px;
       grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
