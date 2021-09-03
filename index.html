@@ -91,9 +91,9 @@
     <!-- Segunda página (Conferecia + logo astronauta) -->
     <section class="twoPage">
         <div class="twoPage-imagen">
-            <img src="./images/flechasVioletas.png" alt="imagen flechas" class="twoPage-imagen-flechas">
+            <img src="./images/flechasVioletas.png" alt="imagen flechas" class="twoPage-imagen-flechas twoPageFlechaOne">
             <img src="./images/imagenPageTwo-mobile.png" alt="imagen satelite" class="twoPage-imagen-logo">
-            <img src="./images/flechasVioletasTrans.png" alt="imagen flechas" class="twoPage-imagen-flechas">
+            <img src="./images/flechasVioletasTrans.png" alt="imagen flechas" class="twoPage-imagen-flechas twoPageFlechaTwo">
         </div>
         <div class="twoPage-texto">
             <h2 class="twoPage-texto-h2"><img src="./images/coderconfNegroPageTwo.png" alt="logo coderconf"></h2>
@@ -131,13 +131,15 @@
                     <img src="./images/invitado.png" alt="Foto del invitado especial" class="fourPage-divInvitado-divDatos-div-img">
                 </div>
                 <div class="fourPage-divInvitado-divDatos-div2">
-                    <h2 class="fourPage-divInvitado-divDatos-h2">Roger Dimant</h2>
-                    <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="fourPage-divInvitado-divDatos-img">
+                    <div class="fourPage-divInvitado-divDatos-div3">
+                        <h2 class="fourPage-divInvitado-divDatos-h2">Roger Dimant</h2>
+                        <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="fourPage-divInvitado-divDatos-img">
+                    </div>
+                    <h3 class="fourPage-divInvitado-divDatos-h3">COUNTRY MANAGER</h3>
+                    <h4 class="fourPage-divInvitado-divDatos-h4">TIENDA MIA</h4>
+                    <p class="fourPage-divInvitado-divDatos-p">Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales.</p>
+                    <h5 class="fourPage-divInvitado-divDatos-h5">www.rogerdimant.com</h5>
                 </div>
-                <h3 class="fourPage-divInvitado-divDatos-h3">COUNTRY MANAGER</h3>
-                <h4 class="fourPage-divInvitado-divDatos-h4">TIENDA MIA</h4>
-                <p class="fourPage-divInvitado-divDatos-p">Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales.</p>
-                <h5 class="fourPage-divInvitado-divDatos-h5">www.rogerdimant.com</h5>
             </div>
         </div>
         <div class="carousel">
@@ -276,7 +278,7 @@
                         <h2 class="fivePage-divGral-agenda-h2 agendaColorGris">11:00 HS</h2>
                         <h3 class="fivePage-divGral-agenda-h3 agendaColorGris">SEBASTÍAN GALANTERNIK</h3>
                         <h4 class="fivePage-divGral-agenda-h4 agendaColorGris">CEO EN TRAFILEA</h4>
-                        <p class="fivePage-divGral-agenda-p agendaColorGris">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+                        <p class="fivePage-divGral-agenda-p agendaColorGris">Charla: Quiero ser consultor SEO. Por dónde empiezo? </p>
                     </div>
                 </div>
                 <div class="fivePage-divGral-agenda">
@@ -380,28 +382,40 @@
         </div>
 
         <form class="sixPage-form" action="">
-            <label for="name" class="sixPage-form-label">Nombres</label>
-            <input class="sixPage-form-input" type="text" placeholder="Nombre" name="nombre">
-            <label for="apellido" class="sixPage-form-label">Apellidos</label>
-            <input class="sixPage-form-input" type="text" placeholder="Apellido" name="apellido">
-            <label for="celular" class="sixPage-form-label">Celular</label>
-            <input class="sixPage-form-input" type="number" placeholder="Celular" name="celular">
-            <label for="email" class="sixPage-form-label">Email</label>
-            <input class="sixPage-form-input" type="email" placeholder="Email" name="email">
-            <label for="email2" class="sixPage-form-label">Confirmar tu Email</label>
-            <input class="sixPage-form-input" type="email" placeholder="Confirmar tu Email" name="email2">
-            <label for="pais" class="sixPage-form-label">País</label>
-            <input class="sixPage-form-input" type="text" placeholder="País" name="pais">
-            <label for="select" class="sixPage-form-label">¿Sos parte de Coder'</label>
-            <select class="sixPage-form-input" name="ocupacion" id="ocupacion" name="select">
-                <option selected disabled>Selecciona</option>
-                <option class="eightPage-option" value="estudiante">Estudiante</option>
-                <option class="eightPage-option" value="graduado">Graduado</option>
-                <option class="eightPage-option" value="tutor">Tutor</option>
-                <option class="eightPage-option" value="profesor">Profesor</option>
-                <option class="eightPage-option" value="no">No</option>
-            </select>
-            <div>
+            <div class="sixPage-form-gral">
+                <div class="sixPage-form-gral-div">
+                    <label for="name" class="sixPage-form-label">Nombres</label>
+                    <input class="sixPage-form-input" type="text" placeholder="Nombre" name="nombre">
+                </div class="sixPage-form-gral-div">
+                <div class="sixPage-form-gral-div">
+                    <label for="celular" class="sixPage-form-label">Celular</label>
+                    <input class="sixPage-form-input" type="number" placeholder="Celular" name="celular">
+                </div>
+                <div class="sixPage-form-gral-div">
+                    <label for="email" class="sixPage-form-label">Email</label>
+                    <input class="sixPage-form-input" type="email" placeholder="Email" name="email">
+                </div>
+                <div class="sixPage-form-gral-div">
+                    <label for="email2" class="sixPage-form-label">Confirmar tu Email</label>
+                    <input class="sixPage-form-input" type="email" placeholder="Confirmar tu Email" name="email2">
+                </div>
+                <div class="sixPage-form-gral-div">
+                    <label for="pais" class="sixPage-form-label">País</label>
+                    <input class="sixPage-form-input" type="text" placeholder="País" name="pais">
+                </div>
+                <div class="sixPage-form-gral-div">
+                    <label for="select" class="sixPage-form-label">¿Sos parte de Coder'</label>
+                    <select class="sixPage-form-input" name="ocupacion" id="ocupacion" name="select">
+                        <option selected disabled>Selecciona</option>
+                        <option class="eightPage-option" value="estudiante">Estudiante</option>
+                        <option class="eightPage-option" value="graduado">Graduado</option>
+                        <option class="eightPage-option" value="tutor">Tutor</option>
+                        <option class="eightPage-option" value="profesor">Profesor</option>
+                        <option class="eightPage-option" value="no">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="sixPage-form-gral-btn">
                 <input class="sixPage-form-btn" type="submit" value="Solicitar Inscripción">
             </div>
         </form>
