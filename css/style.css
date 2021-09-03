@@ -817,7 +817,6 @@ table {
       .eightpage .eightpage-div-form .form .eightpage-div-form-label {
         width: 90%;
         max-width: 400px;
-        padding-left: 20px;
         color: #131313;
         font-family: helvetica-medium; }
       .eightpage .eightpage-div-form .form .input {
@@ -1090,25 +1089,33 @@ table {
       background-repeat: no-repeat;
       background-size: cover; }
       .body .fourPage .fourPage-divSpeaker {
-        width: 50%;
-        height: 30%;
+        width: 65%;
+        height: 25%;
         display: flex;
         flex-direction: column;
         justify-content: center; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h2 {
+          font-size: 3rem; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
+          font-size: 1.6rem; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
+          font-size: 1.3rem;
+          line-height: 1.6rem; }
       .body .fourPage .fourPage-divInvitado {
         height: 35%; }
         .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
           display: flex;
-          flex-direction: row;
-          justify-content: space-around; }
+          flex-direction: row; }
           .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
-            width: 50%; }
+            width: 50%;
+            display: flex;
+            justify-content: center; }
           .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
             width: 50%;
             display: flex;
             flex-direction: column; }
       .body .fourPage .carousel {
-        height: 35%; }
+        height: 40%; }
     .body .fivePage .fivePage-divGral {
       width: 100%;
       display: flex;
@@ -1130,14 +1137,21 @@ table {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover; }
-      .body .sixPage .sixPage-form {
+      .body .sixPage .sixPage-div .sixPage-div-h2 {
+        font-size: 3.5rem; }
+      .body .sixPage .sixPage-div .sixPage-div-h3 {
+        font-size: 2rem; }
+      .body .sixPage .sixPage-div .sixPage-div-p {
+        font-size: 1rem; }
+      .body .sixPage .sixPage-form .sixPage-form-gral {
         display: flex;
-        flex-direction: column; }
-        .body .sixPage .sixPage-form .sixPage-form-gral {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center; }
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 3rem 0rem; }
+        .body .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div {
+          width: 50%; }
+          .body .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .sixPage-form-input {
+            padding: 0.5rem 0.2rem; }
       .body .sixPage .sixPage-divTwo {
         display: none; }
     .body .sevenPage .sevenPage-sponsors .sevenPage-sponsors-h2 {
@@ -1156,6 +1170,8 @@ table {
           background-size: contain; }
     .body .eightpage .eightpage-div-title {
       padding: 2rem; }
+    .body .eightpage .eightpage-div-form .form .eightpage-div-form-label {
+      padding-left: 20px; }
     .body .footerPage {
       height: 250px;
       grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
