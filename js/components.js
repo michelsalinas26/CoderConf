@@ -15,7 +15,7 @@ function agendaUI(speaker){
 }
 
 function sponsorUI(sponsor) {
-    return `<img src="${sponsor.logo}" alt="Logo de Mercado libre">`
+    return `<div class="sevenPage-imgSponsors-div"><img src="${sponsor.logo}" alt="Logo de Mercado libre"></img>`
 }
 
 function speakerUI(speaker){

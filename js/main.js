@@ -75,9 +75,8 @@ document.getElementById('formInscripcion').addEventListener('submit',function(e)
     console.log(grecaptcha.getResponse());
     const data = {
         nombre: e.target[0].value,
-        apellido: e.target[1].value,
-        telefono: e.target[2].value,
-        email:e.target[3].value,
+        telefono: e.target[1].value,
+        email:e.target[2].value,
         pais: e.target[4].value,
         esCoder: e.target[5].value
     }
