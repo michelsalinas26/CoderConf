@@ -17,6 +17,10 @@
         .logo {
             padding: 0.625rem;
             width: 50%;
+            .eje>img {
+                width: 90px;
+                height: 26;
+            }
         }
         /* navegación */
         .navbar {
@@ -27,6 +31,7 @@
             flex-direction: column;
             flex-wrap: nowrap;
             align-items: flex-end;
+            text-align: end;
             #btn-menu-checkbox {
                 display: none;
             }
@@ -57,7 +62,7 @@
                 }
                 .enlaceNavbar {
                     display: block;
-                    padding: 0.625rem 0.625rem;
+                    padding: 0.8rem 0.625rem;
                     text-decoration: none;
                     font-family: helvetica-light;
                     color: #F2F2F2;
@@ -82,7 +87,7 @@
             .pageOneArticle-divOne-h2 {
                 font-family: gobold-bold;
                 text-transform: uppercase;
-                font-size: 1.75rem;
+                font-size: 1.70rem;
                 color: #F2F2F2;
                 line-height: 40px;
                 text-align: center;
@@ -113,6 +118,48 @@
             .pageOneArticle-divThree-a {
                 width: 100%;
                 padding: 0.625rem;
+                img {
+                    width: 293px;
+                    height: 52px;
+                }
+            }
+        }
+        .burbujas {
+            .burbujas-imgOne {
+                width: 16px;
+                position: absolute;
+                left: 5%;
+                bottom: 40%;
+                animation: burbujaOne 4s linear infinite;
+            }
+            @keyframes burbujaOne {
+                0% {
+                    bottom: 30%;
+                }
+                50% {
+                    bottom: 45%;
+                }
+                100% {
+                    bottom: 75%;
+                }
+            }
+            .burbujas-imgTwo {
+                width: 16px;
+                position: absolute;
+                right: 5%;
+                bottom: 50%;
+                animation: burbujaTwo 3s linear infinite;
+            }
+            @keyframes burbujaTwo {
+                0% {
+                    bottom: 40%;
+                }
+                50% {
+                    bottom: 60%;
+                }
+                100% {
+                    bottom: 75%;
+                }
             }
         }
     }
@@ -124,6 +171,10 @@
         align-items: center;
         .anexo-divOne {
             padding: 0.625rem 0rem;
+            a>img {
+                width: 293px;
+                height: 52px;
+            }
         }
         .cuentaRegresiva {
             width: 100%;
