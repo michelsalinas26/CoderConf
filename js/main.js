@@ -25,6 +25,7 @@ function generarSpeaker(data){
     agendaRender(ordenados);
     speakerRender(speakers);
     selectedRender(ordenados[0]);
+    setSelected(ordenados[0].identificador);
 }
 
 function generarSponsor(data){

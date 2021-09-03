@@ -34,6 +34,8 @@ function clockRender(id,tic){
 
 function selectedHandler(e){
     const selected = speakers.find(speaker => speaker.identificador == this.id);
+    cleanSelected();
+    setSelected(this.id)
     selectedRender(selected);
 }
 

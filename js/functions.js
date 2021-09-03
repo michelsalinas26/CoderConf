@@ -31,5 +31,15 @@ function enableSubmit(response){
 
 function submitState(state){
     const botones = document.querySelectorAll('input[type="submit"]');
-    botones.forEach(b=> b.disabled = state)
+    botones.forEach(b=> b.disabled = state);
+}
+
+function cleanSelected(){
+    const images = document.querySelectorAll('.rounded-circle');
+    images.forEach(i=> i.classList.remove("selectedAvatar"));
+}
+
+function setSelected(id){
+    const img = document.getElementById(id);
+    img.classList.add("selectedAvatar");
 }

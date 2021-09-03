@@ -54,7 +54,7 @@ function notificacionUI(email){
 function selectedUI(speaker){
     return `<div class="fourPage-divInvitado-divDatos">
                 <div class="fourPage-divInvitado-divDatos-div">
-                    <img src="${speaker.avatar}" alt="Foto del invitado especial" class="fourPage-divInvitado-divDatos-div-img rounded-circle" width="220" height="220">
+                    <img src="${speaker.avatar}" alt="Foto del invitado especial" class="fourPage-divInvitado-divDatos-div-img rounded-circle selectedAvatar" width="220" height="220">
                 </div>
                 <div class="fourPage-divInvitado-divDatos-div2">
                     <h2 class="fourPage-divInvitado-divDatos-h2">${speaker.nombre} ${speaker.apellido}</h2>
