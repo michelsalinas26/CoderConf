@@ -19,14 +19,17 @@ function sponsorUI(sponsor) {
 }
 
 function speakerUI(speaker){
-    return `<div class="carousel-item">
-            <img src="${speaker.avatar}" class="d-block w-100" alt="Foto del speaker">
-            <div class="carousel-caption d-none d-md-block">
-                <h5 class="carousel-h5">${speaker.nombre} ${speaker.apellido}</h5>
-                <h6 class="carousel-h6">${speaker.posicion}</h6>
-                <p class="carousel-p">${speaker.empresa}</p>
+    return `<div class="carousel-speakerGral-speaker">
+            <img src="${speaker.avatar}" class="carousel-speakerGral-speaker-img rounded-circle" width="220" height="220" alt="Foto del speaker" id="${speaker.identificador}">
+            <div class="carousel-speakerGral-speaker-div">
+                <div class="carousel-speakerGral-speaker-div-subdiv">
+                    <h5 class="carousel-speakerGral-speaker-div-h5">${speaker.nombre} ${speaker.apellido}</h5>
+                    <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
+                </div>
+                <h6 class="carousel-speakerGral-speaker-div-h6">${speaker.posicion}</h6>
+                <p class="carousel-speakerGral-speaker-div-p">${speaker.empresa}</p>
             </div>
-        </div>`
+            </div>`
 }
 
 function spinnerUI(){
@@ -48,4 +51,18 @@ function notificacionUI(email){
     document.querySelector('.eightpage-div-form').remove();
 }
 
-
+function selectedUI(speaker){
+    return `<div class="fourPage-divInvitado-divDatos">
+                <div class="fourPage-divInvitado-divDatos-div">
+                    <img src="${speaker.avatar}" alt="Foto del invitado especial" class="fourPage-divInvitado-divDatos-div-img rounded-circle" width="220" height="220">
+                </div>
+                <div class="fourPage-divInvitado-divDatos-div2">
+                    <h2 class="fourPage-divInvitado-divDatos-h2">${speaker.nombre} ${speaker.apellido}</h2>
+                    <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="fourPage-divInvitado-divDatos-img">
+                </div>
+                <h3 class="fourPage-divInvitado-divDatos-h3">${speaker.posicion}</h3>
+                <h4 class="fourPage-divInvitado-divDatos-h4">${speaker.empresa}</h4>
+                <p class="fourPage-divInvitado-divDatos-p">${speaker.descripcion}</p>
+                <h5 class="fourPage-divInvitado-divDatos-h5">${speaker.contacto}</h5>
+            </div>`
+}

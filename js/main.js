@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.1/firebase
 import { getDatabase, ref,set} from "https://www.gstatic.com/firebasejs/9.0.1/firebase-database.js";
 //------------------------------- GENERADORES-------------------------------
 function generarSpeaker(data){
-    for (const objeto of data) {
+    data.forEach((objeto, index) => {
         speakers.push(new Speaker(
             objeto.apellido,
             objeto.nombre,
@@ -12,9 +12,10 @@ function generarSpeaker(data){
             objeto.horario,
             objeto.avatar,
             objeto.contacto,
-            objeto.descripcion
+            objeto.descripcion,
+            'speaker'+index
         ));
-    }
+    });
     const ordenados = speakers.sort(function(a,b){
         if (a.horario > b.horario) return 1;
         if (a.horario < b.horario) return -1;
@@ -22,7 +23,8 @@ function generarSpeaker(data){
     })
 
     agendaRender(ordenados);
-    //speakerRender(speakers);
+    speakerRender(speakers);
+    selectedRender(ordenados[0]);
 }
 
 function generarSponsor(data){

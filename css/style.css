@@ -175,6 +175,9 @@ table {
     .onePage .navegacion .logo {
       padding: 0.625rem;
       width: 50%; }
+      .onePage .navegacion .logo .eje > img {
+        width: 90px;
+        height: 26; }
     .onePage .navegacion .navbar {
       margin: 0%;
       padding: 0%;
@@ -182,7 +185,8 @@ table {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      align-items: flex-end; }
+      align-items: flex-end;
+      text-align: end; }
       .onePage .navegacion .navbar #btn-menu-checkbox {
         display: none; }
       .onePage .navegacion .navbar .btn-menu {
@@ -207,7 +211,7 @@ table {
           background: rgba(0, 0, 0, 0.3); }
         .onePage .navegacion .navbar .menu .enlaceNavbar {
           display: block;
-          padding: 0.625rem 0.625rem;
+          padding: 0.8rem 0.625rem;
           text-decoration: none;
           font-family: helvetica-light;
           color: #F2F2F2;
@@ -225,7 +229,7 @@ table {
     .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
-      font-size: 1.75rem;
+      font-size: 1.70rem;
       color: #F2F2F2;
       line-height: 40px;
       text-align: center; }
@@ -251,12 +255,15 @@ table {
       .onePage .pageOneArticle .pageOneArticle-divThree .pageOneArticle-divThree-a {
         width: 100%;
         padding: 0.625rem; }
+        .onePage .pageOneArticle .pageOneArticle-divThree .pageOneArticle-divThree-a img {
+          width: 293px;
+          height: 52px; }
     .onePage .pageOneArticle .burbujas .burbujas-imgOne {
       width: 16px;
       position: absolute;
       left: 5%;
       bottom: 40%;
-      animation: burbujaOne 3s linear infinite; }
+      animation: burbujaOne 4s linear infinite; }
 
 @keyframes burbujaOne {
   0% {
@@ -264,7 +271,7 @@ table {
   50% {
     bottom: 45%; }
   100% {
-    bottom: 60%; } }
+    bottom: 75%; } }
     .onePage .pageOneArticle .burbujas .burbujas-imgTwo {
       width: 16px;
       position: absolute;
@@ -274,11 +281,11 @@ table {
 
 @keyframes burbujaTwo {
   0% {
-    bottom: 50%; }
+    bottom: 40%; }
   50% {
-    bottom: 65%; }
+    bottom: 60%; }
   100% {
-    bottom: 80%; } }
+    bottom: 75%; } }
   .onePage .anexo {
     width: 100%;
     height: 30%;
@@ -287,6 +294,9 @@ table {
     align-items: center; }
     .onePage .anexo .anexo-divOne {
       padding: 0.625rem 0rem; }
+      .onePage .anexo .anexo-divOne a > img {
+        width: 293px;
+        height: 52px; }
     .onePage .anexo .cuentaRegresiva {
       width: 100%;
       display: flex;
@@ -345,7 +355,9 @@ table {
     .twoPage .twoPage-imagen .twoPage-imagen-logo {
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      width: 250px;
+      height: 180px; }
   .twoPage .twoPage-texto {
     height: 50%;
     padding: 1.5rem;
@@ -357,6 +369,9 @@ table {
       padding: 1rem;
       text-align: center;
       font-size: 1rem; }
+      .twoPage .twoPage-texto .twoPage-texto-h2 img {
+        width: 200px;
+        height: 50px; }
     .twoPage .twoPage-texto .twoPage-texto-p {
       font-family: helvetica-medium;
       padding: 1.5rem;
@@ -366,6 +381,7 @@ table {
 
 .threePage {
   grid-area: threePage;
+  margin: 0px;
   width: 100%;
   /* height: 130vh; */
   height: 832px;
@@ -377,6 +393,12 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end; }
+    .threePage .threePage-logo .threePage-logo-h2 {
+      font-family: gobold-bold;
+      text-transform: uppercase;
+      font-size: 3rem;
+      text-align: center;
+      color: #8215bc; }
     .threePage .threePage-logo .threePage-logo-h3 {
       padding: 0.312rem;
       font-family: gobold-bold;
@@ -386,16 +408,17 @@ table {
       line-height: 2.5rem; }
     .threePage .threePage-logo .threePage-logo-h4 {
       padding: 5px;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-family: helvetica-medium;
       text-align: center;
       line-height: 20px; }
   .threePage .threePage-imagen {
-    width: 100%;
+    /* width: 100%; */
     height: 40%;
     display: flex;
     justify-content: center; }
     .threePage .threePage-imagen .threePage-imagen-img {
+      width: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -425,7 +448,7 @@ table {
       padding: 0.5rem; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
       font-family: helvetica-bold;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: white;
       padding: 0.5rem; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
@@ -442,15 +465,6 @@ table {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem; }
-    .fourPage .fourPage-divInvitado .fourPage-divInvitado-div {
-      padding: 0.5rem;
-      display: flex;
-      justify-content: center; }
-      .fourPage .fourPage-divInvitado .fourPage-divInvitado-div .fourPage-divInvitado-div-h2 {
-        font-family: gobold-regular;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        color: yellow; }
     .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
       width: 100%;
       padding: 0.5rem;
@@ -458,36 +472,35 @@ table {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
-        /* width: 100%; */ }
-        .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
-          /* width: 100%; */
-          padding: 0.5rem; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
+        padding: 0.5rem; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
         display: flex; }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-h2 {
           font-family: gobold-bold;
           text-transform: uppercase;
-          padding: 0.5rem;
+          padding: 0.5rem 0.5rem 0.5rem 3rem;
           font-size: 1.5rem;
           color: white;
           text-align: center; }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-img {
+          width: 40px;
+          height: 40px;
           padding: 0.5rem; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h3 {
         font-family: helvetica-light;
         padding: 0.312rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: gray;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h4 {
         font-family: helvetica-thin;
         padding: 0.312rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: #E0FF00;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-p {
-        font-family: helvetica-thin;
+        font-family: helvetica-light;
         padding: 0.312rem;
         font-size: 1rem;
         line-height: 1.2rem;
@@ -520,11 +533,15 @@ table {
             justify-content: center;
             align-items: center; }
             .fourPage .carousel .carousel-speakerGral .carousel-speakerGral-speaker .carousel-speakerGral-speaker-div .carousel-speakerGral-speaker-div-subdiv .carousel-speakerGral-speaker-div-h5 {
+              padding-left: 2rem;
+              padding-right: 0.5rem;
               text-align: center;
               color: #FFFFFF;
               font-family: gobold-regular;
               font-size: 1rem; }
             .fourPage .carousel .carousel-speakerGral .carousel-speakerGral-speaker .carousel-speakerGral-speaker-div .carousel-speakerGral-speaker-div-subdiv .carousel-speakerGral-speaker-div-img {
+              width: 35px;
+              height: 25px;
               padding: 0px 5px; }
           .fourPage .carousel .carousel-speakerGral .carousel-speakerGral-speaker .carousel-speakerGral-speaker-div .carousel-speakerGral-speaker-div-h6 {
             padding: 5px;
@@ -617,8 +634,8 @@ table {
           color: #8215BC; }
         .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-p {
           padding: 0rem 0.5rem 0.5rem 0.5rem;
-          font-family: helvetica-regular;
-          font-size: 1rem;
+          font-family: helvetica-medium;
+          font-size: 0.8rem;
           color: #505050; }
 
 .sixPage {
@@ -654,11 +671,11 @@ table {
       line-height: 3rem; }
     .sixPage .sixPage-div .sixPage-div-p {
       padding: 5px;
-      font-family: helvetica-regular;
+      font-family: helvetica-medium;
       color: #FFFFFF;
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-align: center;
-      line-height: 1.5rem; }
+      line-height: 1rem; }
   .sixPage .sixPage-form {
     width: 100%;
     height: 70%;
@@ -677,7 +694,7 @@ table {
       padding: 0.5rem;
       border: 1px solid #E4FF22;
       border-radius: 5px;
-      background-color: black;
+      background-color: #131313;
       color: #707070;
       font-family: helvetica-light; }
     .sixPage .sixPage-form ::placeholder {
@@ -694,6 +711,9 @@ table {
       border-radius: 50px;
       color: black;
       font-family: helvetica-medium; }
+  .sixPage .sixPage-divTwo .sixPage-divTwo-img {
+    width: 300px;
+    height: 300px; }
 
 .sevenPage {
   grid-area: sevenPage;
@@ -719,11 +739,13 @@ table {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    /* overflow-x: scroll; */ }
     .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div {
       height: 33%;
-      width: 50%;
+      width: 125px;
       display: flex;
       flex-direction: column;
       justify-content: center; }
@@ -784,14 +806,14 @@ table {
         border: 1px solid #8215BC;
         border-radius: 5px; }
       .eightpage .eightpage-div-form .form ::placeholder {
-        font-family: helvetica-bold;
+        font-family: helvetica-light;
         color: #8215BC;
         padding-left: 0.8rem; }
       .eightpage .eightpage-div-form .form .btn {
         margin: 2rem auto;
         padding: 0.8rem 5rem;
+        font-family: helvetica-bold;
         background-color: #8215BC;
-        border: black 1px solid;
         border-radius: 2rem;
         color: #FFFFFF; }
 
@@ -811,6 +833,9 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .footerPage .footerPage-coderconf .footerPage-h2 > img {
+      width: 85px;
+      height: 20px; }
     .footerPage .footerPage-coderconf .footerPage-div {
       padding: 0.5rem; }
       .footerPage .footerPage-coderconf .footerPage-div .footerPage-div-ul {
@@ -830,6 +855,9 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .footerPage .footerPage-coderhouse .footerPage-h2 .footerPage-h2-img {
+      width: 85px;
+      height: 20px; }
     .footerPage .footerPage-coderhouse .footerPage-div {
       padding: 0.5rem; }
       .footerPage .footerPage-coderhouse .footerPage-div .footerPage-div-ul {
@@ -857,6 +885,10 @@ table {
       padding: 0.5rem; }
     .footerPage .footerPage-redesSociales .footerPage-redesSociales-div {
       padding: 0.5rem; }
+      .footerPage .footerPage-redesSociales .footerPage-redesSociales-div .footerPage-logoRedes {
+        padding: 2px;
+        width: 20px;
+        height: 20px; }
   .footerPage .footerPage-copyright {
     grid-area: footerPage-copyright;
     display: flex;

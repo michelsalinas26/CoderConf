@@ -96,21 +96,23 @@
             <img src="./images/flechasVioletasTrans.png" alt="imagen flechas" class="twoPage-imagen-flechas">
         </div>
         <div class="twoPage-texto">
-            <h2 class="twoPage-texto-h2"><img src="./images/coderconfNegro.png" alt="logo coderconf"></h2>
+            <h2 class="twoPage-texto-h2"><img src="./images/coderconfNegroPageTwo.png" alt="logo coderconf"></h2>
             <p class="twoPage-texto-p">Reúne en un mismo evento, a expertos del mundo digital y reconocidos de las empresas mejor posicionadas en el mercado laboral.</p>
         </div>
     </section>
     <!-- Tercera página (speaker + conferncia + logo) -->
     <section class="threePage">
         <div class="threePage-logo">
-            <h2 class="threePage-logo-h2"><img src="./images/+15Violeta.png" alt="Logo +15"></h2>
+            <h2 class="threePage-logo-h2">
+                <!-- <img src="./images/+15Violeta.png" alt="Logo +15"> -->+15</h2>
             <h3 class="threePage-logo-h3">SPEAKERS <br> RECONOCIDOS</h3>
-            <h4 class="threePage-logo-h4">BIGBOX / UALA / MERCADOLIBRE / TIENDA MIA / FACEBOOK / GALICIA</h4>
+            <h4 class="threePage-logo-h4">BIGBOX / UALA / MERCADOLIBRE <br> TIENDA MIA / FACEBOOK / GALICIA</h4>
         </div>
         <div class="threePage-logo">
-            <h2 class="threePage-logo-h2"><img src="./images/+12Violeta.png" alt="Logo +12"></h2>
+            <h2 class="threePage-logo-h2">
+                <!-- <img src="./images/+12Violeta.png" alt="Logo +12"> -->+12</h2>
             <h3 class="threePage-logo-h3">CONFERENCIAS</h3>
-            <h4 class="threePage-logo-h4">SOBRE MARKETING, DISEÑO, DESARROLLO, PRODUCTO, SUSTENTABILIDAD Y MÁS</h4>
+            <h4 class="threePage-logo-h4">SOBRE MARKETING, DISEÑO, <br> DESARROLLO, PRODUCTO, <br> SUSTENTABILIDAD Y MÁS</h4>
         </div>
         <div class="threePage-imagen">
             <img src="./images/autoEspacialMobile.png" class="threePage-imagen-img" alt="Imagen de auto espacial">
@@ -123,10 +125,7 @@
             <h3 class="fourPage-divSpeaker-h3">Preparados para el futuro</h3>
             <p class="fourPage-divSpeaker-p">Invitados de alto valor expondrán sus experiencias y sus temas de investigación. Conocé a nuestros invitados 2021.</p>
         </div>
-        <div class="fourPage-divInvitado">
-            <div class="fourPage-divInvitado-div">
-                <h2 class="fourPage-divInvitado-div-h2">INVITADO ESPECIAL</h2>
-            </div>
+        <div class="fourPage-divInvitado" id="selectSpeaker">
             <div class="fourPage-divInvitado-divDatos">
                 <div class="fourPage-divInvitado-divDatos-div">
                     <img src="./images/invitado.png" alt="Foto del invitado especial" class="fourPage-divInvitado-divDatos-div-img">
@@ -135,128 +134,127 @@
                     <h2 class="fourPage-divInvitado-divDatos-h2">Roger Dimant</h2>
                     <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="fourPage-divInvitado-divDatos-img">
                 </div>
-                <h3 class="fourPage-divInvitado-divDatos-h3">Country Manager</h3>
-                <h4 class="fourPage-divInvitado-divDatos-h4">MERCADO LIBRE</h4>
+                <h3 class="fourPage-divInvitado-divDatos-h3">COUNTRY MANAGER</h3>
+                <h4 class="fourPage-divInvitado-divDatos-h4">TIENDA MIA</h4>
                 <p class="fourPage-divInvitado-divDatos-p">Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales.</p>
                 <h5 class="fourPage-divInvitado-divDatos-h5">www.rogerdimant.com</h5>
             </div>
         </div>
-        <!-- <div class="fourPage-divCarousel">
-            <div class="fourPage-divCarousel-divInvit">
-                <h2 class="fourPage-divCarousel-divInvit-h2">INVITADOS</h2>
-            </div>
-            <div class="fourPage-divCarousel-carousel">
-                Carousel hecho con bootstrap
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner" id="listaSpeaker">
-                        <div class="carousel-item active">
-                            <img src="./images/invitado.png" class="d-block w-100" alt="Foto del speaker">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class="carousel-h5">Franco Henandez</h5>
-                                <h6 class="carousel-h6">UX Manager</h6>
-                                <p class="carousel-p">MERCADO PAGO</p>
-                            </div>
+        <div class="carousel">
+            <div class="carousel-speakerGral" id='listaSpeaker'>
+                <div class="carousel-speakerGral-speaker">
+                    <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
+                    <div class="carousel-speakerGral-speaker-div">
+                        <div class="carousel-speakerGral-speaker-div-subdiv">
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
+                            <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
                         </div>
                         <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
-                        <p class="carousel-speakerGral-speaker-div-p">MERCADO PAGO</p>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
                     </div>
                 </div>
                 <div class="carousel-speakerGral-speaker">
                     <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
                     <div class="carousel-speakerGral-speaker-div">
                         <div class="carousel-speakerGral-speaker-div-subdiv">
-                            <h5 class="carousel-speakerGral-speaker-div-h5">Franco Henandez</h5>
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
                             <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
                         </div>
                         <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
-                        <p class="carousel-speakerGral-speaker-div-p">MERCADO PAGO</p>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
                     </div>
                 </div>
                 <div class="carousel-speakerGral-speaker">
                     <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
                     <div class="carousel-speakerGral-speaker-div">
                         <div class="carousel-speakerGral-speaker-div-subdiv">
-                            <h5 class="carousel-speakerGral-speaker-div-h5">Franco Henandez</h5>
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
                             <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
                         </div>
                         <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
-                        <p class="carousel-speakerGral-speaker-div-p">MERCADO PAGO</p>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
                     </div>
                 </div>
                 <div class="carousel-speakerGral-speaker">
                     <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
                     <div class="carousel-speakerGral-speaker-div">
                         <div class="carousel-speakerGral-speaker-div-subdiv">
-                            <h5 class="carousel-speakerGral-speaker-div-h5">Franco Henandez</h5>
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
                             <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
                         </div>
                         <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
-                        <p class="carousel-speakerGral-speaker-div-p">MERCADO PAGO</p>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
                     </div>
                 </div>
                 <div class="carousel-speakerGral-speaker">
                     <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
                     <div class="carousel-speakerGral-speaker-div">
                         <div class="carousel-speakerGral-speaker-div-subdiv">
-                            <h5 class="carousel-speakerGral-speaker-div-h5">Franco Henandez</h5>
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
                             <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
                         </div>
                         <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
-                        <p class="carousel-speakerGral-speaker-div-p">MERCADO PAGO</p>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
                     </div>
                 </div>
                 <div class="carousel-speakerGral-speaker">
                     <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
                     <div class="carousel-speakerGral-speaker-div">
                         <div class="carousel-speakerGral-speaker-div-subdiv">
-                            <h5 class="carousel-speakerGral-speaker-div-h5">Franco Henandez</h5>
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
                             <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
                         </div>
                         <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
-                        <p class="carousel-speakerGral-speaker-div-p">MERCADO PAGO</p>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
                     </div>
                 </div>
                 <div class="carousel-speakerGral-speaker">
                     <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
                     <div class="carousel-speakerGral-speaker-div">
                         <div class="carousel-speakerGral-speaker-div-subdiv">
-                            <h5 class="carousel-speakerGral-speaker-div-h5">Franco Henandez</h5>
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
                             <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
                         </div>
                         <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
-                        <p class="carousel-speakerGral-speaker-div-p">MERCADO PAGO</p>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
                     </div>
                 </div>
                 <div class="carousel-speakerGral-speaker">
                     <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
                     <div class="carousel-speakerGral-speaker-div">
                         <div class="carousel-speakerGral-speaker-div-subdiv">
-                            <h5 class="carousel-speakerGral-speaker-div-h5">Franco Henandez</h5>
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
                             <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
                         </div>
                         <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
-                        <p class="carousel-speakerGral-speaker-div-p">MERCADO PAGO</p>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
                     </div>
                 </div>
                 <div class="carousel-speakerGral-speaker">
                     <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
                     <div class="carousel-speakerGral-speaker-div">
                         <div class="carousel-speakerGral-speaker-div-subdiv">
-                            <h5 class="carousel-speakerGral-speaker-div-h5">Franco Henandez</h5>
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
                             <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
                         </div>
                         <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
-                        <p class="carousel-speakerGral-speaker-div-p">MERCADO PAGO</p>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
+                    </div>
+                </div>
+                <div class="carousel-speakerGral-speaker">
+                    <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
+                    <div class="carousel-speakerGral-speaker-div">
+                        <div class="carousel-speakerGral-speaker-div-subdiv">
+                            <h5 class="carousel-speakerGral-speaker-div-h5">FRANCO HERNANDEZ</h5>
+                            <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="carousel-speakerGral-speaker-div-img">
+                        </div>
+                        <h6 class="carousel-speakerGral-speaker-div-h6">UX Manager</h6>
+                        <p class="carousel-speakerGral-speaker-div-p">TIENDA MIA</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
     <!-- Quinta página (Agenda) -->
     <section class="fivePage" id="agenda">
         <div class="fivePage-divTitle">
@@ -446,7 +444,7 @@
             </div>
         </div>
         <div class="footerPage-coderhouse">
-            <h2 class="footerPage-h2"><img src="./images/coderhouseBlancoMobile.png" alt="Logo Coderhouse"></h2>
+            <h2 class="footerPage-h2"><img src="./images/coderhouseBlancoMobile.png" alt="Logo Coderhouse" class="footerPage-h2-img"></h2>
             <div class="footerPage-div">
                 <ul class="footerPage-div-ul">
                     <li class="footerPage-div-ul-li"><a href="https://www.coderhouse.com/nosotros">Nosotros</a></li>
@@ -457,7 +455,13 @@
         </div>
         <div class="footerPage-redesSociales">
             <h2 class="footerPage-redesSociales-h2">Seguinos en</h2>
-            <div class="footerPage-redesSociales-div"><img src="./images/redesSociales.png" alt="Redes sociales"></div>
+            <div class="footerPage-redesSociales-div">
+                <a href="#"><img src="./images/facebook.png" alt="Logo de Facebook" class="footerPage-logoRedes"></a>
+                <a href="#"><img src="./images/instagram.png" alt="Logo de Instagram" class="footerPage-logoRedes"></a>
+                <a href="#"><img src="./images/youtube.png" alt="Logo de Youtube" class="footerPage-logoRedes"></a>
+                <a href="#"><img src="./images/twitter.png" alt="Logo de Twitter" class="footerPage-logoRedes"></a>
+                <a href="#"><img src="./images/iconoLinkedin.png" alt="Logo de Linkedin" class="footerPage-logoRedes"></a>
+            </div>
         </div>
         <div class="footerPage-copyright">
             <h2 class="footerPage-copyright-h2"><i class="far fa-copyright"></i> - Copyright 2021 - Todos los derechos reservados</h2>

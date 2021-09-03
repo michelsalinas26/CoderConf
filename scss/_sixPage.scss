@@ -33,11 +33,11 @@
         }
         .sixPage-div-p {
             padding: 5px;
-            font-family: helvetica-regular;
+            font-family: helvetica-medium;
             color: #FFFFFF;
-            font-size: 1rem;
+            font-size: 0.8rem;
             text-align: center;
-            line-height: 1.5rem;
+            line-height: 1rem;
         }
     }
     .sixPage-form {
@@ -59,7 +59,7 @@
             padding: 0.5rem;
             border: 1px solid #E4FF22;
             border-radius: 5px;
-            background-color: black;
+            background-color: #131313;
             color: #707070;
             font-family: helvetica-light;
         }
@@ -79,6 +79,12 @@
             border-radius: 50px;
             color: black;
             font-family: helvetica-medium;
+        }
+    }
+    .sixPage-divTwo {
+        .sixPage-divTwo-img {
+            width: 300px;
+            height: 300px;
         }
     }
 }

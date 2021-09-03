@@ -20,6 +20,9 @@ function speakerRender(speakers){
     for (const speaker of speakers) {
         divSpeaker.innerHTML += speakerUI(speaker);
     }
+
+    const avatars = document.querySelectorAll('.carousel-speakerGral-speaker-img');
+    avatars.forEach(avatar => { avatar.onclick = selectedHandler });
 }   
 
 function clockRender(id,tic){
@@ -27,4 +30,15 @@ function clockRender(id,tic){
     document.querySelector('#clockHours').innerHTML = tic.hours;
     document.querySelector('#clockMinutes').innerHTML = tic.minutes;
     document.querySelector('#clockSeconds').innerHTML = tic.seconds;
+}
+
+function selectedHandler(e){
+    const selected = speakers.find(speaker => speaker.identificador == this.id);
+    selectedRender(selected);
+}
+
+function selectedRender(selected){
+    const divSpeaker = document.getElementById('selectSpeaker');
+    divSpeaker.innerHTML ='';
+    divSpeaker.innerHTML = selectedUI(selected);
 }

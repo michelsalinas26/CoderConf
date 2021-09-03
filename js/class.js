@@ -1,5 +1,5 @@
 class Speaker{
-    constructor(apellido, nombre, empresa, posicion, charla, horario, avatar, contacto, descripcion){
+    constructor(apellido, nombre, empresa, posicion, charla, horario, avatar, contacto, descripcion,identificador){
         this.apellido = apellido;
         this.nombre   = nombre;
         this.empresa  = empresa;
@@ -9,6 +9,7 @@ class Speaker{
         this.avatar   = avatar;
         this.contacto = contacto;
         this.descripcion = descripcion;
+        this.identificador = identificador;
     }   
 }
 
