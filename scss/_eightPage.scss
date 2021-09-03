@@ -44,11 +44,13 @@
             justify-content: center;
             .eightpage-div-form-label {
                 width: 90%;
+                max-width: 450px;
                 color: #131313;
                 font-family: helvetica-medium;
             }
             .input {
                 width: 100%;
+                max-width: 450px;
                 margin: 0.5rem 0rem 1rem;
                 padding: 0.5rem;
                 border: 1px solid #8215BC;

@@ -49,12 +49,14 @@
         align-items: center;
         .sixPage-form-label {
             width: 90%;
+            max-width: 450px;
             padding: 0rem 0.5rem;
             color: #FFFFFF;
             font-family: helvetica-light;
         }
         .sixPage-form-input {
             width: 90%;
+            max-width: 450px;
             margin: 0.6rem 0rem;
             padding: 0.5rem;
             border: 1px solid #E4FF22;

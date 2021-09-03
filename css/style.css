@@ -685,11 +685,13 @@ table {
     align-items: center; }
     .sixPage .sixPage-form .sixPage-form-label {
       width: 90%;
+      max-width: 450px;
       padding: 0rem 0.5rem;
       color: #FFFFFF;
       font-family: helvetica-light; }
     .sixPage .sixPage-form .sixPage-form-input {
       width: 90%;
+      max-width: 450px;
       margin: 0.6rem 0rem;
       padding: 0.5rem;
       border: 1px solid #E4FF22;
@@ -797,10 +799,12 @@ table {
       justify-content: center; }
       .eightpage .eightpage-div-form .form .eightpage-div-form-label {
         width: 90%;
+        max-width: 450px;
         color: #131313;
         font-family: helvetica-medium; }
       .eightpage .eightpage-div-form .form .input {
         width: 100%;
+        max-width: 450px;
         margin: 0.5rem 0rem 1rem;
         padding: 0.5rem;
         border: 1px solid #8215BC;
@@ -904,23 +908,13 @@ table {
 /* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
 @media screen and (min-width: 360px) and (max-width: 767px) {
   .body {
-    width: 100%;
-    /* height: 100vh; */
-    /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+    width: 100%; } }
 
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos entre 769px y 1200px - Tablet */
 @media screen and (min-width: 768px) and (max-width: 1139px) {
   .body {
     width: 100%;
-    /* height: 100vh; */
-    /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     /* onePage */ }
     .body .onePage {
       height: 624px;

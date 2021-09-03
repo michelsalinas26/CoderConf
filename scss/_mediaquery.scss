@@ -3,11 +3,6 @@
 @media screen and (min-width: 360px) and (max-width: 767px) {
     .body {
         width: 100%;
-        /* height: 100vh; */
-        /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     }
 }
 
@@ -20,11 +15,6 @@
 @media screen and (min-width: 768px) and (max-width: 1139px) {
     .body {
         width: 100%;
-        /* height: 100vh; */
-        /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
         /* onePage */
         .onePage {
             height: 624px;
