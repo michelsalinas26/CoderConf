@@ -1,62 +1,75 @@
 .sixPage {
     grid-area: sixPage;
     width: 100%;
-    /* height: 100vh; */
+    /* height: 175vh; */
+    height: 1120px;
     padding: 1.5rem;
     background-color: #131313;
     display: flex;
     flex-direction: column;
     align-items: center;
     .sixPage-div {
-        width: 100%;
-        /* height: 30%; */
+        width: 85%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .sixPage-div-h2 {
+            padding: 5px;
             font-family: gobold-bold;
             text-transform: uppercase;
             color: #E4FF22;
-            font-size: 2rem;
+            font-size: 3rem;
             text-align: center;
             line-height: 3rem;
         }
         .sixPage-div-h3 {
-            font-family: helvetica-medium;
-            color: white;
+            padding: 5px;
+            font-family: helvetica-bold;
+            color: #FFFFFF;
             font-size: 1.5rem;
             text-align: center;
             line-height: 3rem;
         }
         .sixPage-div-p {
-            font-family: helvetica-thin;
-            color: white;
-            font-size: 1rem;
+            padding: 5px;
+            font-family: helvetica-medium;
+            color: #FFFFFF;
+            font-size: 0.8rem;
             text-align: center;
-            line-height: 1.5rem;
+            line-height: 1rem;
         }
     }
     .sixPage-form {
         width: 100%;
-        /* height: 70%; */
+        height: 70%;
         padding: 1rem 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        .sixPage-form-label {
+            width: 90%;
+            padding: 0rem 0.5rem;
+            color: #FFFFFF;
+            font-family: helvetica-light;
+        }
         .sixPage-form-input {
             width: 90%;
             margin: 0.6rem 0rem;
             padding: 0.5rem;
             border: 1px solid #E4FF22;
-            border-radius: 10px;
-            background-color: black;
-            color: #E4FF22;
+            border-radius: 5px;
+            background-color: #131313;
+            color: #707070;
             font-family: helvetica-light;
         }
          ::placeholder {
-            color: gray;
+            color: #707070;
             font-family: helvetica-light;
             padding-left: 0.8rem;
         }
         .eightPage-option {
-            color: white;
+            color: #E0FF00;
         }
         .sixPage-form-btn {
             margin: 1rem auto 0rem;
@@ -66,6 +79,12 @@
             border-radius: 50px;
             color: black;
             font-family: helvetica-medium;
+        }
+    }
+    .sixPage-divTwo {
+        .sixPage-divTwo-img {
+            width: 300px;
+            height: 300px;
         }
     }
 }

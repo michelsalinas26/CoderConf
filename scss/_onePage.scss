@@ -3,7 +3,7 @@
 .onePage {
     grid-area: onePage;
     width: 100%;
-    height: 120vh;
+    height: 768px;
     padding: 0px;
     background-image: url(../images/prueba1.png);
     background-position: center;
@@ -17,6 +17,10 @@
         .logo {
             padding: 0.625rem;
             width: 50%;
+            .eje>img {
+                width: 90px;
+                height: 26;
+            }
         }
         /* navegación */
         .navbar {
@@ -27,6 +31,7 @@
             flex-direction: column;
             flex-wrap: nowrap;
             align-items: flex-end;
+            text-align: end;
             #btn-menu-checkbox {
                 display: none;
             }
@@ -50,17 +55,17 @@
                     list-style: none;
                 }
                 .li {
-                    color: white;
+                    color: #F2F2F2;
                 }
                 .li:hover {
                     background: rgba(0, 0, 0, 0.3);
                 }
                 .enlaceNavbar {
                     display: block;
-                    padding: 0.625rem 0.625rem;
+                    padding: 0.8rem 0.625rem;
                     text-decoration: none;
                     font-family: helvetica-light;
-                    color: white;
+                    color: #F2F2F2;
                     font-size: 1rem;
                 }
             }
@@ -71,52 +76,149 @@
         }
     }
     /* Datos del main */
-    .pageOne-article {
+    .pageOneArticle {
         width: 100%;
         height: 65%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        .pageOne-title {
-            font-family: gobold-bold;
-            text-transform: uppercase;
-            font-size: 1.75rem;
-            color: white;
-            line-height: 40px;
-            text-align: center;
+        .pageOneArticle-divOne {
+            .pageOneArticle-divOne-h2 {
+                font-family: gobold-bold;
+                text-transform: uppercase;
+                font-size: 1.70rem;
+                color: #F2F2F2;
+                line-height: 40px;
+                text-align: center;
+            }
+            .pageOneArticle-divOne-h2b {
+                font-size: 2.5rem;
+            }
         }
-        .pageOne-title-h3 {
-            padding-bottom: 0.312rem;
-            font-family: gobold-regular;
-            text-transform: uppercase;
-            font-size: 1rem;
-            color: white;
-            line-height: 1.5rem;
-            text-align: center;
+        .pageOneArticle-divTwo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            .pageOneArticle-divTwo-h3 {
+                padding-bottom: 0.312rem;
+                font-family: gobold-regular;
+                text-transform: uppercase;
+                font-size: 1rem;
+                color: #F2F2F2;
+                line-height: 1.5rem;
+                text-align: center;
+            }
         }
-        .pageOne-images {
+        .pageOneArticle-divThree {
             display: flex;
             flex-direction: column;
             align-items: center;
-            .pageOne-imageOne {
+            .pageOneArticle-divThree-a {
                 width: 100%;
                 padding: 0.625rem;
+                img {
+                    width: 293px;
+                    height: 52px;
+                }
+            }
+        }
+        .burbujas {
+            .burbujas-imgOne {
+                width: 16px;
+                position: absolute;
+                left: 5%;
+                bottom: 40%;
+                animation: burbujaOne 4s linear infinite;
+            }
+            @keyframes burbujaOne {
+                0% {
+                    bottom: 30%;
+                }
+                50% {
+                    bottom: 45%;
+                }
+                100% {
+                    bottom: 75%;
+                }
+            }
+            .burbujas-imgTwo {
+                width: 16px;
+                position: absolute;
+                right: 5%;
+                bottom: 50%;
+                animation: burbujaTwo 3s linear infinite;
+            }
+            @keyframes burbujaTwo {
+                0% {
+                    bottom: 40%;
+                }
+                50% {
+                    bottom: 60%;
+                }
+                100% {
+                    bottom: 75%;
+                }
             }
         }
     }
     .anexo {
         width: 100%;
         height: 30%;
-        margin: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        .anexo-imageOne {
-            padding-bottom: 0.625rem;
+        .anexo-divOne {
+            padding: 0.625rem 0rem;
+            a>img {
+                width: 293px;
+                height: 52px;
+            }
         }
-        .anexo-imageTwo {
-            padding: 0px;
+        .cuentaRegresiva {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .cuentaRegresiva-divOne {
+                padding-top: 1rem;
+                .cuentaRegresiva-divOne-h2 {
+                    padding: 10px;
+                    font-size: 1.2rem;
+                    color: #F2F2F2;
+                    text-align: center;
+                    font-family: gobold-regular;
+                    text-transform: uppercase;
+                }
+            }
+            .cuentaRegresiva-divTwo {
+                display: flex;
+                .cuentaRegresiva-divTwo-div {
+                    margin: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #E0FF00;
+                    justify-content: center;
+                    width: 75px;
+                    height: 75px;
+                    .cuentaRegresiva-divTwo-div-h2 {
+                        padding: 5px 0px;
+                        font-size: 2rem;
+                        color: #131313;
+                        text-align: center;
+                        font-family: gobold-regular;
+                        text-transform: uppercase;
+                    }
+                    .cuentaRegresiva-divTwo-div-p {
+                        font-size: 0.7rem;
+                        color: #131313;
+                        text-align: center;
+                        font-family: gobold-regular;
+                        text-transform: uppercase;
+                    }
+                }
+            }
         }
     }
 }

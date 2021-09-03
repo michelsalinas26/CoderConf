@@ -1,39 +1,385 @@
-    /* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
-    
-    @media screen and (min-width: 375px) and (max-width: 768px) {
-        .body {
-            width: 100%;
-            height: 100vh;
-            display: grid;
+/* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .body {
+        width: 100%;
+        /* height: 100vh; */
+        /* display: grid;
             grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        }
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     }
-    /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
-    /* Media query para dispositivos entre 769px y 1200px - Tablet */
-    
-    @media screen and (min-width: 769px) and (max-width: 1200px) {
-        .body {
-            width: 100%;
-            height: 100vh;
-            display: grid;
+}
+
+
+/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
+
+
+/* Media query para dispositivos entre 769px y 1200px - Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1139px) {
+    .body {
+        width: 100%;
+        /* height: 100vh; */
+        /* display: grid;
             grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+        /* onePage */
+        .onePage {
+            height: 624px;
+            background-image: url(../images/fondoOnePageDesktop.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .navegacion {
+                height: 10%;
+                .logo>h1 {
+                    padding: 5px;
+                    img {
+                        width: 110px;
+                        height: 35px;
+                    }
+                }
+                .navbar {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    .btn-menu {
+                        display: none;
+                    }
+                    .menu {
+                        display: inline-block;
+                        margin: auto 1rem;
+                        .ul {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+                        .enlaceNavbar {
+                            padding: 0.5rem;
+                            font-size: 1.0rem;
+                        }
+                    }
+                }
+            }
+            .pageOneArticle {
+                width: 40%;
+                height: 70%;
+                padding-bottom: 5rem;
+                .pageOneArticle-divOne {
+                    width: 90%;
+                    padding: 0rem 1rem;
+                    .pageOneArticle-divOne-h2 {
+                        font-size: 1.5rem;
+                        line-height: 3rem;
+                        text-align: start;
+                    }
+                    .pageOneArticle-divOne-h2b {
+                        font-size: 2.5rem;
+                    }
+                }
+                .pageOneArticle-divTwo {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0rem 1rem;
+                    justify-content: flex-start;
+                    .pageOneArticle-divTwo-h3 {
+                        padding: 0.5rem;
+                        text-align: start;
+                    }
+                }
+            }
+            .anexo {
+                width: 100%;
+                height: 20%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                .anexo-divOne {
+                    width: 40%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .cuentaRegresiva {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: row;
+                    .cuentaRegresiva-divOne {
+                        width: 33%;
+                        padding: 0px;
+                        .cuentaRegresiva-divOne-h2 {
+                            padding: 0px;
+                        }
+                    }
+                    .cuentaRegresiva-divTwo {
+                        width: 67%;
+                    }
+                }
+            }
+        }
+        .twoPage {
+            display: flex;
+            flex-direction: row-reverse;
+            .twoPage-imagen {
+                height: 100%;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                .twoPage-imagen-logo {
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+            .twoPage-texto {
+                height: 100%;
+                width: 50%;
+                display: flex;
+                .twoPage-texto-h2 {
+                    position: relative;
+                    right: 20%;
+                    img {
+                        width: 260px;
+                        height: 62px;
+                    }
+                }
+                .twoPage-texto-p {
+                    text-align: start;
+                    font-size: 19px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .threePage {
+            height: 500px;
+            padding: 0.625rem 0rem;
+            background-image: url(../images/movilJaxa3-tablet.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .threePage-logo {
+                width: 40%;
+                height: 50%;
+                padding: 2rem;
+                justify-content: flex-start;
+                .threePage-logo-h2 {
+                    width: 100%;
+                }
+                .threePage-logo-h3 {
+                    width: 100%;
+                    font-size: 38px;
+                    line-height: 48px;
+                    text-align: start;
+                }
+                .threePage-logo-h4 {
+                    width: 100%;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    text-align: start;
+                }
+            }
+            .threePage-imagen {
+                display: none;
+            }
+        }
+        .fivePage {
+            .fivePage-divGral {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .fivePage-divGral-imagen {
+                    padding-left: 100px;
+                    width: 30%;
+                    display: block;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .fivePage-divGral-divTwo {
+                    width: 70%;
+                    padding-right: 100px;
+                }
+            }
         }
     }
-    /* ------------ navegacion ------------ */
-    /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
-    /* Media query para dispositivos mayores a 1201px - Desktop */
-    
-    @media screen and (min-width: 1201px) and (max-width: 1500px) {
-        .body {
-            width: 100%;
-            height: 100vh;
-            display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+/* ------------ navegacion ------------ */
+
+
+/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
+
+
+/* Media query para dispositivos mayores a 1201px - Desktop */
+
+@media screen and (min-width: 1140px) and (max-width: 2400px) {
+    .body {
+        width: 100%;
+        .onePage {
+            height: 624px;
+            background-image: url(../images/fondoOnePageDesktop.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .navegacion {
+                height: 10%;
+                .logo>h1 {
+                    padding: 5px;
+                    img {
+                        width: 110px;
+                        height: 35px;
+                    }
+                }
+                .navbar {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .btn-menu {
+                        display: none;
+                    }
+                    .menu {
+                        display: inline-block;
+                        margin: auto 0px;
+                        .ul {
+                            display: flex;
+                            flex-direction: row;
+                        }
+                        .enlaceNavbar {
+                            padding: 0.5rem;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+            .pageOneArticle {
+                width: 40%;
+                height: 70%;
+                padding-bottom: 5rem;
+                .pageOneArticle-divOne {
+                    width: 90%;
+                    padding: 0rem 1rem;
+                    .pageOneArticle-divOne-h2 {
+                        font-size: 2.5rem;
+                        line-height: 3.5rem;
+                        text-align: start;
+                    }
+                    .pageOneArticle-divOne-h2b {
+                        font-size: 3.5rem;
+                    }
+                }
+                .pageOneArticle-divTwo {
+                    width: 90%;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 0rem 1rem;
+                    justify-content: flex-start;
+                    .pageOneArticle-divTwo-h3 {
+                        padding: 0.5rem;
+                        text-align: start;
+                    }
+                }
+            }
+            .anexo {
+                width: 100%;
+                height: 20%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                .anexo-divOne {
+                    width: 40%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .cuentaRegresiva {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: row;
+                    .cuentaRegresiva-divOne {
+                        width: 33%;
+                        padding: 0px;
+                        .cuentaRegresiva-divOne-h2 {
+                            padding: 0px;
+                        }
+                    }
+                    .cuentaRegresiva-divTwo {
+                        width: 67%;
+                    }
+                }
+            }
+        }
+        .twoPage {
+            display: flex;
+            flex-direction: row-reverse;
+            .twoPage-imagen {
+                height: 100%;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                .twoPage-imagen-logo {
+                    width: 400px;
+                    height: 300px;
+                }
+            }
+            .twoPage-texto {
+                height: 100%;
+                width: 50%;
+                display: flex;
+                .twoPage-texto-h2 {
+                    position: relative;
+                    right: 20%;
+                    img {
+                        width: 260px;
+                        height: 62px;
+                    }
+                }
+                .twoPage-texto-p {
+                    text-align: start;
+                    font-size: 19px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .threePage {
+            height: 500px;
+            padding: 0.625rem 0rem;
+            background-image: url(../images/movilJaxa3-tablet.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .threePage-logo {
+                width: 40%;
+                height: 50%;
+                padding: 2rem;
+                justify-content: flex-start;
+                .threePage-logo-h2 {
+                    width: 100%;
+                }
+                .threePage-logo-h3 {
+                    width: 100%;
+                    font-size: 38px;
+                    line-height: 48px;
+                    text-align: start;
+                }
+                .threePage-logo-h4 {
+                    width: 100%;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    text-align: start;
+                }
+            }
+            .threePage-imagen {
+                display: none;
+            }
         }
     }
+}
