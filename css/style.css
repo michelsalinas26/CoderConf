@@ -1434,3 +1434,12 @@ table {
       grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
       grid-template-columns: 0.33fr 0.33fr 0.34fr;
       grid-template-rows: 0.5fr 0.5fr; } }
+
+      .selectedAvatar{
+        padding: 5px 5px !important;
+        border: 1px solid transparent;
+        border-radius: 60px;
+        background-image: linear-gradient(180deg, #8215BC 20%, #E0FF00 100%);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+      }

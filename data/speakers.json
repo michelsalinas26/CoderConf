@@ -1,0 +1,101 @@
+[
+    {
+        "apellido": "GALANTERNIKS",
+        "nombre": "SEBASTÍAN",
+        "empresa": "Trafilea",
+        "posicion": "CEO",
+        "charla": "Quiero ser consultor SEO. Por dónde empiezo?",
+        "horario": "09:00",
+        "avatar": "images/invitado.png",
+        "contacto": "www.sebas.com",
+        "descripcion": "Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales."
+    },
+    {
+        "apellido": "LOPEZ",
+        "nombre": "CONSUELO",
+        "empresa": "Chicas en Tecnología",
+        "posicion": "Advisor in Programs and Technology",
+        "charla": "De usuarias a creadoras: La próxima generación de Chicas Líderes en Tecnología.",
+        "horario": "12:30",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1599320327/CoderConf/Consuelo_L%C3%B3pez_-_Speaker_CoderConf.jpg",
+        "contacto": "www.consuelo.com",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Leo a diam sollicitudin tempor id eu. Ipsum dolor sit amet consectetur."
+    },
+    {
+        "apellido": "BARRETO",
+        "nombre": "MARÍA LAURA",
+        "empresa": "Doppler",
+        "posicion": "Outbound Marketing Manager",
+        "charla": "Cómo automatizar tu embudo de ventas con Marketing Automation.",
+        "horario": "14:10",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1600122229/CoderConf/CoderConf_-_Mar%C3%ADa_Laura_Barreto.png",
+        "contacto": "www.franco.com",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Leo a diam sollicitudin tempor id eu. Ipsum dolor sit amet consectetur."
+    },
+    {
+        "apellido": "LINENBERG",
+        "nombre": "AGUSTÍN",
+        "empresa": "Aerolab",
+        "posicion": "Co-Fundador & CEO",
+        "charla": "Tips para crear Productos Digitales y validar una idea.",
+        "horario": "15:00",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1602012735/Agustin_Linenberg_kwv7ky_loqjuz.jpg",
+        "contacto": "www.agus.com",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Leo a diam sollicitudin tempor id eu. Ipsum dolor sit amet consectetur."
+    },
+    {
+        "apellido": "TORNERO",
+        "nombre": "LUCIA",
+        "empresa": "Ashoka",
+        "posicion": "Coordinadora de Comunicación",
+        "charla": "Cómo me preparo para una entrevista de UX",
+        "horario": "18:00",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1599320328/CoderConf/Lucia_Tornero_-_Speaker_CoderConf.jpg",
+        "contacto": "www.lucia.com",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Leo a diam sollicitudin tempor id eu. Ipsum dolor sit amet consectetur."
+    },
+    {
+        "apellido": "BLANCO",
+        "nombre": "CONRADO MADER",
+        "empresa": "Wolox",
+        "posicion": "Managing Director",
+        "charla": "Lo único constante es el cambio",
+        "horario": "18:00",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1599320327/CoderConf/Conrado_Mader_Blanco_-_Speaker_CoderConf.jpg",
+        "contacto": "www.lucia.com",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Leo a diam sollicitudin tempor id eu. Ipsum dolor sit amet consectetur."
+    },
+    {
+        "apellido": "MEDINA",
+        "nombre": "MAXIMILIANO",
+        "empresa": "IBM",
+        "posicion": "Arquitecto de Soluciones",
+        "charla": "Innovando en tiempos de crisis. Innovacion = Creatividad + Tecnología.",
+        "horario": "14:30",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1602102724/CoderConf/maxi_Medina.jpg",
+        "contacto": "www.lucia.com",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Leo a diam sollicitudin tempor id eu. Ipsum dolor sit amet consectetur."
+    },
+    {
+        "apellido": "IBARRA",
+        "nombre": "STEFANÍA",
+        "empresa": "Facebook",
+        "posicion": "Account Manager",
+        "charla": "Tecnología: estrategias de marketing con realidad virtual y realidad aumentada",
+        "horario": "16:00",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1599750483/CoderConf/Stefania_Ibarra_-_Webinar_-_Membresa.jpg",
+        "contacto": "www.stefa.com",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Leo a diam sollicitudin tempor id eu. Ipsum dolor sit amet consectetur."
+    },
+    {
+        "apellido": " MATEO",
+        "nombre": "DANIEL DIAZ",
+        "empresa": "Google",
+        "posicion": "Vendor Operations Manager",
+        "charla": "Google Para PyMEs: Consejos para mantenerte conectado y crecer tu negocio en línea",
+        "horario": "18:00",
+        "avatar": "https://res.cloudinary.com/hdsqazxtw/image/upload/e_grayscale/v1604420604/CoderConf/DanielDiazMateo.jpg",
+        "contacto": "www.lucia.com",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis leo vel fringilla est. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Leo a diam sollicitudin tempor id eu. Ipsum dolor sit amet consectetur."
+    }
+]
