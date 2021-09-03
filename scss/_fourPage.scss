@@ -1,7 +1,6 @@
 .fourPage {
     grid-area: fourPage;
     width: 100%;
-    /* height: 175vh; */
     height: 1120px;
     padding: 1rem 0.312rem;
     background-color: #131313;
@@ -24,7 +23,7 @@
         }
         .fourPage-divSpeaker-h3 {
             font-family: helvetica-bold;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: white;
             padding: 0.5rem;
         }
@@ -44,17 +43,6 @@
         flex-direction: column;
         align-items: center;
         padding: 0.5rem;
-        .fourPage-divInvitado-div {
-            padding: 0.5rem;
-            display: flex;
-            justify-content: center;
-            .fourPage-divInvitado-div-h2 {
-                font-family: gobold-regular;
-                text-transform: uppercase;
-                font-size: 1.5rem;
-                color: yellow;
-            }
-        }
         .fourPage-divInvitado-divDatos {
             width: 100%;
             padding: 0.5rem;
@@ -63,42 +51,60 @@
             justify-content: center;
             align-items: center;
             .fourPage-divInvitado-divDatos-div {
-                /* width: 100%; */
                 .fourPage-divInvitado-divDatos-div-img {
-                    /* width: 100%; */
                     padding: 0.5rem;
                 }
             }
             .fourPage-divInvitado-divDatos-div2 {
                 display: flex;
+                flex-direction: column;
+                .fourPage-divInvitado-divDatos-div3 {
+                    display: flex;
+                    justify-content: center;
+                    .fourPage-divInvitado-divDatos-h2 {
+                        font-family: gobold-bold;
+                        text-transform: uppercase;
+                        padding: 0.5rem 0.5rem 0.5rem 3rem;
+                        font-size: 1.5rem;
+                        color: white;
+                        text-align: center;
+                    }
+                    .fourPage-divInvitado-divDatos-img {
+                        width: 40px;
+                        height: 40px;
+                        padding: 0.5rem;
+                    }
+                }
                 .fourPage-divInvitado-divDatos-h2 {
                     font-family: gobold-bold;
                     text-transform: uppercase;
-                    padding: 0.5rem;
+                    padding: 0.5rem 0.5rem 0.5rem 3rem;
                     font-size: 1.5rem;
                     color: white;
                     text-align: center;
                 }
                 .fourPage-divInvitado-divDatos-img {
+                    width: 40px;
+                    height: 40px;
                     padding: 0.5rem;
                 }
             }
             .fourPage-divInvitado-divDatos-h3 {
                 font-family: helvetica-light;
                 padding: 0.312rem;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 color: gray;
                 text-align: center;
             }
             .fourPage-divInvitado-divDatos-h4 {
                 font-family: helvetica-thin;
                 padding: 0.312rem;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 color: #E0FF00;
                 text-align: center;
             }
             .fourPage-divInvitado-divDatos-p {
-                font-family: helvetica-thin;
+                font-family: helvetica-light;
                 padding: 0.312rem;
                 font-size: 1rem;
                 line-height: 1.2rem;
@@ -136,12 +142,16 @@
                         justify-content: center;
                         align-items: center;
                         .carousel-speakerGral-speaker-div-h5 {
+                            padding-left: 2rem;
+                            padding-right: 0.5rem;
                             text-align: center;
                             color: #FFFFFF;
                             font-family: gobold-regular;
                             font-size: 1rem;
                         }
                         .carousel-speakerGral-speaker-div-img {
+                            width: 35px;
+                            height: 25px;
                             padding: 0px 5px;
                         }
                     }

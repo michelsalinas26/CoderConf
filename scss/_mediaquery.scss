@@ -3,11 +3,6 @@
 @media screen and (min-width: 360px) and (max-width: 767px) {
     .body {
         width: 100%;
-        /* height: 100vh; */
-        /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     }
 }
 
@@ -20,11 +15,6 @@
 @media screen and (min-width: 768px) and (max-width: 1139px) {
     .body {
         width: 100%;
-        /* height: 100vh; */
-        /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
         /* onePage */
         .onePage {
             height: 624px;
@@ -35,11 +25,7 @@
             .navegacion {
                 height: 10%;
                 .logo>h1 {
-                    padding: 5px;
-                    img {
-                        width: 110px;
-                        height: 35px;
-                    }
+                    padding: 10px;
                 }
                 .navbar {
                     display: flex;
@@ -90,6 +76,11 @@
                         text-align: start;
                     }
                 }
+                .burbujas {
+                    .burbujas-imgOne {
+                        left: 50%;
+                    }
+                }
             }
             .anexo {
                 width: 100%;
@@ -128,18 +119,52 @@
                 width: 50%;
                 display: flex;
                 justify-content: space-around;
+                position: relative;
+                .twoPageFlechaOne {
+                    position: absolute;
+                    left: 0%;
+                    display: block;
+                    animation: flechas 4s linear infinite;
+                }
+                @keyframes flechas {
+                    0% {
+                        bottom: 30%;
+                    }
+                    50% {
+                        bottom: 45%;
+                    }
+                    100% {
+                        bottom: 75%;
+                    }
+                }
+                .twoPageFlechaTwo {
+                    position: absolute;
+                    left: 95%;
+                    display: block;
+                    animation: flechasTwo 4s linear infinite;
+                }
+                @keyframes flechasTwo {
+                    0% {
+                        bottom: 10%;
+                    }
+                    50% {
+                        bottom: 30%;
+                    }
+                    100% {
+                        bottom: 50%;
+                    }
+                }
                 .twoPage-imagen-logo {
-                    width: 400px;
-                    height: 300px;
+                    width: 350px;
+                    height: 250px;
                 }
             }
             .twoPage-texto {
                 height: 100%;
                 width: 50%;
                 display: flex;
+                flex-direction: column;
                 .twoPage-texto-h2 {
-                    position: relative;
-                    right: 20%;
                     img {
                         width: 260px;
                         height: 62px;
@@ -187,24 +212,112 @@
                 display: none;
             }
         }
+        .fourPage {
+            height: 960px;
+            background-image: url(../images/imagenFondoFourPage.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .fourPage-divSpeaker {
+                width: 50%;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .fourPage-divInvitado {
+                height: 35%;
+                .fourPage-divInvitado-divDatos {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .fourPage-divInvitado-divDatos-div {
+                        width: 50%;
+                    }
+                    .fourPage-divInvitado-divDatos-div2 {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+            .carousel {
+                height: 35%;
+            }
+        }
         .fivePage {
             .fivePage-divGral {
+                width: 100%;
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
                 .fivePage-divGral-imagen {
-                    padding-left: 100px;
-                    width: 30%;
+                    width: 15%;
                     display: block;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
                 }
                 .fivePage-divGral-divTwo {
-                    width: 70%;
-                    padding-right: 100px;
+                    width: 85%;
+                    .fivePage-divGral-agenda {
+                        justify-content: flex-start;
+                    }
                 }
             }
+        }
+        .sixPage {
+            width: 100%;
+            height: 640px;
+            background-image: url(../images/imagenFondoSixPage.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            .sixPage-form {
+                display: flex;
+                flex-direction: column;
+                .sixPage-form-gral {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+            .sixPage-divTwo {
+                display: none;
+            }
+        }
+        .sevenPage {
+            .sevenPage-sponsors {
+                .sevenPage-sponsors-h2 {
+                    font-size: 4rem;
+                }
+            }
+            .sevenPage-imgSponsors {
+                flex-direction: row;
+                .sevenPage-imgSponsors-div {
+                    width: 33%;
+                    height: 125px;
+                    padding: 10px 20px;
+                    .sevenPage-imgSponsors-div-img {
+                        width: 175px;
+                        height: 175px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+        .eightpage {
+            .eightpage-div-title {
+                padding: 2rem;
+            }
+        }
+        .footerPage {
+            height: 250px;
+            grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
+            grid-template-columns: 0.33fr 0.33fr 0.34fr;
+            grid-template-rows: 0.5fr 0.5fr;
         }
     }
 }
@@ -221,6 +334,7 @@
 @media screen and (min-width: 1140px) and (max-width: 2400px) {
     .body {
         width: 100%;
+        /* onePage */
         .onePage {
             height: 624px;
             background-image: url(../images/fondoOnePageDesktop.png);
@@ -230,29 +344,26 @@
             .navegacion {
                 height: 10%;
                 .logo>h1 {
-                    padding: 5px;
-                    img {
-                        width: 110px;
-                        height: 35px;
-                    }
+                    padding: 10px;
                 }
                 .navbar {
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-around;
+                    justify-content: flex-end;
                     .btn-menu {
                         display: none;
                     }
                     .menu {
                         display: inline-block;
-                        margin: auto 0px;
+                        margin: auto 1rem;
                         .ul {
                             display: flex;
                             flex-direction: row;
+                            justify-content: space-between;
                         }
                         .enlaceNavbar {
                             padding: 0.5rem;
-                            font-size: 1.1rem;
+                            font-size: 1.0rem;
                         }
                     }
                 }
@@ -265,12 +376,12 @@
                     width: 90%;
                     padding: 0rem 1rem;
                     .pageOneArticle-divOne-h2 {
-                        font-size: 2.5rem;
-                        line-height: 3.5rem;
+                        font-size: 1.5rem;
+                        line-height: 3rem;
                         text-align: start;
                     }
                     .pageOneArticle-divOne-h2b {
-                        font-size: 3.5rem;
+                        font-size: 2.5rem;
                     }
                 }
                 .pageOneArticle-divTwo {
@@ -282,6 +393,11 @@
                     .pageOneArticle-divTwo-h3 {
                         padding: 0.5rem;
                         text-align: start;
+                    }
+                }
+                .burbujas {
+                    .burbujas-imgOne {
+                        left: 50%;
                     }
                 }
             }
@@ -322,18 +438,52 @@
                 width: 50%;
                 display: flex;
                 justify-content: space-around;
+                position: relative;
+                .twoPageFlechaOne {
+                    position: absolute;
+                    left: 0%;
+                    display: block;
+                    animation: flechas 4s linear infinite;
+                }
+                @keyframes flechas {
+                    0% {
+                        bottom: 30%;
+                    }
+                    50% {
+                        bottom: 45%;
+                    }
+                    100% {
+                        bottom: 75%;
+                    }
+                }
+                .twoPageFlechaTwo {
+                    position: absolute;
+                    left: 95%;
+                    display: block;
+                    animation: flechasTwo 4s linear infinite;
+                }
+                @keyframes flechasTwo {
+                    0% {
+                        bottom: 10%;
+                    }
+                    50% {
+                        bottom: 30%;
+                    }
+                    100% {
+                        bottom: 50%;
+                    }
+                }
                 .twoPage-imagen-logo {
-                    width: 400px;
-                    height: 300px;
+                    width: 350px;
+                    height: 250px;
                 }
             }
             .twoPage-texto {
                 height: 100%;
                 width: 50%;
                 display: flex;
+                flex-direction: column;
                 .twoPage-texto-h2 {
-                    position: relative;
-                    right: 20%;
                     img {
                         width: 260px;
                         height: 62px;
@@ -380,6 +530,101 @@
             .threePage-imagen {
                 display: none;
             }
+        }
+        .fourPage {
+            height: 960px;
+            background-image: url(../images/imagenFondoFourPage.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .fourPage-divSpeaker {
+                width: 50%;
+                height: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .fourPage-divInvitado {
+                height: 35%;
+                .fourPage-divInvitado-divDatos {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    .fourPage-divInvitado-divDatos-div {
+                        width: 50%;
+                    }
+                    .fourPage-divInvitado-divDatos-div2 {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+            .carousel {
+                height: 35%;
+            }
+        }
+        .fivePage {
+            .fivePage-divGral {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                .fivePage-divGral-imagen {
+                    width: 15%;
+                    display: block;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                .fivePage-divGral-divTwo {
+                    width: 85%;
+                    .fivePage-divGral-agenda {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+        .sixPage {
+            width: 100%;
+            height: 640px;
+            background-image: url(../images/imagenFondoSixPage.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            .sixPage-form {
+                display: flex;
+                flex-direction: column;
+                .sixPage-form-gral {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+            }
+            .sixPage-divTwo {
+                display: none;
+            }
+        }
+        .sevenPage {
+            .sevenPage-imgSponsors {
+                flex-direction: row;
+                .sevenPage-imgSponsors-div {
+                    width: 33%;
+                    height: 125px;
+                    padding: 16px;
+                }
+            }
+        }
+        .eightpage {
+            .eightpage-div-title {
+                padding: 2rem;
+            }
+        }
+        .footerPage {
+            height: 250px;
+            grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
+            grid-template-columns: 0.33fr 0.33fr 0.34fr;
+            grid-template-rows: 0.5fr 0.5fr;
         }
     }
 }

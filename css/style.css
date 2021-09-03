@@ -175,6 +175,9 @@ table {
     .onePage .navegacion .logo {
       padding: 0.625rem;
       width: 50%; }
+      .onePage .navegacion .logo .eje > img {
+        width: 90px;
+        height: 26; }
     .onePage .navegacion .navbar {
       margin: 0%;
       padding: 0%;
@@ -182,7 +185,8 @@ table {
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
-      align-items: flex-end; }
+      align-items: flex-end;
+      text-align: end; }
       .onePage .navegacion .navbar #btn-menu-checkbox {
         display: none; }
       .onePage .navegacion .navbar .btn-menu {
@@ -207,7 +211,7 @@ table {
           background: rgba(0, 0, 0, 0.3); }
         .onePage .navegacion .navbar .menu .enlaceNavbar {
           display: block;
-          padding: 0.625rem 0.625rem;
+          padding: 0.8rem 0.625rem;
           text-decoration: none;
           font-family: helvetica-light;
           color: #F2F2F2;
@@ -225,7 +229,7 @@ table {
     .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
       font-family: gobold-bold;
       text-transform: uppercase;
-      font-size: 1.75rem;
+      font-size: 1.70rem;
       color: #F2F2F2;
       line-height: 40px;
       text-align: center; }
@@ -251,12 +255,15 @@ table {
       .onePage .pageOneArticle .pageOneArticle-divThree .pageOneArticle-divThree-a {
         width: 100%;
         padding: 0.625rem; }
+        .onePage .pageOneArticle .pageOneArticle-divThree .pageOneArticle-divThree-a img {
+          width: 293px;
+          height: 52px; }
     .onePage .pageOneArticle .burbujas .burbujas-imgOne {
       width: 16px;
       position: absolute;
       left: 5%;
       bottom: 40%;
-      animation: burbujaOne 3s linear infinite; }
+      animation: burbujaOne 4s linear infinite; }
 
 @keyframes burbujaOne {
   0% {
@@ -264,7 +271,7 @@ table {
   50% {
     bottom: 45%; }
   100% {
-    bottom: 60%; } }
+    bottom: 75%; } }
     .onePage .pageOneArticle .burbujas .burbujas-imgTwo {
       width: 16px;
       position: absolute;
@@ -274,11 +281,11 @@ table {
 
 @keyframes burbujaTwo {
   0% {
-    bottom: 50%; }
+    bottom: 40%; }
   50% {
-    bottom: 65%; }
+    bottom: 60%; }
   100% {
-    bottom: 80%; } }
+    bottom: 75%; } }
   .onePage .anexo {
     width: 100%;
     height: 30%;
@@ -287,6 +294,9 @@ table {
     align-items: center; }
     .onePage .anexo .anexo-divOne {
       padding: 0.625rem 0rem; }
+      .onePage .anexo .anexo-divOne a > img {
+        width: 293px;
+        height: 52px; }
     .onePage .anexo .cuentaRegresiva {
       width: 100%;
       display: flex;
@@ -328,7 +338,6 @@ table {
 .twoPage {
   grid-area: twoPage;
   width: 100%;
-  /* height: 100vh; */
   height: 550px;
   margin: 0%;
   padding: 0.625rem;
@@ -340,12 +349,13 @@ table {
     justify-content: center;
     align-items: center; }
     .twoPage .twoPage-imagen .twoPage-imagen-flechas {
-      display: none;
-      /* padding: 0rem 0.625rem; */ }
+      display: none; }
     .twoPage .twoPage-imagen .twoPage-imagen-logo {
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      width: 250px;
+      height: 180px; }
   .twoPage .twoPage-texto {
     height: 50%;
     padding: 1.5rem;
@@ -357,6 +367,9 @@ table {
       padding: 1rem;
       text-align: center;
       font-size: 1rem; }
+      .twoPage .twoPage-texto .twoPage-texto-h2 img {
+        width: 200px;
+        height: 50px; }
     .twoPage .twoPage-texto .twoPage-texto-p {
       font-family: helvetica-medium;
       padding: 1.5rem;
@@ -366,6 +379,7 @@ table {
 
 .threePage {
   grid-area: threePage;
+  margin: 0px;
   width: 100%;
   /* height: 130vh; */
   height: 832px;
@@ -377,6 +391,12 @@ table {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end; }
+    .threePage .threePage-logo .threePage-logo-h2 {
+      font-family: gobold-bold;
+      text-transform: uppercase;
+      font-size: 3rem;
+      text-align: center;
+      color: #8215bc; }
     .threePage .threePage-logo .threePage-logo-h3 {
       padding: 0.312rem;
       font-family: gobold-bold;
@@ -386,16 +406,17 @@ table {
       line-height: 2.5rem; }
     .threePage .threePage-logo .threePage-logo-h4 {
       padding: 5px;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-family: helvetica-medium;
       text-align: center;
       line-height: 20px; }
   .threePage .threePage-imagen {
-    width: 100%;
+    /* width: 100%; */
     height: 40%;
     display: flex;
     justify-content: center; }
     .threePage .threePage-imagen .threePage-imagen-img {
+      width: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover; }
@@ -403,7 +424,6 @@ table {
 .fourPage {
   grid-area: fourPage;
   width: 100%;
-  /* height: 175vh; */
   height: 1120px;
   padding: 1rem 0.312rem;
   background-color: #131313;
@@ -425,7 +445,7 @@ table {
       padding: 0.5rem; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
       font-family: helvetica-bold;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       color: white;
       padding: 0.5rem; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
@@ -442,15 +462,6 @@ table {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem; }
-    .fourPage .fourPage-divInvitado .fourPage-divInvitado-div {
-      padding: 0.5rem;
-      display: flex;
-      justify-content: center; }
-      .fourPage .fourPage-divInvitado .fourPage-divInvitado-div .fourPage-divInvitado-div-h2 {
-        font-family: gobold-regular;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        color: yellow; }
     .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
       width: 100%;
       padding: 0.5rem;
@@ -458,36 +469,50 @@ table {
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
-        /* width: 100%; */ }
-        .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
-          /* width: 100%; */
-          padding: 0.5rem; }
+      .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
+        padding: 0.5rem; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
-        display: flex; }
+        display: flex;
+        flex-direction: column; }
+        .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-div3 {
+          display: flex;
+          justify-content: center; }
+          .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-div3 .fourPage-divInvitado-divDatos-h2 {
+            font-family: gobold-bold;
+            text-transform: uppercase;
+            padding: 0.5rem 0.5rem 0.5rem 3rem;
+            font-size: 1.5rem;
+            color: white;
+            text-align: center; }
+          .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-div3 .fourPage-divInvitado-divDatos-img {
+            width: 40px;
+            height: 40px;
+            padding: 0.5rem; }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-h2 {
           font-family: gobold-bold;
           text-transform: uppercase;
-          padding: 0.5rem;
+          padding: 0.5rem 0.5rem 0.5rem 3rem;
           font-size: 1.5rem;
           color: white;
           text-align: center; }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-img {
+          width: 40px;
+          height: 40px;
           padding: 0.5rem; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h3 {
         font-family: helvetica-light;
         padding: 0.312rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: gray;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h4 {
         font-family: helvetica-thin;
         padding: 0.312rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: #E0FF00;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-p {
-        font-family: helvetica-thin;
+        font-family: helvetica-light;
         padding: 0.312rem;
         font-size: 1rem;
         line-height: 1.2rem;
@@ -520,11 +545,15 @@ table {
             justify-content: center;
             align-items: center; }
             .fourPage .carousel .carousel-speakerGral .carousel-speakerGral-speaker .carousel-speakerGral-speaker-div .carousel-speakerGral-speaker-div-subdiv .carousel-speakerGral-speaker-div-h5 {
+              padding-left: 2rem;
+              padding-right: 0.5rem;
               text-align: center;
               color: #FFFFFF;
               font-family: gobold-regular;
               font-size: 1rem; }
             .fourPage .carousel .carousel-speakerGral .carousel-speakerGral-speaker .carousel-speakerGral-speaker-div .carousel-speakerGral-speaker-div-subdiv .carousel-speakerGral-speaker-div-img {
+              width: 35px;
+              height: 25px;
               padding: 0px 5px; }
           .fourPage .carousel .carousel-speakerGral .carousel-speakerGral-speaker .carousel-speakerGral-speaker-div .carousel-speakerGral-speaker-div-h6 {
             padding: 5px;
@@ -578,7 +607,6 @@ table {
   .fivePage .fivePage-divGral {
     width: 100%;
     height: 70%;
-    /* overflow-y: scroll; */
     padding: 0.5rem;
     display: flex;
     flex-direction: column; }
@@ -617,14 +645,13 @@ table {
           color: #8215BC; }
         .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda .fivePage-divGral-agenda-divTwo .fivePage-divGral-agenda-p {
           padding: 0rem 0.5rem 0.5rem 0.5rem;
-          font-family: helvetica-regular;
-          font-size: 1rem;
+          font-family: helvetica-medium;
+          font-size: 0.8rem;
           color: #505050; }
 
 .sixPage {
   grid-area: sixPage;
   width: 100%;
-  /* height: 175vh; */
   height: 1120px;
   padding: 1.5rem;
   background-color: #131313;
@@ -654,11 +681,11 @@ table {
       line-height: 3rem; }
     .sixPage .sixPage-div .sixPage-div-p {
       padding: 5px;
-      font-family: helvetica-regular;
+      font-family: helvetica-medium;
       color: #FFFFFF;
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-align: center;
-      line-height: 1.5rem; }
+      line-height: 1rem; }
   .sixPage .sixPage-form {
     width: 100%;
     height: 70%;
@@ -666,26 +693,38 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .sixPage .sixPage-form .sixPage-form-label {
+    .sixPage .sixPage-form .sixPage-form-gral {
       width: 90%;
-      padding: 0rem 0.5rem;
-      color: #FFFFFF;
-      font-family: helvetica-light; }
-    .sixPage .sixPage-form .sixPage-form-input {
-      width: 90%;
-      margin: 0.6rem 0rem;
-      padding: 0.5rem;
-      border: 1px solid #E4FF22;
-      border-radius: 5px;
-      background-color: black;
-      color: #707070;
-      font-family: helvetica-light; }
-    .sixPage .sixPage-form ::placeholder {
-      color: #707070;
-      font-family: helvetica-light;
-      padding-left: 0.8rem; }
-    .sixPage .sixPage-form .eightPage-option {
-      color: #E0FF00; }
+      display: flex;
+      flex-direction: column;
+      align-content: center; }
+      .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .sixPage-form-label {
+          width: 90%;
+          max-width: 400px;
+          padding: 0rem 1rem;
+          color: #FFFFFF;
+          font-family: helvetica-light; }
+        .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .sixPage-form-input {
+          width: 90%;
+          max-width: 400px;
+          margin: 0.6rem 0rem;
+          padding: 0.5rem;
+          border: 1px solid #E4FF22;
+          border-radius: 5px;
+          background-color: #131313;
+          color: #707070;
+          font-family: helvetica-light; }
+        .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div ::placeholder {
+          color: #707070;
+          font-family: helvetica-light;
+          padding-left: 0.8rem; }
+        .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .eightPage-option {
+          color: #E0FF00; }
     .sixPage .sixPage-form .sixPage-form-btn {
       margin: 1rem auto 0rem;
       padding: 15px 50px;
@@ -694,11 +733,13 @@ table {
       border-radius: 50px;
       color: black;
       font-family: helvetica-medium; }
+  .sixPage .sixPage-divTwo .sixPage-divTwo-img {
+    width: 300px;
+    height: 300px; }
 
 .sevenPage {
   grid-area: sevenPage;
   width: 100%;
-  /* height: 100vh; */
   height: 640px;
   padding: 0.5rem; }
   .sevenPage .sevenPage-sponsors {
@@ -719,11 +760,13 @@ table {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    /* overflow-x: scroll; */ }
     .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div {
       height: 33%;
-      width: 50%;
+      width: 125px;
       display: flex;
       flex-direction: column;
       justify-content: center; }
@@ -735,7 +778,6 @@ table {
 .eightpage {
   grid-area: eightPage;
   width: 100%;
-  /* height: 100vh; */
   height: 640px;
   padding: 1.5rem 0.5rem;
   background-color: #F2F2F2;
@@ -744,7 +786,6 @@ table {
   align-items: center; }
   .eightpage .eightpage-div-title {
     width: 100%;
-    /* height: 30%; */
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -775,23 +816,26 @@ table {
       justify-content: center; }
       .eightpage .eightpage-div-form .form .eightpage-div-form-label {
         width: 90%;
+        max-width: 400px;
+        padding-left: 20px;
         color: #131313;
         font-family: helvetica-medium; }
       .eightpage .eightpage-div-form .form .input {
         width: 100%;
+        max-width: 400px;
         margin: 0.5rem 0rem 1rem;
         padding: 0.5rem;
         border: 1px solid #8215BC;
         border-radius: 5px; }
       .eightpage .eightpage-div-form .form ::placeholder {
-        font-family: helvetica-bold;
+        font-family: helvetica-light;
         color: #8215BC;
         padding-left: 0.8rem; }
       .eightpage .eightpage-div-form .form .btn {
         margin: 2rem auto;
         padding: 0.8rem 5rem;
+        font-family: helvetica-bold;
         background-color: #8215BC;
-        border: black 1px solid;
         border-radius: 2rem;
         color: #FFFFFF; }
 
@@ -811,6 +855,9 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .footerPage .footerPage-coderconf .footerPage-h2 > img {
+      width: 85px;
+      height: 20px; }
     .footerPage .footerPage-coderconf .footerPage-div {
       padding: 0.5rem; }
       .footerPage .footerPage-coderconf .footerPage-div .footerPage-div-ul {
@@ -830,6 +877,9 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .footerPage .footerPage-coderhouse .footerPage-h2 .footerPage-h2-img {
+      width: 85px;
+      height: 20px; }
     .footerPage .footerPage-coderhouse .footerPage-div {
       padding: 0.5rem; }
       .footerPage .footerPage-coderhouse .footerPage-div .footerPage-div-ul {
@@ -857,6 +907,10 @@ table {
       padding: 0.5rem; }
     .footerPage .footerPage-redesSociales .footerPage-redesSociales-div {
       padding: 0.5rem; }
+      .footerPage .footerPage-redesSociales .footerPage-redesSociales-div .footerPage-logoRedes {
+        padding: 2px;
+        width: 20px;
+        height: 20px; }
   .footerPage .footerPage-copyright {
     grid-area: footerPage-copyright;
     display: flex;
@@ -872,23 +926,13 @@ table {
 /* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
 @media screen and (min-width: 360px) and (max-width: 767px) {
   .body {
-    width: 100%;
-    /* height: 100vh; */
-    /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+    width: 100%; } }
 
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos entre 769px y 1200px - Tablet */
 @media screen and (min-width: 768px) and (max-width: 1139px) {
   .body {
     width: 100%;
-    /* height: 100vh; */
-    /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     /* onePage */ }
     .body .onePage {
       height: 624px;
@@ -899,10 +943,7 @@ table {
       .body .onePage .navegacion {
         height: 10%; }
         .body .onePage .navegacion .logo > h1 {
-          padding: 5px; }
-          .body .onePage .navegacion .logo > h1 img {
-            width: 110px;
-            height: 35px; }
+          padding: 10px; }
         .body .onePage .navegacion .navbar {
           display: flex;
           flex-direction: row;
@@ -941,6 +982,8 @@ table {
           .body .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
             padding: 0.5rem;
             text-align: start; }
+        .body .onePage .pageOneArticle .burbujas .burbujas-imgOne {
+          left: 50%; }
       .body .onePage .anexo {
         width: 100%;
         height: 20%;
@@ -970,20 +1013,43 @@ table {
         height: 100%;
         width: 50%;
         display: flex;
-        justify-content: space-around; }
+        justify-content: space-around;
+        position: relative; }
+        .body .twoPage .twoPage-imagen .twoPageFlechaOne {
+          position: absolute;
+          left: 0%;
+          display: block;
+          animation: flechas 4s linear infinite; }
+  @keyframes flechas {
+    0% {
+      bottom: 30%; }
+    50% {
+      bottom: 45%; }
+    100% {
+      bottom: 75%; } }
+        .body .twoPage .twoPage-imagen .twoPageFlechaTwo {
+          position: absolute;
+          left: 95%;
+          display: block;
+          animation: flechasTwo 4s linear infinite; }
+  @keyframes flechasTwo {
+    0% {
+      bottom: 10%; }
+    50% {
+      bottom: 30%; }
+    100% {
+      bottom: 50%; } }
         .body .twoPage .twoPage-imagen .twoPage-imagen-logo {
-          width: 400px;
-          height: 300px; }
+          width: 350px;
+          height: 250px; }
       .body .twoPage .twoPage-texto {
         height: 100%;
         width: 50%;
-        display: flex; }
-        .body .twoPage .twoPage-texto .twoPage-texto-h2 {
-          position: relative;
-          right: 20%; }
-          .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
-            width: 260px;
-            height: 62px; }
+        display: flex;
+        flex-direction: column; }
+        .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
+          width: 260px;
+          height: 62px; }
         .body .twoPage .twoPage-texto .twoPage-texto-p {
           text-align: start;
           font-size: 19px;
@@ -1017,27 +1083,92 @@ table {
           text-align: start; }
       .body .threePage .threePage-imagen {
         display: none; }
+    .body .fourPage {
+      height: 960px;
+      background-image: url(../images/imagenFondoFourPage.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .body .fourPage .fourPage-divSpeaker {
+        width: 50%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      .body .fourPage .fourPage-divInvitado {
+        height: 35%; }
+        .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; }
+          .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
+            width: 50%; }
+          .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column; }
+      .body .fourPage .carousel {
+        height: 35%; }
     .body .fivePage .fivePage-divGral {
+      width: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: center; }
+      flex-direction: row; }
       .body .fivePage .fivePage-divGral .fivePage-divGral-imagen {
-        padding-left: 100px;
-        width: 30%;
+        width: 15%;
         display: block;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .body .fivePage .fivePage-divGral .fivePage-divGral-divTwo {
-        width: 70%;
-        padding-right: 100px; } }
+        width: 85%; }
+        .body .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda {
+          justify-content: flex-start; }
+    .body .sixPage {
+      width: 100%;
+      height: 640px;
+      background-image: url(../images/imagenFondoSixPage.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      .body .sixPage .sixPage-form {
+        display: flex;
+        flex-direction: column; }
+        .body .sixPage .sixPage-form .sixPage-form-gral {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center; }
+      .body .sixPage .sixPage-divTwo {
+        display: none; }
+    .body .sevenPage .sevenPage-sponsors .sevenPage-sponsors-h2 {
+      font-size: 4rem; }
+    .body .sevenPage .sevenPage-imgSponsors {
+      flex-direction: row; }
+      .body .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div {
+        width: 33%;
+        height: 125px;
+        padding: 10px 20px; }
+        .body .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div .sevenPage-imgSponsors-div-img {
+          width: 175px;
+          height: 175px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain; }
+    .body .eightpage .eightpage-div-title {
+      padding: 2rem; }
+    .body .footerPage {
+      height: 250px;
+      grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
+      grid-template-columns: 0.33fr 0.33fr 0.34fr;
+      grid-template-rows: 0.5fr 0.5fr; } }
 
 /* ------------ navegacion ------------ */
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos mayores a 1201px - Desktop */
 @media screen and (min-width: 1140px) and (max-width: 2400px) {
   .body {
-    width: 100%; }
+    width: 100%;
+    /* onePage */ }
     .body .onePage {
       height: 624px;
       background-image: url(../images/fondoOnePageDesktop.png);
@@ -1047,25 +1178,23 @@ table {
       .body .onePage .navegacion {
         height: 10%; }
         .body .onePage .navegacion .logo > h1 {
-          padding: 5px; }
-          .body .onePage .navegacion .logo > h1 img {
-            width: 110px;
-            height: 35px; }
+          padding: 10px; }
         .body .onePage .navegacion .navbar {
           display: flex;
           flex-direction: row;
-          justify-content: space-around; }
+          justify-content: flex-end; }
           .body .onePage .navegacion .navbar .btn-menu {
             display: none; }
           .body .onePage .navegacion .navbar .menu {
             display: inline-block;
-            margin: auto 0px; }
+            margin: auto 1rem; }
             .body .onePage .navegacion .navbar .menu .ul {
               display: flex;
-              flex-direction: row; }
+              flex-direction: row;
+              justify-content: space-between; }
             .body .onePage .navegacion .navbar .menu .enlaceNavbar {
               padding: 0.5rem;
-              font-size: 1.1rem; }
+              font-size: 1.0rem; }
       .body .onePage .pageOneArticle {
         width: 40%;
         height: 70%;
@@ -1074,11 +1203,11 @@ table {
           width: 90%;
           padding: 0rem 1rem; }
           .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
-            font-size: 2.5rem;
-            line-height: 3.5rem;
+            font-size: 1.5rem;
+            line-height: 3rem;
             text-align: start; }
           .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2b {
-            font-size: 3.5rem; }
+            font-size: 2.5rem; }
         .body .onePage .pageOneArticle .pageOneArticle-divTwo {
           width: 90%;
           display: flex;
@@ -1088,6 +1217,8 @@ table {
           .body .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
             padding: 0.5rem;
             text-align: start; }
+        .body .onePage .pageOneArticle .burbujas .burbujas-imgOne {
+          left: 50%; }
       .body .onePage .anexo {
         width: 100%;
         height: 20%;
@@ -1117,20 +1248,43 @@ table {
         height: 100%;
         width: 50%;
         display: flex;
-        justify-content: space-around; }
+        justify-content: space-around;
+        position: relative; }
+        .body .twoPage .twoPage-imagen .twoPageFlechaOne {
+          position: absolute;
+          left: 0%;
+          display: block;
+          animation: flechas 4s linear infinite; }
+  @keyframes flechas {
+    0% {
+      bottom: 30%; }
+    50% {
+      bottom: 45%; }
+    100% {
+      bottom: 75%; } }
+        .body .twoPage .twoPage-imagen .twoPageFlechaTwo {
+          position: absolute;
+          left: 95%;
+          display: block;
+          animation: flechasTwo 4s linear infinite; }
+  @keyframes flechasTwo {
+    0% {
+      bottom: 10%; }
+    50% {
+      bottom: 30%; }
+    100% {
+      bottom: 50%; } }
         .body .twoPage .twoPage-imagen .twoPage-imagen-logo {
-          width: 400px;
-          height: 300px; }
+          width: 350px;
+          height: 250px; }
       .body .twoPage .twoPage-texto {
         height: 100%;
         width: 50%;
-        display: flex; }
-        .body .twoPage .twoPage-texto .twoPage-texto-h2 {
-          position: relative;
-          right: 20%; }
-          .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
-            width: 260px;
-            height: 62px; }
+        display: flex;
+        flex-direction: column; }
+        .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
+          width: 260px;
+          height: 62px; }
         .body .twoPage .twoPage-texto .twoPage-texto-p {
           text-align: start;
           font-size: 19px;
@@ -1163,4 +1317,74 @@ table {
           line-height: 1.5rem;
           text-align: start; }
       .body .threePage .threePage-imagen {
-        display: none; } }
+        display: none; }
+    .body .fourPage {
+      height: 960px;
+      background-image: url(../images/imagenFondoFourPage.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .body .fourPage .fourPage-divSpeaker {
+        width: 50%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+      .body .fourPage .fourPage-divInvitado {
+        height: 35%; }
+        .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; }
+          .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
+            width: 50%; }
+          .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column; }
+      .body .fourPage .carousel {
+        height: 35%; }
+    .body .fivePage .fivePage-divGral {
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      .body .fivePage .fivePage-divGral .fivePage-divGral-imagen {
+        width: 15%;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .body .fivePage .fivePage-divGral .fivePage-divGral-divTwo {
+        width: 85%; }
+        .body .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda {
+          justify-content: flex-start; }
+    .body .sixPage {
+      width: 100%;
+      height: 640px;
+      background-image: url(../images/imagenFondoSixPage.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      .body .sixPage .sixPage-form {
+        display: flex;
+        flex-direction: column; }
+        .body .sixPage .sixPage-form .sixPage-form-gral {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center; }
+      .body .sixPage .sixPage-divTwo {
+        display: none; }
+    .body .sevenPage .sevenPage-imgSponsors {
+      flex-direction: row; }
+      .body .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div {
+        width: 33%;
+        height: 125px;
+        padding: 16px; }
+    .body .eightpage .eightpage-div-title {
+      padding: 2rem; }
+    .body .footerPage {
+      height: 250px;
+      grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
+      grid-template-columns: 0.33fr 0.33fr 0.34fr;
+      grid-template-rows: 0.5fr 0.5fr; } }
