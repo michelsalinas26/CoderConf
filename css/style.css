@@ -446,14 +446,14 @@ table {
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
       font-family: helvetica-bold;
       font-size: 1.4rem;
-      color: white;
+      color: #FFFFFF;
       padding: 0.5rem; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
       font-family: helvetica-thin;
       line-height: 1.2rem;
       padding: 0.5rem;
       font-size: 1rem;
-      color: white;
+      color: #FFFFFF;
       text-align: center; }
   .fourPage .fourPage-divInvitado {
     width: 100%;
@@ -482,7 +482,7 @@ table {
             text-transform: uppercase;
             padding: 0.5rem 0.5rem 0.5rem 3rem;
             font-size: 1.5rem;
-            color: white;
+            color: #FFFFFF;
             text-align: center; }
           .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-div3 .fourPage-divInvitado-divDatos-img {
             width: 40px;
@@ -493,7 +493,7 @@ table {
           text-transform: uppercase;
           padding: 0.5rem 0.5rem 0.5rem 3rem;
           font-size: 1.5rem;
-          color: white;
+          color: #FFFFFF;
           text-align: center; }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-img {
           width: 40px;
@@ -503,7 +503,7 @@ table {
         font-family: helvetica-light;
         padding: 0.312rem;
         font-size: 0.8rem;
-        color: gray;
+        color: #A5A5A5;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h4 {
         font-family: helvetica-thin;
@@ -516,7 +516,7 @@ table {
         padding: 0.312rem;
         font-size: 1rem;
         line-height: 1.2rem;
-        color: white;
+        color: #FFFFFF;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h5 {
         font-family: helvetica-light;
