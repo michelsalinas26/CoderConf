@@ -9,9 +9,13 @@ function sponsorRender(sponsor){
 function agendaRender(speakers){
     const divAgenda = document.getElementById('agendaSpeaker');
     divAgenda.innerHTML ='';
-    for (const speaker of speakers) {
-        divAgenda.innerHTML += nextAgendaUI(speaker);
-    }
+    speakers.forEach((speaker, index) => {
+        if(index == 0){
+            divAgenda.innerHTML += agendaUI(speaker);
+        }else{
+            divAgenda.innerHTML += nextAgendaUI(speaker);
+        }
+    });
 }   
 
 function speakerRender(speakers){
