@@ -1,18 +1,31 @@
 function agendaUI(speaker){
     return `<div class="fivePage-divGral-agenda">
-    <div class="fivePage-divGral-agenda-divOne">
-        <img src="./images/imagenFlechaAgenda.png" alt="Imagen de flecha - agenda">
-    </div>
-    <div class="fivePage-divGral-agenda-divTwo">
-        <h2 class="fivePage-divGral-agenda-h2 agendaColorGris">${speaker.horario}</h2>
-        <h3 class="fivePage-divGral-agenda-h3 agendaColorGris">${speaker.nombre} ${speaker.apellido}</h3>
-        <h4 class="fivePage-divGral-agenda-h4 agendaColorGris">${speaker.posicion} EN ${speaker.empresa}</h4>
-        <p class="fivePage-divGral-agenda-p agendaColorGris">${speaker.charla}</p>
-    </div>
-</div>`
-
-
+        <div class="fivePage-divGral-agenda-divOne">
+            <img src="./images/imagenFlechaAgenda.png" alt="Imagen de flecha - agenda">
+        </div>
+        <div class="fivePage-divGral-agenda-divTwo">
+            <h2 class="fivePage-divGral-agenda-h2 ">${speaker.horario}</h2>
+            <h3 class="fivePage-divGral-agenda-h3">${speaker.nombre} ${speaker.apellido}</h3>
+            <h4 class="fivePage-divGral-agenda-h4 ">${speaker.posicion} EN ${speaker.empresa}</h4>
+            <p class="fivePage-divGral-agenda-p ">${speaker.charla}</p>
+        </div>
+    </div>`
 }
+
+function nextAgendaUI(speaker){
+    return `<div class="fivePage-divGral-agenda">
+        <div class="fivePage-divGral-agenda-divOne">
+            <img src="./images/imagenAgenda.png" alt="Imagen de flecha - agenda">
+        </div>
+        <div class="fivePage-divGral-agenda-divTwo">
+            <h2 class="fivePage-divGral-agenda-h2 text-muted">${speaker.horario}</h2>
+            <h3 class="fivePage-divGral-agenda-h3 text-muted">${speaker.nombre} ${speaker.apellido}</h3>
+            <h4 class="fivePage-divGral-agenda-h4 text-muted">${speaker.posicion} EN ${speaker.empresa}</h4>
+            <p class="fivePage-divGral-agenda-p text-muted">${speaker.charla}</p>
+        </div>
+    </div>`
+}
+
 
 function sponsorUI(sponsor) {
     return `<div class="sevenPage-imgSponsors-div"><img src="${sponsor.logo}" alt="Logo de Mercado libre"></img>`
