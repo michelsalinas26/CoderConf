@@ -54,15 +54,17 @@ function notificacionUI(email){
 function selectedUI(speaker){
     return `<div class="fourPage-divInvitado-divDatos">
                 <div class="fourPage-divInvitado-divDatos-div">
-                    <img src="${speaker.avatar}" alt="Foto del invitado especial" class="fourPage-divInvitado-divDatos-div-img rounded-circle selectedAvatar" width="220" height="220">
+                    <img src="${speaker.avatar}" alt="Foto del invitado especial" class="fourPage-divInvitado-divDatos-div-img rounded-circle selectedAvatar"  width="220" height="220">
                 </div>
                 <div class="fourPage-divInvitado-divDatos-div2">
-                    <h2 class="fourPage-divInvitado-divDatos-h2">${speaker.nombre} ${speaker.apellido}</h2>
-                    <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="fourPage-divInvitado-divDatos-img">
+                    <div class="fourPage-divInvitado-divDatos-div3">
+                        <h2 class="fourPage-divInvitado-divDatos-h2">${speaker.nombre} ${speaker.apellido}</h2>
+                        <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="fourPage-divInvitado-divDatos-img">
+                    </div>
+                    <h3 class="fourPage-divInvitado-divDatos-h3">${speaker.posicion}</h3>
+                    <h4 class="fourPage-divInvitado-divDatos-h4">${speaker.empresa}</h4>
+                    <p class="fourPage-divInvitado-divDatos-p">${speaker.descripcion}</p>
+                    <h5 class="fourPage-divInvitado-divDatos-h5">${speaker.contacto}</h5>
                 </div>
-                <h3 class="fourPage-divInvitado-divDatos-h3">${speaker.posicion}</h3>
-                <h4 class="fourPage-divInvitado-divDatos-h4">${speaker.empresa}</h4>
-                <p class="fourPage-divInvitado-divDatos-p">${speaker.descripcion}</p>
-                <h5 class="fourPage-divInvitado-divDatos-h5">${speaker.contacto}</h5>
-            </div>`
+            </div>`;
 }
