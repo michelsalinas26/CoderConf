@@ -194,6 +194,7 @@
                 justify-content: flex-start;
                 .threePage-logo-h2 {
                     width: 100%;
+                    text-align: left;
                 }
                 .threePage-logo-h3 {
                     width: 100%;
@@ -278,7 +279,7 @@
         }
         .sixPage {
             width: 100%;
-            height: 640px;
+            height: 720px;
             background-image: url(../images/imagenFondoSixPage.png);
             background-repeat: no-repeat;
             background-position: center;
@@ -291,6 +292,7 @@
                     font-size: 2rem;
                 }
                 .sixPage-div-p {
+                    width: 90%;
                     font-size: 1rem;
                 }
             }
@@ -306,6 +308,9 @@
                             padding: 0.5rem 0.2rem;
                         }
                     }
+                }
+                .sixPageCaptcha {
+                    padding-left: 25%;
                 }
             }
             .sixPage-divTwo {
@@ -342,6 +347,9 @@
                 .form {
                     .eightpage-div-form-label {
                         padding-left: 20px;
+                    }
+                    .eightPageCaptcha {
+                        padding-left: 25%;
                     }
                 }
             }
@@ -552,6 +560,7 @@
                 padding: 2rem;
                 justify-content: flex-start;
                 .threePage-logo-h2 {
+                    text-align: left;
                     width: 100%;
                 }
                 .threePage-logo-h3 {
@@ -637,11 +646,11 @@
         }
         .sixPage {
             width: 100%;
-            height: 640px;
+            height: 740px;
             background-image: url(../images/imagenFondoSixPage.png);
             background-repeat: no-repeat;
             background-position: center;
-            background-size: cover;
+            background-size: 100% 1000px;
             .sixPage-div {
                 .sixPage-div-h2 {
                     font-size: 3.5rem;
@@ -650,6 +659,7 @@
                     font-size: 2rem;
                 }
                 .sixPage-div-p {
+                    padding: 0 100px;
                     font-size: 1rem;
                 }
             }
@@ -666,12 +676,16 @@
                         }
                     }
                 }
+                .sixPageCaptcha {
+                    padding-left: 29%;
+                }
             }
             .sixPage-divTwo {
                 display: none;
             }
         }
         .sevenPage {
+            height: 750px;
             .sevenPage-sponsors {
                 .sevenPage-sponsors-h2 {
                     font-size: 4rem;
@@ -684,8 +698,8 @@
                     height: 125px;
                     padding: 10px 20px;
                     .sevenPage-imgSponsors-div-img {
-                        width: 250px;
-                        height: 250px;
+                        width: 200px;
+                        height: 200px;
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: contain;
@@ -702,6 +716,9 @@
                 .form {
                     .eightpage-div-form-label {
                         padding-left: 20px;
+                    }
+                    .eightPageCaptcha {
+                        padding-left: 31%;
                     }
                 }
             }
