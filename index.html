@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <!-- Link de fontawesome -->
     <script src="https://kit.fontawesome.com/7f0b64bb6b.js" crossorigin="anonymous"></script>
     <!-- Link de css -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Título -->
     <title>CODERCONF</title>
+    <!--CAPCHA-->
 </head>
 
 <body class="body">
@@ -47,7 +47,7 @@
                 <h2 class="pageOneArticle-divOne-h2">SÉ EL PROTAGONISTA <br> <span class="pageOneArticle-divOne-h2b">DE TU FUTURO</span></h2>
             </div>
             <div class="pageOneArticle-divTwo">
-                <h3 class="pageOneArticle-divTwo-h3">29 AGO 2021</h3>
+                <h3 class="pageOneArticle-divTwo-h3">20 SEP 2021</h3>
                 <h3 class="pageOneArticle-divTwo-h3">11:00 A 22:00 HS</h3>
             </div>
             <div class="pageOneArticle-divThree">
@@ -69,19 +69,19 @@
                 </div>
                 <div class="cuentaRegresiva-divTwo">
                     <div class="cuentaRegresiva-divTwo-div">
-                        <h2 class="cuentaRegresiva-divTwo-div-h2">02</h2>
+                        <h2 class="cuentaRegresiva-divTwo-div-h2" id='clockDay'></h2>
                         <p class="cuentaRegresiva-divTwo-div-p">DÍAS</p>
                     </div>
                     <div class="cuentaRegresiva-divTwo-div">
-                        <h2 class="cuentaRegresiva-divTwo-div-h2">12</h2>
+                        <h2 class="cuentaRegresiva-divTwo-div-h2" id='clockHours'></h2>
                         <p class="cuentaRegresiva-divTwo-div-p">HORAS</p>
                     </div>
                     <div class="cuentaRegresiva-divTwo-div">
-                        <h2 class="cuentaRegresiva-divTwo-div-h2">48</h2>
+                        <h2 class="cuentaRegresiva-divTwo-div-h2" id='clockMinutes'></h2>
                         <p class="cuentaRegresiva-divTwo-div-p">MINUTOS</p>
                     </div>
                     <div class="cuentaRegresiva-divTwo-div">
-                        <h2 class="cuentaRegresiva-divTwo-div-h2">15</h2>
+                        <h2 class="cuentaRegresiva-divTwo-div-h2" id='clockSeconds'></h2>
                         <p class="cuentaRegresiva-divTwo-div-p">SEGUNDOS</p>
                     </div>
                 </div>
@@ -91,9 +91,9 @@
     <!-- Segunda página (Conferecia + logo astronauta) -->
     <section class="twoPage">
         <div class="twoPage-imagen">
-            <img src="./images/flechasVioletas.png" alt="imagen flechas" class="twoPage-imagen-flechas">
+            <img src="./images/flechasVioletas.png" alt="imagen flechas" class="twoPage-imagen-flechas twoPageFlechaOne">
             <img src="./images/imagenPageTwo-mobile.png" alt="imagen satelite" class="twoPage-imagen-logo">
-            <img src="./images/flechasVioletasTrans.png" alt="imagen flechas" class="twoPage-imagen-flechas">
+            <img src="./images/flechasVioletasTrans.png" alt="imagen flechas" class="twoPage-imagen-flechas twoPageFlechaTwo">
         </div>
         <div class="twoPage-texto">
             <h2 class="twoPage-texto-h2"><img src="./images/coderconfNegroPageTwo.png" alt="logo coderconf"></h2>
@@ -125,23 +125,25 @@
             <h3 class="fourPage-divSpeaker-h3">Preparados para el futuro</h3>
             <p class="fourPage-divSpeaker-p">Invitados de alto valor expondrán sus experiencias y sus temas de investigación. Conocé a nuestros invitados 2021.</p>
         </div>
-        <div class="fourPage-divInvitado">
+        <div class="fourPage-divInvitado" id="selectSpeaker">
             <div class="fourPage-divInvitado-divDatos">
                 <div class="fourPage-divInvitado-divDatos-div">
                     <img src="./images/invitado.png" alt="Foto del invitado especial" class="fourPage-divInvitado-divDatos-div-img">
                 </div>
                 <div class="fourPage-divInvitado-divDatos-div2">
-                    <h2 class="fourPage-divInvitado-divDatos-h2">Roger Dimant</h2>
-                    <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="fourPage-divInvitado-divDatos-img">
+                    <div class="fourPage-divInvitado-divDatos-div3">
+                        <h2 class="fourPage-divInvitado-divDatos-h2">Roger Dimant</h2>
+                        <img src="./images/iconoLinkedin.png" alt="Icono de linkedin" class="fourPage-divInvitado-divDatos-img">
+                    </div>
+                    <h3 class="fourPage-divInvitado-divDatos-h3">COUNTRY MANAGER</h3>
+                    <h4 class="fourPage-divInvitado-divDatos-h4">TIENDA MIA</h4>
+                    <p class="fourPage-divInvitado-divDatos-p">Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales.</p>
+                    <h5 class="fourPage-divInvitado-divDatos-h5">www.rogerdimant.com</h5>
                 </div>
-                <h3 class="fourPage-divInvitado-divDatos-h3">COUNTRY MANAGER</h3>
-                <h4 class="fourPage-divInvitado-divDatos-h4">TIENDA MIA</h4>
-                <p class="fourPage-divInvitado-divDatos-p">Licenciado en informática y desarrollador de software que actualmente trabaja en Meedan: un equipo de diseñadores, tecnólogos y periodistas que se centran en la investigación de código abierto de los medios digitales.</p>
-                <h5 class="fourPage-divInvitado-divDatos-h5">www.rogerdimant.com</h5>
             </div>
         </div>
         <div class="carousel">
-            <div class="carousel-speakerGral">
+            <div class="carousel-speakerGral" id='listaSpeaker'>
                 <div class="carousel-speakerGral-speaker">
                     <img src="./images/invitado.png" class="carousel-speakerGral-speaker-img" alt="Foto del speaker">
                     <div class="carousel-speakerGral-speaker-div">
@@ -267,16 +269,16 @@
             <div class="fivePage-divGral-imagen">
                 <img src="./images/coheteAgendaDektop.png" alt="Cohete espacial">
             </div>
-            <div class="fivePage-divGral-divTwo">
+            <div class="fivePage-divGral-divTwo" id="agendaSpeaker">
                 <div class="fivePage-divGral-agenda">
                     <div class="fivePage-divGral-agenda-divOne">
                         <img src="./images/imagenFlechaAgenda.png" alt="Imagen de flecha - agenda">
                     </div>
                     <div class="fivePage-divGral-agenda-divTwo">
-                        <h2 class="fivePage-divGral-agenda-h2 agendaColorGris">11:00 HS</h2>
+                        <h2 class="fivePage-divGral-agenda-h2 ">11:00 HS</h2>
                         <h3 class="fivePage-divGral-agenda-h3 agendaColorGris">SEBASTÍAN GALANTERNIK</h3>
                         <h4 class="fivePage-divGral-agenda-h4 agendaColorGris">CEO EN TRAFILEA</h4>
-                        <p class="fivePage-divGral-agenda-p agendaColorGris">Charla: Quiero ser consultor SEO. Por dónde empiezo?</p>
+                        <p class="fivePage-divGral-agenda-p agendaColorGris">Charla: Quiero ser consultor SEO. Por dónde empiezo? </p>
                     </div>
                 </div>
                 <div class="fivePage-divGral-agenda">
@@ -368,40 +370,51 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-    <!-- Sexta agenda (Inscripción) -->
+    <!-- Sexta página (Form principal) -->
     <section class="sixPage" id="inscripcion">
         <div class="sixPage-div">
             <h2 class="sixPage-div-h2">INSCRIPCIÓN</h2>
             <h3 class="sixPage-div-h3">¡Completa tus datos!</h3>
-            <p class="sixPage-div-p">y se parte de esta gran experiencia con los mejores speakers y temas de alto impacto para el futuro.</p>
+            <p class="sixPage-div-p">Sé parte de esta gran experiencia con los mejores speakers y temas de alto impacto para el futuro.</p>
         </div>
-
-        <form class="sixPage-form" action="">
-            <label for="name" class="sixPage-form-label">Nombres</label>
-            <input class="sixPage-form-input" type="text" placeholder="Nombre" name="nombre">
-            <label for="apellido" class="sixPage-form-label">Apellidos</label>
-            <input class="sixPage-form-input" type="text" placeholder="Apellido" name="apellido">
-            <label for="celular" class="sixPage-form-label">Celular</label>
-            <input class="sixPage-form-input" type="text" placeholder="Celular" name="celular">
-            <label for="email" class="sixPage-form-label">Email</label>
-            <input class="sixPage-form-input" type="email" placeholder="Email" name="email">
-            <label for="email2" class="sixPage-form-label">Confirmar tu Email</label>
-            <input class="sixPage-form-input" type="email" placeholder="Confirmar tu Email" name="email2">
-            <label for="pais" class="sixPage-form-label">País</label>
-            <input class="sixPage-form-input" type="text" placeholder="País" name="pais">
-            <label for="select" class="sixPage-form-label">¿Sos parte de Coder'</label>
-            <select class="sixPage-form-input" name="ocupacion" id="ocupacion" name="select">
-                <option selected disabled>Selecciona</option>
-                <option class="eightPage-option" value="estudiante">Estudiante</option>
-                <option class="eightPage-option" value="graduado">Graduado</option>
-                <option class="eightPage-option" value="tutor">Tutor</option>
-                <option class="eightPage-option" value="profesor">Profesor</option>
-                <option class="eightPage-option" value="no">No</option>
-            </select>
-            <div>
+        <form class="sixPage-form" id="formInscripcion">
+            <div class="sixPage-form-gral">
+                <div class="sixPage-form-gral-div">
+                    <label for="name" class="sixPage-form-label">Nombre y Apellido</label>
+                    <input class="sixPage-form-input" type="text" placeholder="Nombre y Apellido" name="nombre" required>
+                </div class="sixPage-form-gral-div">
+                <div class="sixPage-form-gral-div">
+                    <label for="celular" class="sixPage-form-label">Celular</label>
+                    <input class="sixPage-form-input" type="number" placeholder="Celular" name="celular" required>
+                </div>
+                <div class="sixPage-form-gral-div">
+                    <label for="email" class="sixPage-form-label">Email</label>
+                    <input class="sixPage-form-input" type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="sixPage-form-gral-div">
+                    <label for="email2" class="sixPage-form-label">Confirmar tu Email</label>
+                    <input class="sixPage-form-input" type="email" placeholder="Confirmar tu Email" name="email2" required>
+                </div>
+                <div class="sixPage-form-gral-div">
+                    <label for="pais" class="sixPage-form-label">País</label>
+                    <input class="sixPage-form-input" type="text" placeholder="País" name="pais" required>
+                </div>
+                <div class="sixPage-form-gral-div">
+                    <label for="select" class="sixPage-form-label">¿Sos parte de Coder?</label>
+                    <select class="sixPage-form-input" name="ocupacion" id="ocupacion" name="select">
+                        <option selected disabled value="no">Selecciona</option>
+                        <option class="eightPage-option" value="estudiante">Estudiante</option>
+                        <option class="eightPage-option" value="graduado">Graduado</option>
+                        <option class="eightPage-option" value="tutor">Tutor</option>
+                        <option class="eightPage-option" value="profesor">Profesor</option>
+                        <option class="eightPage-option" value="no">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="g-recaptcha sixPageCaptcha" data-sitekey="6LdRwz4cAAAAAGY6xA6a5s_CRnTh-xMfuc-lfTdk" data-callback="enableSubmit"></div>
+            <div class="sixPage-form-gral-btn">
                 <input class="sixPage-form-btn" type="submit" value="Solicitar Inscripción">
             </div>
         </form>
@@ -414,13 +427,8 @@
         <div class="sevenPage-sponsors">
             <h2 class="sevenPage-sponsors-h2">SPONSORS</h2>
         </div>
-        <div class="sevenPage-imgSponsors">
-            <div class="sevenPage-imgSponsors-div"><img src="./images/Logo-ML.png" alt="Logo de Mercado libre" class="sevenPage-imgSponsors-div-img"></div>
-            <div class="sevenPage-imgSponsors-div"><img src="./images/Logo-Google.png" alt="Logo de google" class="sevenPage-imgSponsors-div-img"></div>
-            <div class="sevenPage-imgSponsors-div"><img src="./images/Logo-TiendaNube.png" alt="Tienda de nube" class="sevenPage-imgSponsors-div-img"></div>
-            <div class="sevenPage-imgSponsors-div"><img src="./images/Logo-ML.png" alt="Logo de Mercado libre" class="sevenPage-imgSponsors-div-img"></div>
-            <div class="sevenPage-imgSponsors-div"><img src="./images/Logo-Google.png" alt="Logo de google" class="sevenPage-imgSponsors-div-img"></div>
-            <div class="sevenPage-imgSponsors-div"><img src="./images/Logo-TiendaNube.png" alt="Tienda de nube" class="sevenPage-imgSponsors-div-img"></div>
+        <div class="sevenPage-imgSponsors" id="listaSponsor">
+            <!--RENDER SPONSOR-->
         </div>
     </section>
     <!-- Octava página (Form para ser sponsor) -->
@@ -430,13 +438,14 @@
             <h3 class="eightpage-div-title-h3">¡Emprendamos el mismo vuelo!</h3>
         </div>
         <div class="eightpage-div-form">
-            <form action="#" class="form">
-                <label for="nombre" class="eightpage-div-form-label">Nombre</label>
-                <input type="text" class="input" name="nombre" id="" placeholder="Nombre y Apellido">
+            <form class="form" id="formSponsor">
+                <label for="nombre" class="eightpage-div-form-label">Nombre y Apellido</label>
+                <input type="text" class="input" name="nombre" placeholder="Nombre y Apellido" required>
                 <label for="email" class="eightpage-div-form-label">Email</label>
-                <input type="email" class="input" name="email" id="" placeholder="Email">
+                <input type="email" class="input" name="email" placeholder="Email" required>
                 <label for="celular" class="eightpage-div-form-label">Celular</label>
-                <input type="text" class="input" name="celular" id="" placeholder="Celular">
+                <input type="number" class="input" name="celular" placeholder="Celular" required>
+                <div class="g-recaptcha eightPageCaptcha" data-sitekey="6LdRwz4cAAAAAGY6xA6a5s_CRnTh-xMfuc-lfTdk" data-callback="enableSubmit"></div>
                 <div>
                     <input class="btn" type="submit" value="Enviar Solicitud">
                 </div>
@@ -470,9 +479,9 @@
             <h2 class="footerPage-redesSociales-h2">Seguinos en</h2>
             <div class="footerPage-redesSociales-div">
                 <a href="#"><img src="./images/facebook.png" alt="Logo de Facebook" class="footerPage-logoRedes"></a>
-                <a href="#"><img src="./images/instagram.png" alt="Logo de Instagram" class="footerPage-logoRedes"></a>
+                <a href="#"><img src="./images/Instagram.png" alt="Logo de Instagram" class="footerPage-logoRedes"></a>
                 <a href="#"><img src="./images/youtube.png" alt="Logo de Youtube" class="footerPage-logoRedes"></a>
-                <a href="#"><img src="./images/twitter.png" alt="Logo de Twitter" class="footerPage-logoRedes"></a>
+                <a href="#"><img src="./images/Twitter.png" alt="Logo de Twitter" class="footerPage-logoRedes"></a>
                 <a href="#"><img src="./images/iconoLinkedin.png" alt="Logo de Linkedin" class="footerPage-logoRedes"></a>
             </div>
         </div>
@@ -482,6 +491,14 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="js/class.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/render.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

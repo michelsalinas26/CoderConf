@@ -338,7 +338,6 @@ table {
 .twoPage {
   grid-area: twoPage;
   width: 100%;
-  /* height: 100vh; */
   height: 550px;
   margin: 0%;
   padding: 0.625rem;
@@ -350,8 +349,7 @@ table {
     justify-content: center;
     align-items: center; }
     .twoPage .twoPage-imagen .twoPage-imagen-flechas {
-      display: none;
-      /* padding: 0rem 0.625rem; */ }
+      display: none; }
     .twoPage .twoPage-imagen .twoPage-imagen-logo {
       background-position: center;
       background-repeat: no-repeat;
@@ -426,7 +424,6 @@ table {
 .fourPage {
   grid-area: fourPage;
   width: 100%;
-  /* height: 175vh; */
   height: 1120px;
   padding: 1rem 0.312rem;
   background-color: #131313;
@@ -444,19 +441,19 @@ table {
       font-family: gobold-bold;
       text-transform: uppercase;
       font-size: 2.5rem;
-      color: yellow;
+      color: #E0FF00;
       padding: 0.5rem; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
       font-family: helvetica-bold;
       font-size: 1.4rem;
-      color: white;
+      color: #FFFFFF;
       padding: 0.5rem; }
     .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
       font-family: helvetica-thin;
       line-height: 1.2rem;
       padding: 0.5rem;
       font-size: 1rem;
-      color: white;
+      color: #FFFFFF;
       text-align: center; }
   .fourPage .fourPage-divInvitado {
     width: 100%;
@@ -475,13 +472,28 @@ table {
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div .fourPage-divInvitado-divDatos-div-img {
         padding: 0.5rem; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
-        display: flex; }
+        display: flex;
+        flex-direction: column; }
+        .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-div3 {
+          display: flex;
+          justify-content: center; }
+          .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-div3 .fourPage-divInvitado-divDatos-h2 {
+            font-family: gobold-bold;
+            text-transform: uppercase;
+            padding: 0.5rem 0.5rem 0.5rem 3rem;
+            font-size: 1.5rem;
+            color: #FFFFFF;
+            text-align: center; }
+          .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-div3 .fourPage-divInvitado-divDatos-img {
+            width: 40px;
+            height: 40px;
+            padding: 0.5rem; }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-h2 {
           font-family: gobold-bold;
           text-transform: uppercase;
           padding: 0.5rem 0.5rem 0.5rem 3rem;
           font-size: 1.5rem;
-          color: white;
+          color: #FFFFFF;
           text-align: center; }
         .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 .fourPage-divInvitado-divDatos-img {
           width: 40px;
@@ -491,7 +503,7 @@ table {
         font-family: helvetica-light;
         padding: 0.312rem;
         font-size: 0.8rem;
-        color: gray;
+        color: #A5A5A5;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h4 {
         font-family: helvetica-thin;
@@ -504,7 +516,7 @@ table {
         padding: 0.312rem;
         font-size: 1rem;
         line-height: 1.2rem;
-        color: white;
+        color: #FFFFFF;
         text-align: center; }
       .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-h5 {
         font-family: helvetica-light;
@@ -595,7 +607,6 @@ table {
   .fivePage .fivePage-divGral {
     width: 100%;
     height: 70%;
-    /* overflow-y: scroll; */
     padding: 0.5rem;
     display: flex;
     flex-direction: column; }
@@ -641,9 +652,8 @@ table {
 .sixPage {
   grid-area: sixPage;
   width: 100%;
-  /* height: 175vh; */
-  height: 1120px;
-  padding: 1.5rem;
+  height: 1200px;
+  padding: 1rem;
   background-color: #131313;
   display: flex;
   flex-direction: column;
@@ -683,26 +693,40 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .sixPage .sixPage-form .sixPage-form-label {
+    .sixPage .sixPage-form .sixPage-form-gral {
       width: 90%;
-      padding: 0rem 0.5rem;
-      color: #FFFFFF;
-      font-family: helvetica-light; }
-    .sixPage .sixPage-form .sixPage-form-input {
-      width: 90%;
-      margin: 0.6rem 0rem;
-      padding: 0.5rem;
-      border: 1px solid #E4FF22;
-      border-radius: 5px;
-      background-color: #131313;
-      color: #707070;
-      font-family: helvetica-light; }
-    .sixPage .sixPage-form ::placeholder {
-      color: #707070;
-      font-family: helvetica-light;
-      padding-left: 0.8rem; }
-    .sixPage .sixPage-form .eightPage-option {
-      color: #E0FF00; }
+      display: flex;
+      flex-direction: column;
+      align-content: center; }
+      .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .sixPage-form-label {
+          width: 90%;
+          max-width: 400px;
+          padding: 0rem 1rem;
+          color: #FFFFFF;
+          font-family: helvetica-light; }
+        .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .sixPage-form-input {
+          width: 90%;
+          max-width: 400px;
+          margin: 0.6rem 0rem;
+          padding: 0.5rem;
+          border: 1px solid #E4FF22;
+          border-radius: 5px;
+          background-color: #131313;
+          color: #707070;
+          font-family: helvetica-light; }
+        .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div ::placeholder {
+          color: #707070;
+          font-family: helvetica-light;
+          padding-left: 0.8rem; }
+        .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .eightPage-option {
+          color: #E0FF00; }
+    .sixPage .sixPage-form .sixPageCaptcha {
+      width: 85%; }
     .sixPage .sixPage-form .sixPage-form-btn {
       margin: 1rem auto 0rem;
       padding: 15px 50px;
@@ -718,7 +742,6 @@ table {
 .sevenPage {
   grid-area: sevenPage;
   width: 100%;
-  /* height: 100vh; */
   height: 640px;
   padding: 0.5rem; }
   .sevenPage .sevenPage-sponsors {
@@ -752,13 +775,12 @@ table {
       .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div .sevenPage-imgSponsors-div-img {
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover; }
+        background-size: contain; }
 
 .eightpage {
   grid-area: eightPage;
   width: 100%;
-  /* height: 100vh; */
-  height: 640px;
+  height: 700px;
   padding: 1.5rem 0.5rem;
   background-color: #F2F2F2;
   display: flex;
@@ -766,7 +788,6 @@ table {
   align-items: center; }
   .eightpage .eightpage-div-title {
     width: 100%;
-    /* height: 30%; */
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -797,10 +818,12 @@ table {
       justify-content: center; }
       .eightpage .eightpage-div-form .form .eightpage-div-form-label {
         width: 90%;
+        max-width: 400px;
         color: #131313;
         font-family: helvetica-medium; }
       .eightpage .eightpage-div-form .form .input {
         width: 100%;
+        max-width: 400px;
         margin: 0.5rem 0rem 1rem;
         padding: 0.5rem;
         border: 1px solid #8215BC;
@@ -809,6 +832,8 @@ table {
         font-family: helvetica-light;
         color: #8215BC;
         padding-left: 0.8rem; }
+      .eightpage .eightpage-div-form .form .eightPageCaptcha {
+        width: 90%; }
       .eightpage .eightpage-div-form .form .btn {
         margin: 2rem auto;
         padding: 0.8rem 5rem;
@@ -904,23 +929,13 @@ table {
 /* ----------------- Media query para dispositivos entre 375 y 768px - Mobile first ----------------------------------------- */
 @media screen and (min-width: 360px) and (max-width: 767px) {
   .body {
-    width: 100%;
-    /* height: 100vh; */
-    /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */ } }
+    width: 100%; } }
 
 /* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
 /* Media query para dispositivos entre 769px y 1200px - Tablet */
-@media screen and (min-width: 768px) and (max-width: 1139px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .body {
     width: 100%;
-    /* height: 100vh; */
-    /* display: grid;
-            grid-template-areas: "onePage" "twoPage" "threePage" "fourPage" "fivePage" "sixPage" "sevenPage" "eightPage" "footer";
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
     /* onePage */ }
     .body .onePage {
       height: 624px;
@@ -931,10 +946,7 @@ table {
       .body .onePage .navegacion {
         height: 10%; }
         .body .onePage .navegacion .logo > h1 {
-          padding: 5px; }
-          .body .onePage .navegacion .logo > h1 img {
-            width: 110px;
-            height: 35px; }
+          padding: 10px; }
         .body .onePage .navegacion .navbar {
           display: flex;
           flex-direction: row;
@@ -960,7 +972,7 @@ table {
           padding: 0rem 1rem; }
           .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
             font-size: 1.5rem;
-            line-height: 3rem;
+            line-height: 2.8rem;
             text-align: start; }
           .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2b {
             font-size: 2.5rem; }
@@ -973,6 +985,8 @@ table {
           .body .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
             padding: 0.5rem;
             text-align: start; }
+        .body .onePage .pageOneArticle .burbujas .burbujas-imgOne {
+          left: 50%; }
       .body .onePage .anexo {
         width: 100%;
         height: 20%;
@@ -1002,20 +1016,43 @@ table {
         height: 100%;
         width: 50%;
         display: flex;
-        justify-content: space-around; }
+        justify-content: space-around;
+        position: relative; }
+        .body .twoPage .twoPage-imagen .twoPageFlechaOne {
+          position: absolute;
+          left: 0%;
+          display: block;
+          animation: flechas 4s linear infinite; }
+  @keyframes flechas {
+    0% {
+      bottom: 30%; }
+    50% {
+      bottom: 45%; }
+    100% {
+      bottom: 75%; } }
+        .body .twoPage .twoPage-imagen .twoPageFlechaTwo {
+          position: absolute;
+          left: 95%;
+          display: block;
+          animation: flechasTwo 4s linear infinite; }
+  @keyframes flechasTwo {
+    0% {
+      bottom: 10%; }
+    50% {
+      bottom: 30%; }
+    100% {
+      bottom: 50%; } }
         .body .twoPage .twoPage-imagen .twoPage-imagen-logo {
-          width: 400px;
-          height: 300px; }
+          width: 350px;
+          height: 250px; }
       .body .twoPage .twoPage-texto {
         height: 100%;
         width: 50%;
-        display: flex; }
-        .body .twoPage .twoPage-texto .twoPage-texto-h2 {
-          position: relative;
-          right: 20%; }
-          .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
-            width: 260px;
-            height: 62px; }
+        display: flex;
+        flex-direction: column; }
+        .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
+          width: 260px;
+          height: 62px; }
         .body .twoPage .twoPage-texto .twoPage-texto-p {
           text-align: start;
           font-size: 19px;
@@ -1036,6 +1073,269 @@ table {
         padding: 2rem;
         justify-content: flex-start; }
         .body .threePage .threePage-logo .threePage-logo-h2 {
+          width: 100%;
+          text-align: left; }
+        .body .threePage .threePage-logo .threePage-logo-h3 {
+          width: 100%;
+          font-size: 38px;
+          line-height: 48px;
+          text-align: start; }
+        .body .threePage .threePage-logo .threePage-logo-h4 {
+          width: 100%;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          text-align: start; }
+      .body .threePage .threePage-imagen {
+        display: none; }
+    .body .fourPage {
+      height: 960px;
+      background-image: url(../images/imagenFondoFourPage.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .body .fourPage .fourPage-divSpeaker {
+        width: 65%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h2 {
+          font-size: 3rem; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
+          font-size: 1.6rem; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
+          font-size: 1.3rem;
+          line-height: 1.6rem; }
+      .body .fourPage .fourPage-divInvitado {
+        height: 35%; }
+        .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
+          display: flex;
+          flex-direction: row; }
+          .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
+            width: 50%;
+            display: flex;
+            justify-content: center; }
+          .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column; }
+      .body .fourPage .carousel {
+        height: 40%; }
+    .body .fivePage .fivePage-divGral {
+      width: 100%;
+      display: flex;
+      flex-direction: row; }
+      .body .fivePage .fivePage-divGral .fivePage-divGral-imagen {
+        width: 15%;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .body .fivePage .fivePage-divGral .fivePage-divGral-divTwo {
+        width: 85%; }
+        .body .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda {
+          justify-content: flex-start; }
+    .body .sixPage {
+      width: 100%;
+      height: 720px;
+      background-image: url(../images/imagenFondoSixPage.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover; }
+      .body .sixPage .sixPage-div .sixPage-div-h2 {
+        font-size: 3.5rem; }
+      .body .sixPage .sixPage-div .sixPage-div-h3 {
+        font-size: 2rem; }
+      .body .sixPage .sixPage-div .sixPage-div-p {
+        width: 90%;
+        font-size: 1rem; }
+      .body .sixPage .sixPage-form .sixPage-form-gral {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 3rem 0rem; }
+        .body .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div {
+          width: 50%; }
+          .body .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .sixPage-form-input {
+            padding: 0.5rem 0.2rem; }
+      .body .sixPage .sixPage-form .sixPageCaptcha {
+        padding-left: 25%; }
+      .body .sixPage .sixPage-divTwo {
+        display: none; }
+    .body .sevenPage .sevenPage-sponsors .sevenPage-sponsors-h2 {
+      font-size: 4rem; }
+    .body .sevenPage .sevenPage-imgSponsors {
+      flex-direction: row; }
+      .body .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div {
+        width: 33%;
+        height: 125px;
+        padding: 10px 20px; }
+        .body .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div .sevenPage-imgSponsors-div-img {
+          width: 175px;
+          height: 175px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain; }
+    .body .eightpage .eightpage-div-title {
+      padding: 2rem; }
+    .body .eightpage .eightpage-div-form .form .eightpage-div-form-label {
+      padding-left: 20px; }
+    .body .eightpage .eightpage-div-form .form .eightPageCaptcha {
+      padding-left: 25%; }
+    .body .footerPage {
+      height: 250px;
+      grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
+      grid-template-columns: 0.33fr 0.33fr 0.34fr;
+      grid-template-rows: 0.5fr 0.5fr; } }
+
+/* ------------ navegacion ------------ */
+/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
+/* Media query para dispositivos mayores a 1201px - Desktop */
+@media screen and (min-width: 1024px) and (max-width: 2400px) {
+  .body {
+    width: 100%;
+    /* onePage */ }
+    .body .onePage {
+      height: 624px;
+      background-image: url(../images/fondoOnePageDesktop.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .body .onePage .navegacion {
+        height: 10%; }
+        .body .onePage .navegacion .logo .eje {
+          padding: 10px; }
+          .body .onePage .navegacion .logo .eje img {
+            width: 110px;
+            height: 35px; }
+        .body .onePage .navegacion .navbar {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end; }
+          .body .onePage .navegacion .navbar .btn-menu {
+            display: none; }
+          .body .onePage .navegacion .navbar .menu {
+            display: inline-block;
+            margin: auto 1rem; }
+            .body .onePage .navegacion .navbar .menu .ul {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between; }
+            .body .onePage .navegacion .navbar .menu .enlaceNavbar {
+              padding: 0.5rem;
+              font-size: 1.2rem; }
+      .body .onePage .pageOneArticle {
+        width: 40%;
+        height: 70%;
+        padding-bottom: 5rem; }
+        .body .onePage .pageOneArticle .pageOneArticle-divOne {
+          width: 90%;
+          padding: 0rem 1rem; }
+          .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
+            font-size: 2.5rem;
+            line-height: 4rem;
+            text-align: start; }
+          .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2b {
+            font-size: 3.5rem; }
+        .body .onePage .pageOneArticle .pageOneArticle-divTwo {
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          padding: 0rem 1rem;
+          justify-content: flex-start; }
+          .body .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
+            padding: 0.5rem;
+            text-align: start;
+            font-size: 1.2rem; }
+        .body .onePage .pageOneArticle .burbujas .burbujas-imgOne {
+          left: 50%; }
+      .body .onePage .anexo {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; }
+        .body .onePage .anexo .anexo-divOne {
+          width: 40%;
+          display: flex;
+          justify-content: center; }
+        .body .onePage .anexo .cuentaRegresiva {
+          width: 60%;
+          display: flex;
+          flex-direction: row; }
+          .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne {
+            width: 33%;
+            padding: 0px; }
+            .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne .cuentaRegresiva-divOne-h2 {
+              padding: 0px; }
+          .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo {
+            width: 67%; }
+    .body .twoPage {
+      display: flex;
+      flex-direction: row-reverse; }
+      .body .twoPage .twoPage-imagen {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        position: relative; }
+        .body .twoPage .twoPage-imagen .twoPageFlechaOne {
+          position: absolute;
+          left: 0%;
+          display: block;
+          animation: flechas 4s linear infinite; }
+  @keyframes flechas {
+    0% {
+      bottom: 30%; }
+    50% {
+      bottom: 45%; }
+    100% {
+      bottom: 75%; } }
+        .body .twoPage .twoPage-imagen .twoPageFlechaTwo {
+          position: absolute;
+          left: 95%;
+          display: block;
+          animation: flechasTwo 4s linear infinite; }
+  @keyframes flechasTwo {
+    0% {
+      bottom: 10%; }
+    50% {
+      bottom: 30%; }
+    100% {
+      bottom: 50%; } }
+        .body .twoPage .twoPage-imagen .twoPage-imagen-logo {
+          width: 350px;
+          height: 250px; }
+      .body .twoPage .twoPage-texto {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
+          width: 300px;
+          height: 80px; }
+        .body .twoPage .twoPage-texto .twoPage-texto-p {
+          text-align: start;
+          font-size: 21px;
+          line-height: 25px; }
+    .body .threePage {
+      height: 500px;
+      padding: 0.625rem 0rem;
+      background-image: url(../images/movilJaxa3-tablet.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .body .threePage .threePage-logo {
+        width: 40%;
+        height: 50%;
+        padding: 2rem;
+        justify-content: flex-start; }
+        .body .threePage .threePage-logo .threePage-logo-h2 {
+          text-align: left;
           width: 100%; }
         .body .threePage .threePage-logo .threePage-logo-h3 {
           width: 100%;
@@ -1049,150 +1349,106 @@ table {
           text-align: start; }
       .body .threePage .threePage-imagen {
         display: none; }
+    .body .fourPage {
+      height: 960px;
+      background-image: url(../images/imagenFondoFourPage.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .body .fourPage .fourPage-divSpeaker {
+        width: 65%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h2 {
+          font-size: 3rem; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-h3 {
+          font-size: 1.6rem; }
+        .body .fourPage .fourPage-divSpeaker .fourPage-divSpeaker-p {
+          font-size: 1.3rem;
+          line-height: 1.6rem; }
+      .body .fourPage .fourPage-divInvitado {
+        height: 35%; }
+        .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos {
+          display: flex;
+          flex-direction: row; }
+          .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div {
+            width: 50%;
+            display: flex;
+            justify-content: center; }
+          .body .fourPage .fourPage-divInvitado .fourPage-divInvitado-divDatos .fourPage-divInvitado-divDatos-div2 {
+            width: 50%;
+            display: flex;
+            flex-direction: column; }
+      .body .fourPage .carousel {
+        height: 40%; }
     .body .fivePage .fivePage-divGral {
+      width: 100%;
       display: flex;
-      flex-direction: row;
-      justify-content: center; }
+      flex-direction: row; }
       .body .fivePage .fivePage-divGral .fivePage-divGral-imagen {
-        padding-left: 100px;
-        width: 30%;
+        width: 15%;
         display: block;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover; }
       .body .fivePage .fivePage-divGral .fivePage-divGral-divTwo {
-        width: 70%;
-        padding-right: 100px; } }
-
-/* ------------ navegacion ------------ */
-/* ----------------- Media Query Para Mayor Resoluciones ----------------------------------------- */
-/* Media query para dispositivos mayores a 1201px - Desktop */
-@media screen and (min-width: 1140px) and (max-width: 2400px) {
-  .body {
-    width: 100%; }
-    .body .onePage {
-      height: 624px;
-      background-image: url(../images/fondoOnePageDesktop.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover; }
-      .body .onePage .navegacion {
-        height: 10%; }
-        .body .onePage .navegacion .logo > h1 {
-          padding: 5px; }
-          .body .onePage .navegacion .logo > h1 img {
-            width: 110px;
-            height: 35px; }
-        .body .onePage .navegacion .navbar {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around; }
-          .body .onePage .navegacion .navbar .btn-menu {
-            display: none; }
-          .body .onePage .navegacion .navbar .menu {
-            display: inline-block;
-            margin: auto 0px; }
-            .body .onePage .navegacion .navbar .menu .ul {
-              display: flex;
-              flex-direction: row; }
-            .body .onePage .navegacion .navbar .menu .enlaceNavbar {
-              padding: 0.5rem;
-              font-size: 1.1rem; }
-      .body .onePage .pageOneArticle {
-        width: 40%;
-        height: 70%;
-        padding-bottom: 5rem; }
-        .body .onePage .pageOneArticle .pageOneArticle-divOne {
-          width: 90%;
-          padding: 0rem 1rem; }
-          .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2 {
-            font-size: 2.5rem;
-            line-height: 3.5rem;
-            text-align: start; }
-          .body .onePage .pageOneArticle .pageOneArticle-divOne .pageOneArticle-divOne-h2b {
-            font-size: 3.5rem; }
-        .body .onePage .pageOneArticle .pageOneArticle-divTwo {
-          width: 90%;
-          display: flex;
-          flex-direction: row;
-          padding: 0rem 1rem;
+        width: 85%; }
+        .body .fivePage .fivePage-divGral .fivePage-divGral-divTwo .fivePage-divGral-agenda {
           justify-content: flex-start; }
-          .body .onePage .pageOneArticle .pageOneArticle-divTwo .pageOneArticle-divTwo-h3 {
-            padding: 0.5rem;
-            text-align: start; }
-      .body .onePage .anexo {
-        width: 100%;
-        height: 20%;
+    .body .sixPage {
+      width: 100%;
+      height: 740px;
+      background-image: url(../images/imagenFondoSixPage.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 1000px; }
+      .body .sixPage .sixPage-div .sixPage-div-h2 {
+        font-size: 3.5rem; }
+      .body .sixPage .sixPage-div .sixPage-div-h3 {
+        font-size: 2rem; }
+      .body .sixPage .sixPage-div .sixPage-div-p {
+        padding: 0 100px;
+        font-size: 1rem; }
+      .body .sixPage .sixPage-form .sixPage-form-gral {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center; }
-        .body .onePage .anexo .anexo-divOne {
-          width: 40%;
-          display: flex;
-          justify-content: center; }
-        .body .onePage .anexo .cuentaRegresiva {
-          width: 60%;
-          display: flex;
-          flex-direction: row; }
-          .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne {
-            width: 33%;
-            padding: 0px; }
-            .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divOne .cuentaRegresiva-divOne-h2 {
-              padding: 0px; }
-          .body .onePage .anexo .cuentaRegresiva .cuentaRegresiva-divTwo {
-            width: 67%; }
-    .body .twoPage {
-      display: flex;
-      flex-direction: row-reverse; }
-      .body .twoPage .twoPage-imagen {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        justify-content: space-around; }
-        .body .twoPage .twoPage-imagen .twoPage-imagen-logo {
-          width: 400px;
-          height: 300px; }
-      .body .twoPage .twoPage-texto {
-        height: 100%;
-        width: 50%;
-        display: flex; }
-        .body .twoPage .twoPage-texto .twoPage-texto-h2 {
-          position: relative;
-          right: 20%; }
-          .body .twoPage .twoPage-texto .twoPage-texto-h2 img {
-            width: 260px;
-            height: 62px; }
-        .body .twoPage .twoPage-texto .twoPage-texto-p {
-          text-align: start;
-          font-size: 19px;
-          line-height: 24px; }
-    .body .threePage {
-      height: 500px;
-      padding: 0.625rem 0rem;
-      background-image: url(../images/movilJaxa3-tablet.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-      .body .threePage .threePage-logo {
-        width: 40%;
-        height: 50%;
-        padding: 2rem;
-        justify-content: flex-start; }
-        .body .threePage .threePage-logo .threePage-logo-h2 {
-          width: 100%; }
-        .body .threePage .threePage-logo .threePage-logo-h3 {
-          width: 100%;
-          font-size: 38px;
-          line-height: 48px;
-          text-align: start; }
-        .body .threePage .threePage-logo .threePage-logo-h4 {
-          width: 100%;
-          font-size: 1rem;
-          line-height: 1.5rem;
-          text-align: start; }
-      .body .threePage .threePage-imagen {
-        display: none; } }
+        flex-wrap: wrap;
+        padding: 3rem 0rem; }
+        .body .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div {
+          width: 50%; }
+          .body .sixPage .sixPage-form .sixPage-form-gral .sixPage-form-gral-div .sixPage-form-input {
+            padding: 0.5rem 0.2rem; }
+      .body .sixPage .sixPage-form .sixPageCaptcha {
+        padding-left: 29%; }
+      .body .sixPage .sixPage-divTwo {
+        display: none; }
+    .body .sevenPage {
+      height: 750px; }
+      .body .sevenPage .sevenPage-sponsors .sevenPage-sponsors-h2 {
+        font-size: 4rem; }
+      .body .sevenPage .sevenPage-imgSponsors {
+        flex-direction: row; }
+        .body .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div {
+          width: 33%;
+          height: 125px;
+          padding: 10px 20px; }
+          .body .sevenPage .sevenPage-imgSponsors .sevenPage-imgSponsors-div .sevenPage-imgSponsors-div-img {
+            width: 200px;
+            height: 200px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            padding-left: 3rem; }
+    .body .eightpage .eightpage-div-title {
+      padding: 2rem; }
+    .body .eightpage .eightpage-div-form .form .eightpage-div-form-label {
+      padding-left: 20px; }
+    .body .eightpage .eightpage-div-form .form .eightPageCaptcha {
+      padding-left: 31%; }
+    .body .footerPage {
+      height: 250px;
+      grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
+      grid-template-columns: 0.33fr 0.33fr 0.34fr;
+      grid-template-rows: 0.5fr 0.5fr; } }
