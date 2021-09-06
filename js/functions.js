@@ -43,3 +43,12 @@ function setSelected(id){
     const img = document.getElementById(id);
     img.classList.add("selectedAvatar");
 }
+
+function timeAgenda(date) {
+    return `${date.getHours()}:${fixMinute(date.getMinutes())}`
+}
+
+
+function fixMinute(minute){
+    return minute < 10 ? "0"+minute : minute;
+}

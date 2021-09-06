@@ -11,6 +11,13 @@ class Speaker{
         this.descripcion = descripcion;
         this.identificador = identificador;
     }   
+
+    isSpeaking(now, next){
+        console.log(this.horario);
+        console.log(now);
+        console.log(next);
+        return (this.horario <= now) && (now < next);
+    }
 }
 
 class Sponsor{

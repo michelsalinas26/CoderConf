@@ -8,12 +8,42 @@ function sponsorRender(sponsor){
 
 function agendaRender(speakers){
     const divAgenda = document.getElementById('agendaSpeaker');
+    const now  = timeAgenda(new Date());
+    const flag = isEvent(new Date(), eventday);
     divAgenda.innerHTML ='';
-    speakers.forEach((speaker, index) => {
-        if(index == 0){
-            divAgenda.innerHTML += agendaUI(speaker);
+    console.log(flag);
+    speakers.forEach((speaker, index, speakers) => {
+        if(flag){
+            if(index == 0){
+                if(now <= speakers[index+1].horario){
+                    divAgenda.innerHTML += agendaUI(speaker);
+                }else{
+                    divAgenda.innerHTML += nextAgendaUI(speaker);
+                }
+            }else{
+                let nextIndex = index + 1;
+                if(nextIndex == speakers.length){
+                    if(now >= speaker.horario){
+                        divAgenda.innerHTML += agendaUI(speaker);
+                    }else{
+                        divAgenda.innerHTML += nextAgendaUI(speaker);
+                    }
+                }else{
+                    let next = speakers[nextIndex].horario;
+                    if(speaker.isSpeaking(now, next)){
+                        divAgenda.innerHTML += agendaUI(speaker);
+                    }else{
+                        divAgenda.innerHTML += nextAgendaUI(speaker);
+                        
+                    }
+                }
+            }
         }else{
-            divAgenda.innerHTML += nextAgendaUI(speaker);
+            if(index == 0){
+                divAgenda.innerHTML += agendaUI(speaker);
+            }else{
+                divAgenda.innerHTML += nextAgendaUI(speaker);
+            }
         }
     });
 }   
