@@ -1325,7 +1325,7 @@ table {
       background-image: url(../images/movilJaxa3-tablet.png);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100% 500px;
       display: flex;
       flex-direction: row;
       justify-content: space-around; }
