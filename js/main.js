@@ -96,6 +96,17 @@ document.getElementById('formSponsor').addEventListener('submit',function(e){
     this.innerHTML += spinnerUI();
     sendData(POSTSPONSORS,data.celular, data);
 })
+document.getElementById('btnSpeakerL').addEventListener('click', function(e){
+    document.getElementById('listaSpeaker').scrollLeft -= scrollpixel;
+});
+
+document.getElementById('btnSpeakerR').addEventListener('click', function(e){
+    document.getElementById('listaSpeaker').scrollLeft += scrollpixel;
+});
+
+document.getElementById('btnAgenda').addEventListener('click', function(e){
+    document.getElementById('agendaSpeaker').scrollTop += scrollpixel;
+});
 //------------------------------- MAIN -------------------------------
 submitState(true);
 if(isEvent(new Date(), eventday)){
