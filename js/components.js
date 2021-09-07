@@ -28,12 +28,12 @@ function nextAgendaUI(speaker){
 
 
 function sponsorUI(sponsor) {
-    return `<div class="sevenPage-imgSponsors-div"><img src="${sponsor.logo}" alt="Logo de Mercado libre"></img>`
+    return `<div class="sevenPage-imgSponsors-div"><img src="${sponsor.logo}" class="img-fluid" alt="Logo de Mercado libre"></img>`
 }
 
 function speakerUI(speaker){
-    return `<div class="carousel-speakerGral-speaker">
-            <img src="${speaker.avatar}" class="carousel-speakerGral-speaker-img rounded-circle" width="220" height="220" alt="Foto del speaker" id="${speaker.identificador}">
+    return `<div class="carousel-speakerGral-speaker m-2">
+            <img src="${speaker.avatar}" class="img-speakers rounded-circle m-2" width="220" height="220" alt="Foto del speaker" id="${speaker.identificador}">
             <div class="carousel-speakerGral-speaker-div">
                 <div class="carousel-speakerGral-speaker-div-subdiv">
                     <h5 class="carousel-speakerGral-speaker-div-h5">${speaker.nombre} ${speaker.apellido}</h5>

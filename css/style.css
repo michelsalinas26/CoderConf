@@ -89,7 +89,8 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -1452,3 +1453,6 @@ table {
       grid-template-areas: "footerPage-coderconf footerPage-coderhouse footerPage-redesSociales" "footerPage-copyright footerPage-copyright footerPage-copyright";
       grid-template-columns: 0.33fr 0.33fr 0.34fr;
       grid-template-rows: 0.5fr 0.5fr; } }
+
+
+

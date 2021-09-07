@@ -4,7 +4,7 @@
         "email": "lala@lala.com",
         "celular": "000000122",
         "empresa": "Mercado Libre",
-        "logo": "images/Logo-ML.png"
+        "logo": "https://res.cloudinary.com/hdsqazxtw/image/upload/v1599782143/CoderConf/neolo-verde-chico.png"
 
     },
     {
@@ -13,7 +13,7 @@
         "email": "popoa@lala.com",
         "celular": "00003333",
         "empresa": "Tienda Nube",
-        "logo": "images/Logo-TiendaNube.png"
+        "logo": "https://res.cloudinary.com/hdsqazxtw/image/upload/v1599782144/CoderConf/LOGO-BAIRES-05.png"
 
     },
     {
@@ -22,7 +22,7 @@
         "email": "flafla@lala.com",
         "celular": "00004444",
         "empresa": "Google",
-        "logo": "images/Logo-Google.png"
+        "logo": "https://res.cloudinary.com/hdsqazxtw/image/upload/v1599782143/CoderConf/EMBLUE_cmyl-horizontal.png"
 
     },
     {
@@ -31,7 +31,7 @@
         "email": "flafla@lala.com",
         "celular": "00004444",
         "empresa": "Google",
-        "logo": "images/Logo-Google.png"
+        "logo": "https://res.cloudinary.com/hdsqazxtw/image/upload/v1599782143/CoderConf/doppler-logo.svg"
 
     },
     {
@@ -40,7 +40,7 @@
         "email": "lala@lala.com",
         "celular": "000000122",
         "empresa": "Mercado Libre",
-        "logo": "images/Logo-ML.png"
+        "logo": "https://res.cloudinary.com/hdsqazxtw/image/upload/v1599782144/CoderConf/nextpng.com.png"
 
     },
     {
@@ -49,7 +49,7 @@
         "email": "popoa@lala.com",
         "celular": "00003333",
         "empresa": "Tienda Nube",
-        "logo": "images/Logo-TiendaNube.png"
+        "logo": "https://res.cloudinary.com/hdsqazxtw/image/upload/v1601640549/CoderConf/FACTURANTE_logotipo.png"
 
     }
 ]

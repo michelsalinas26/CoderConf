@@ -1,0 +1,23 @@
+.carousel-speakerGral{
+    scroll-behavior: smooth;
+}
+.carousel-speakerGral::-webkit-scrollbar {
+          display: none;
+}
+
+.fivePage-divGral-divTwo{
+    scroll-behavior: smooth;
+}
+
+.fivePage-divGral-divTwo::-webkit-scrollbar {
+    display: none;
+}
+
+.selectedAvatar{
+    padding: 5px 5px !important;
+    border: 1px solid transparent;
+    border-radius: 60px;
+    background-image: linear-gradient(180deg, #8215BC 20%, #E0FF00 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }

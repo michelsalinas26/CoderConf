@@ -55,7 +55,8 @@ function speakerRender(speakers){
         divSpeaker.innerHTML += speakerUI(speaker);
     }
 
-    const avatars = document.querySelectorAll('.carousel-speakerGral-speaker-img');
+    const avatars = document.querySelectorAll('.img-speakers');
+    console.log(avatars);
     avatars.forEach(avatar => { avatar.onclick = selectedHandler });
 }   
 
