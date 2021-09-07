@@ -351,6 +351,9 @@
                     .eightPageCaptcha {
                         padding-left: 25%;
                     }
+                    .btn {
+                        background-color: #8215BC;
+                    }
                 }
             }
         }
@@ -425,7 +428,7 @@
                     .pageOneArticle-divOne-h2 {
                         font-size: 2.5rem;
                         line-height: 4rem;
-                        text-align: start;
+                        text-align: center;
                     }
                     .pageOneArticle-divOne-h2b {
                         font-size: 3.5rem;
@@ -436,7 +439,7 @@
                     display: flex;
                     flex-direction: row;
                     padding: 0rem 1rem;
-                    justify-content: flex-start;
+                    justify-content: center;
                     .pageOneArticle-divTwo-h3 {
                         padding: 0.5rem;
                         text-align: start;
@@ -547,7 +550,7 @@
         .threePage {
             height: 500px;
             padding: 0.625rem 0rem;
-            background-image: url(../images/movilJaxa3-tablet.png);
+            background-image: url(../images/movilJaxa3-desktop.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100% 500px;
@@ -557,7 +560,7 @@
             .threePage-logo {
                 width: 40%;
                 height: 50%;
-                padding: 2rem;
+                padding: 2rem 8rem;
                 justify-content: flex-start;
                 .threePage-logo-h2 {
                     text-align: left;
@@ -581,11 +584,11 @@
             }
         }
         .fourPage {
-            height: 960px;
+            height: 1100px;
             background-image: url(../images/imagenFondoFourPage.png);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: 100% 190vh;
             .fourPage-divSpeaker {
                 width: 65%;
                 height: 25%;
@@ -668,7 +671,7 @@
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    padding: 3rem 0rem;
+                    padding: 3rem 7rem;
                     .sixPage-form-gral-div {
                         width: 50%;
                         .sixPage-form-input {
